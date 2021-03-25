@@ -1,4 +1,6 @@
+import NavBar from './components/NavBar';
 import ColorRow from './components/ColorRow';
+import TypographyRow from './components/TypographyRow';
 
 const theme = {
   colors: {
@@ -37,8 +39,12 @@ const theme = {
 
 function App() {
   return (
-    <div className="App container">
-      <ColorRow theme={theme}/>
+    <div className="App">
+      <NavBar/>
+      <div className="container">
+        <ColorRow theme={theme}/>
+        <TypographyRow theme={theme}/>
+      </div>
     </div>
   );
 }
