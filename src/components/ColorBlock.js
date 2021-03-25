@@ -12,13 +12,13 @@ function ColorBlock({color}) {
             </div>
             <div className="card-body">
               <div className="d-flex justify-content-between mb-2">
-              <b className="color-code me-3 align-self-center">HEX:</b> 
+                <b className="color-code me-3 align-self-center">HEX:</b> 
                 <code className="code css flex-grow-1">
                   { color.hex }
                 </code>
               </div>
               <div className="d-flex justify-content-between mb-2">
-              <b className="color-code me-3 align-self-center">RGB:</b> 
+                <b className="color-code me-3 align-self-center">RGB:</b> 
                 <code className="code css flex-grow-1">
                   { color.rgb }
                 </code>
