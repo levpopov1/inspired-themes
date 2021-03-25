@@ -1,12 +1,12 @@
 function ColorBlock({color}) {
   return (
-    <div className="col-sm-4">
-      <div className="card mb-3">
+    <div className="col mb-3">
+      <div className="card">
         <div class="row g-0">
-          <div className="col-md-3">
+          <div className="col-md-2 col-lg-3">
             <div className="color-block" style={{ backgroundColor: color.hex }}></div>
           </div>
-          <div className="col-md-9">
+          <div className="col-md-10 col-lg-9">
             <div className="card-body">
               <h3 className="card-title m-0">{ color.name }</h3>
             </div>
