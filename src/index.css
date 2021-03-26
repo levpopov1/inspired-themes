@@ -36,3 +36,35 @@ body{
 .color-code{
   width: 50px;
 }
+
+.dropdown-menu-horizontal.show{
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  border: none;
+  border-radius: unset;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  transform: translate(0px, 64px) !important;
+}
+
+.dropdown-menu-horizontal.full-width{
+  width: 100%;
+}
+
+.pos-initial{
+  position: initial;
+}
+
+.dropdown-column{
+  border-right:1px solid rgba(0, 0, 0, 0.15);
+  padding: 0.5rem 0.75rem;
+}
+
+.continuous{
+  border-right: none;
+}
+
+.dropdown-column:last-of-type{
+  border-right: none;
+}
