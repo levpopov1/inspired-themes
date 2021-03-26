@@ -2,7 +2,7 @@ function ColorBlock({color}) {
   return (
     <div className="col mb-3">
       <div className="card">
-        <div class="row g-0">
+        <div className="row g-0">
           <div className="col-md-2 col-lg-3">
             <div className="color-block" style={{ backgroundColor: color.hex }}></div>
           </div>
