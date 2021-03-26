@@ -41,7 +41,7 @@ const theme = {
 function App() {
   return (
     <div className="App">
-      <NavBar/>
+      <NavBar theme={theme}/>
       <div className="container">
         <ColorRow theme={theme}/>
         <TypographyRow theme={theme}/>
