@@ -1,0 +1,63 @@
+{
+  "gallery": {
+    "collections": [{
+      "id": "1",
+      "name": "Tokyo Series",
+      "themes": [{
+        "id": "1.1",
+        "name": "Sakura",
+        "slug": "tokyo-series/sakura",
+        "colors": {
+          "primary": {
+            "name": "Primary",
+            "hex": "#8682CE",
+            "rgb": "rgb(0,0,239)",
+            "hsl": "hsl(240,100%,20%)"
+          },
+          "secondary": {
+            "name": "Secondary",
+            "hex": "#82ce86",
+            "rgb": "rgb(239,239,0)",
+            "hsl": "hsl(240,100%,20%)"
+          },
+          "highlight": {
+            "name": "Highlight",
+            "hex": "#D6CBEB",
+            "rgb": "rgb(0,120,239)",
+            "hsl": "hsl(240,100%,20%)"
+          },
+          "shadow": {
+            "name": "Shadow",
+            "hex": "#111111",
+            "rgb": "rgb(0,0,82)",
+            "hsl": "hsl(240,100%,20%)"
+          },
+          "light": {
+            "name": "Light",
+            "hex": "#ffffff",
+            "rgb": "rgb(239,239,255)",
+            "hsl": "hsl(240,100%,20%)"
+          }
+        }
+      }]
+    },
+    {
+      "id": "2",
+      "name": "The Great Silence",
+      "themes": []
+    },
+    {
+      "id": "3",
+      "name": "Landscapes",
+      "themes": []
+    },
+    {
+      "id": "4",
+      "name": "Botanicals",
+      "themes": []
+    }
+  ]
+  }
+
+
+}
