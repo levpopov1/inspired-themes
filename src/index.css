@@ -58,7 +58,7 @@ body{
 
 .dropdown-column{
   border-right:1px solid rgba(0, 0, 0, 0.15);
-  padding: 0.5rem 0.75rem;
+  padding: 0.5rem 0;
 }
 
 .continuous{
@@ -67,4 +67,14 @@ body{
 
 .dropdown-column:last-of-type{
   border-right: none;
+}
+
+.minipalette{
+  display: flex;
+}
+
+.minipalette .palette-block{
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
 }
