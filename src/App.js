@@ -2,6 +2,7 @@ import NavBar from './components/NavBar';
 import ColorRow from './components/ColorRow';
 import TypographyRow from './components/TypographyRow';
 import ButtonyRow from './components/ButtonRow';
+import data from './data/test-dataset.json';
 
 const theme = {
   colors: {
@@ -38,10 +39,12 @@ const theme = {
   }
 }
 
+const collections = data.gallery.collections;
+
 function App() {
   return (
     <div className="App">
-      <NavBar theme={theme}/>
+      <NavBar collections={collections}/>
       <div className="container">
         <ColorRow theme={theme}/>
         <TypographyRow theme={theme}/>
