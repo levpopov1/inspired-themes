@@ -1,10 +1,16 @@
-import NavBar from './components/NavBar';
-import ColorRow from './components/ColorRow';
-import TypographyRow from './components/TypographyRow';
-import ButtonyRow from './components/ButtonRow';
-import data from './data/test-dataset.json';
+// import NavBar from './components/NavBar';
+// import Hero from './components/Hero';
+// import ColorRow from './components/ColorRow';
+// import TypographyRow from './components/TypographyRow';
+// import ButtonyRow from './components/ButtonRow';
+// import data from './data/test-dataset.json';
+import Sidebar from './components/Sidebar';
 
 const theme = {
+  id: "1",
+  name: "Sakura",
+  collection: "Tokyo Series",
+  image: "/img/sakura_pastel.jpg",
   colors: {
     primary: {
       name: "Primary",
@@ -39,17 +45,22 @@ const theme = {
   }
 }
 
-const collections = data.gallery.collections;
+// const collections = data.gallery.collections;
 
 function App() {
   return (
     <div className="App">
-      <NavBar collections={collections}/>
+      <Sidebar theme={theme}/>
+      <div className="container-fluid" id="main">
+        Main content here
+      </div>
+      {/* <NavBar collections={collections}/>
       <div className="container">
+        <Hero theme={theme}/>
         <ColorRow theme={theme}/>
         <TypographyRow theme={theme}/>
         <ButtonyRow theme={theme}/>
-      </div>
+      </div> */}
     </div>
   );
 }
