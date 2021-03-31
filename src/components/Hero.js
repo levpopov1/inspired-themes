@@ -14,11 +14,21 @@ function Hero({theme}) {
 
   return (
     <div className="hero d-flex flex-column justify-content-between mb-3" style={heroImage}>
-      <div className="container">
-        <div className="row justify-content-center">
-          <div className="col-12 col-md-8 col-xl-6 justify-content-center mb-2 mb-md-0">
-            <form className="w-100 my-3 shadow-lg">
-              <div className="input-group">
+      <div className="container-fluid">
+        <div className="row">
+          <div className="d-none d-md-block position-relative">
+            <button className="btn btn-light my-3 ms-3 shadow" id="sidebar-toggler" 
+              data-bs-toggle="collapse" 
+              data-bs-target="#sidebar" 
+              aria-expanded="true"
+              aria-controls="sidebar"
+            >
+              <i className="bi bi-list"></i>
+            </button>
+          </div>
+          <div className="col-12 col-md-8 col-xl-6 mx-auto">
+            <form className="w-100 my-3">
+              <div className="input-group shadow">
                 <input type="text" className="form-control" placeholder="Paste image URL here" 
                   aria-label="Paste Twitter URL here" aria-describedby="button-addon"
                   onChange={handleImageChange}
