@@ -26,7 +26,7 @@ function Hero({theme}) {
               <i className="bi bi-list"></i>
             </button>
           </div>
-          <div className="col-12 col-md-8 col-xl-6 mx-auto">
+          <div className="col-12 col-md-8 col-xl-6 col-xxxl-4 mx-auto">
             <form className="w-100 my-3">
               <div className="input-group shadow">
                 <input type="text" className="form-control" placeholder="Paste image URL here" 
