@@ -1,8 +1,9 @@
 // import NavBar from './components/NavBar';
-// import Hero from './components/Hero';
-// import ColorRow from './components/ColorRow';
-// import TypographyRow from './components/TypographyRow';
-// import ButtonyRow from './components/ButtonRow';
+import Hero from './components/Hero';
+import ColorRow from './components/ColorRow';
+import TypographyHeader from './components/TypographyHeader';
+import TypographyRow from './components/TypographyRow';
+import ButtonyRow from './components/ButtonRow';
 // import data from './data/test-dataset.json';
 import Sidebar from './components/Sidebar';
 
@@ -45,17 +46,28 @@ const theme = {
   }
 }
 
+const userPrefs = {
+  font: "sans-serif",
+  color: "hex"
+}
+
 // const collections = data.gallery.collections;
 
 function App() {
   return (
     <div className="App">
       <Sidebar theme={theme}/>
-      <div className="container-fluid" id="main">
-        Main content here
+      <div className="main">
+        <Hero theme={theme}/>
+        <div className="container-fluid">
+          <ColorRow theme={theme}/>
+          <TypographyHeader userPrefs={userPrefs} />
+          <TypographyRow theme={theme}/>
+          <ButtonyRow theme={theme}/>
+        </div>
       </div>
-      {/* <NavBar collections={collections}/>
-      <div className="container">
+      {/* <NavBar collections={collections}/> */}
+      {/* <div className="container">
         <Hero theme={theme}/>
         <ColorRow theme={theme}/>
         <TypographyRow theme={theme}/>

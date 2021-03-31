@@ -6,7 +6,6 @@ function TypographyRow({theme}) {
       {Object.keys(theme.colors).map((key, index) => 
         <TypographyBlock color={theme.colors[key]} key={index}/>
       )}
-      
     </div>
   );
 }
