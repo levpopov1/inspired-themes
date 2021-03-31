@@ -7,8 +7,10 @@ function Sidebar({theme}) {
     caret.classList.toggle("active");
   }
 
+  const showSidebar = window.innerWidth >= 768 ? 'show' : '';
+
   return (
-    <div className="d-none d-md-block" id="sidebar">
+    <div className={"collapse " + showSidebar} id="sidebar">
       <div className="d-flex flex-column sticky-top p-3 text-white bg-dark" id="sidebar-inner">
         <a href="/" className="d-flex align-items-center text-white text-decoration-none" id="logo">
           <i className="bi bi-palette2 me-2"/>
