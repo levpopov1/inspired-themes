@@ -6,9 +6,32 @@
   background-color: #f7f9fc;
 }
 
+#sidebar{
+  // height: 100vh;
+  width: 280px;
+  transition: width 0.1s ease;
+}
+
 #sidebar-inner{
   height: 100vh;
   width: 280px;
+  transition: width 0.1s ease;
+}
+
+#sidebar.collapsing{
+  width: 0;
+  overflow: hidden;
+}
+
+#sidebar.collapsing #sidebar-inner{
+  width: 0;
+  overflow: hidden;
+}
+
+#sidebar-toggler{
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 
 #logo i{
