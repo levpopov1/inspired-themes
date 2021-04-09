@@ -1,63 +1,331 @@
 {
   "gallery": {
-    "collections": [{
-      "id": "1",
-      "name": "Tokyo Series",
-      "themes": [{
-        "id": "1.1",
-        "name": "Sakura",
-        "slug": "tokyo-series/sakura",
-        "colors": {
-          "primary": {
-            "name": "Primary",
-            "hex": "#8682CE",
-            "rgb": "rgb(0,0,239)",
-            "hsl": "hsl(240,100%,20%)"
+    "collections": [
+      {
+        "id": "1",
+        "name": "Tokyo Series",
+        "themes": [
+          {
+            "id": "1.1",
+            "name": "Sakura",
+            "slug": "tokyo-series/sakura",
+            "colors": {
+              "primary": {
+                "name": "Primary",
+                "hex": "#8682CE",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
+              },
+              "secondary": {
+                "name": "Secondary",
+                "hex": "#82ce86",
+                "rgb": "rgb(239,239,0)",
+                "hsl": "hsl(240,100%,20%)"
+              },
+              "highlight": {
+                "name": "Highlight",
+                "hex": "#D6CBEB",
+                "rgb": "rgb(0,120,239)",
+                "hsl": "hsl(240,100%,20%)"
+              },
+              "shadow": {
+                "name": "Shadow",
+                "hex": "#111111",
+                "rgb": "rgb(0,0,82)",
+                "hsl": "hsl(240,100%,20%)"
+              },
+              "light": {
+                "name": "Light",
+                "hex": "#ffffff",
+                "rgb": "rgb(239,239,255)",
+                "hsl": "hsl(240,100%,20%)"
+              }
+            }
           },
-          "secondary": {
-            "name": "Secondary",
-            "hex": "#82ce86",
-            "rgb": "rgb(239,239,0)",
-            "hsl": "hsl(240,100%,20%)"
+          {
+            "id": "1.2",
+            "name": "Pastel",
+            "slug": "tokyo-series/pastel",
+            "colors": {
+
+            }
           },
-          "highlight": {
-            "name": "Highlight",
-            "hex": "#D6CBEB",
-            "rgb": "rgb(0,120,239)",
-            "hsl": "hsl(240,100%,20%)"
+          {
+            "id": "1.3",
+            "name": "Clouds",
+            "slug": "tokyo-series/clouds",
+            "colors": {
+
+            }
           },
-          "shadow": {
-            "name": "Shadow",
-            "hex": "#111111",
-            "rgb": "rgb(0,0,82)",
-            "hsl": "hsl(240,100%,20%)"
+          {
+            "id": "1.4",
+            "name": "Neons",
+            "slug": "tokyo-series/neons",
+            "colors": {
+
+            }
           },
-          "light": {
-            "name": "Light",
-            "hex": "#ffffff",
-            "rgb": "rgb(239,239,255)",
-            "hsl": "hsl(240,100%,20%)"
+          {
+            "id": "1.5",
+            "name": "White Noise",
+            "slug": "tokyo-series/white-noise",
+            "colors": {
+
+            }
           }
-        }
-      }]
-    },
-    {
-      "id": "2",
-      "name": "The Great Silence",
-      "themes": []
-    },
-    {
-      "id": "3",
-      "name": "Landscapes",
-      "themes": []
-    },
-    {
-      "id": "4",
-      "name": "Botanicals",
-      "themes": []
-    }
-  ]
+        ]
+      },
+      {
+        "id": "2",
+        "name": "The Great Silence",
+        "themes": [
+          {
+            "id": "2.1",
+            "name": "Hydrogen Clouds",
+            "slug": "the-great-silence/hydrogen-clouds",
+            "colors": {
+    
+            }
+          },
+          {
+            "id": "2.2",
+            "name": "Starglow",
+            "slug": "the-great-silence/starglow",
+            "colors": {
+    
+            }
+          },
+          {
+            "id": "2.3",
+            "name": "Atmosphere",
+            "slug": "the-great-silence/atmosphere",
+            "colors": {
+    
+            }
+          },
+          {
+            "id": "2.4",
+            "name": "Nebula",
+            "slug": "the-great-silence/nebula",
+            "colors": {
+    
+            }
+          },
+          {
+            "id": "2.5",
+            "name": "Ice Giant",
+            "slug": "the-great-silence/ice-giant",
+            "colors": {
+    
+            }
+          }
+        ]
+      },
+      {
+        "id": "3",
+        "name": "Landscapes",
+        "themes": [
+          {
+            "id": "3.1",
+            "name": "Dolomites",
+            "slug": "landscapes/dolomites",
+            "colors": {
+    
+            }
+          },
+          {
+            "id": "3.2",
+            "name": "Esperance Beach",
+            "slug": "landscapes/esperance-beach",
+            "colors": {
+    
+            }
+          },
+          {
+            "id": "3.3",
+            "name": "Faroe Islands",
+            "slug": "landscapes/faroe-islands",
+            "colors": {
+    
+            }
+          },
+          {
+            "id": "3.4",
+            "name": "Glacier National Park",
+            "slug": "landscapes/glacier-notional-park",
+            "colors": {
+    
+            }
+          },
+          {
+            "id": "3.5",
+            "name": "Lake Hāwea",
+            "slug": "landscapes/lake-hawea",
+            "colors": {
+    
+            }
+          },
+          {
+            "id": "3.6",
+            "name": "Kauai",
+            "slug": "landscapes/kauai",
+            "colors": {
+    
+            }
+          },
+          {
+            "id": "3.7",
+            "name": "Island of Senja",
+            "slug": "landscapes/island-of-senja",
+            "colors": {
+    
+            }
+          },
+          {
+            "id": "3.8",
+            "name": "Mizar and Alcor",
+            "slug": "landscapes/mizar-and-alcor",
+            "colors": {
+    
+            }
+          },
+          {
+            "id": "3.9",
+            "name": "Mono Lake",
+            "slug": "landscapes/mono-lake",
+            "colors": {
+    
+            }
+          },
+          {
+            "id": "3.10",
+            "name": "Sedona Peaks",
+            "slug": "landscapes/sedona-peaks",
+            "colors": {
+    
+            }
+          },
+          {
+            "id": "3.11",
+            "name": "Ha Long Bay",
+            "slug": "landscapes/ha-long-bay",
+            "colors": {
+    
+            }
+          },
+          {
+            "id": "3.12",
+            "name": "Yosemite National Park",
+            "slug": "landscapes/yosemite-national-park",
+            "colors": {
+    
+            }
+          }
+        ]
+      },
+      {
+        "id": "4",
+        "name": "Botanicals",
+        "themes": [
+          {
+            "id": "4.1",
+            "name": "Camellia",
+            "slug": "botanicals/camellia",
+            "colors": {
+    
+            }
+          },
+          {
+            "id": "4.2",
+            "name": "Freesia",
+            "slug": "botanicals/freesia",
+            "colors": {
+    
+            }
+          },
+          {
+            "id": "4.3",
+            "name": "Hydrangea",
+            "slug": "botanicals/hydrangea",
+            "colors": {
+    
+            }
+          },
+          {
+            "id": "4.4",
+            "name": "Sakura",
+            "slug": "botanicals/sakura",
+            "colors": {
+    
+            }
+          },
+          {
+            "id": "4.5",
+            "name": "Wisteria",
+            "slug": "botanicals/wisteria",
+            "colors": {
+    
+            }
+          },
+          {
+            "id": "4.6",
+            "name": "Lily of the Valley",
+            "slug": "botanicals/lily-of-the-valley",
+            "colors": {
+    
+            }
+          },
+          {
+            "id": "4.7",
+            "name": "Mango Tulip",
+            "slug": "botanicals/mango-tulip",
+            "colors": {
+    
+            }
+          },
+          {
+            "id": "4.8",
+            "name": "Delphinium",
+            "slug": "botanicals/delphinium",
+            "colors": {
+    
+            }
+          },
+          {
+            "id": "4.9",
+            "name": "Sunflower",
+            "slug": "botanicals/sunflower",
+            "colors": {
+    
+            }
+          },
+          {
+            "id": "4.10",
+            "name": "Forget Me Not",
+            "slug": "botanicals/forget-me-not",
+            "colors": {
+    
+            }
+          },
+          {
+            "id": "4.11",
+            "name": "Night Sky Petunia",
+            "slug": "botanicals/night-sly-petunia",
+            "colors": {
+    
+            }
+          },
+          {
+            "id": "4.12",
+            "name": "Lagrass",
+            "slug": "botanicals/lagrass",
+            "colors": {
+    
+            }
+          }
+        ]
+      }
+    ]
   }
-
-
 }
