@@ -1,5 +1,28 @@
 @import "./extensions.scss";
 
+:root{
+  --bg-dark: #23282E;
+  --bg-light: #F4F4F4;
+  --text-dark: #2d2d2d;
+  --text-light: #f1f1f1;
+}
+
+.dark{
+  --bg-color: var(--bg-dark);
+  --text-color: var(--text-light);
+}
+
+.light{
+  --bg-color: var(--bg-light);
+  --text-color: var(--text-dark);
+}
+
+body{
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background 500ms ease-in-out, color 850ms ease-in-out;
+}
+
 .App{
   display: flex;
   flex-direction: row;
