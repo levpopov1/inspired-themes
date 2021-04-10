@@ -1,7 +1,7 @@
 function ColorBlock({color}) {
   return (
     <div className="col mb-3">
-      <div className="card">
+      {/* <div className="card">
         <div className="row g-0">
           <div className="col-3 col-sm-12 col-xxxl-3">
             <div className="color-block" style={{ backgroundColor: color.hex }}></div>
@@ -12,42 +12,44 @@ function ColorBlock({color}) {
             </div>
             <div className="card-body">
               <p className="card-text">
-                {/* <b className="color-code me-3 d-block">HEX</b>  */}
                 <code className="code css d-block">
                     { color.hex }
                 </code>
               </p>
               <p className="card-text">
-                {/* <b className="color-code me-3 d-block">RGB</b>  */}
                 <code className="code css d-block">
                     { color.rgb }
                 </code>
               </p>
               <p className="card-text">
-                {/* <b className="color-code me-3 d-block">HSL</b>  */}
                 <code className="code css d-block">
                   { color.hsl }
                 </code>
               </p>
-
-              {/* <div className="d-flex flex-column mb-2">
-                <b className="color-code me-3 align-self-center">HEX:</b> 
-                <code className="code css flex-grow-1">
-                  { color.hex }
+            </div>
+          </div>
+        </div>
+      </div> */}
+      <div className="card color-block" style={{ backgroundColor: color.hex }}>
+        <div className="card-img-overlay d-flex">
+          <div className="card bg-light text-dark mt-auto flex-grow-1">
+            <div className="card-body ">
+              <h3 className="card-title">{ color.name }</h3>
+              <p className="card-text">
+                <code className="code css d-block">
+                    { color.hex }
                 </code>
-              </div>
-              <div className="d-flex flex-column mb-2">
-                <b className="color-code me-3 align-self-center">RGB:</b> 
-                <code className="code css flex-grow-1">
-                  { color.rgb }
+              </p>
+              <p className="card-text">
+                <code className="code css d-block">
+                    { color.rgb }
                 </code>
-              </div>
-              <div className="d-flex flex-column mb-2">
-                <b className="color-code me-3 align-self-center">HSL:</b> 
-                <code className="code css flex-grow-1">
+              </p>
+              <p className="card-text">
+                <code className="code css d-block">
                   { color.hsl }
                 </code>
-              </div> */}
+              </p>
             </div>
           </div>
         </div>
