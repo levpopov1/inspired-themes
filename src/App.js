@@ -4,8 +4,12 @@ import ColorRow from './components/ColorRow';
 import TypographyHeader from './components/TypographyHeader';
 import TypographyRow from './components/TypographyRow';
 import ButtonyRow from './components/ButtonRow';
-// import data from './data/test-dataset.json';
+import data from './data/test-dataset.json';
 import Sidebar from './components/Sidebar';
+import InternalThemeSwither from './components/InternalThemeSwitcher';
+import NavBar from './components/NavBar';
+import InspoImage from './components/InspoImage';
+import Accordion from './components/Accordion';
 
 const theme = {
   id: "1",
@@ -31,8 +35,8 @@ const theme = {
       rgb: "rgb(0,120,239)",
       hsl: "hsl(240,100%,20%)"
     },
-    shadow: {
-      name: "Shadow",
+    dark: {
+      name: "Dark",
       hex: "#000052",
       rgb: "rgb(0,0,82)",
       hsl: "hsl(240,100%,20%)"
@@ -51,13 +55,31 @@ const userPrefs = {
   color: "hex"
 }
 
-// const collections = data.gallery.collections;
+
+
+const collections = data.gallery.collections;
 
 function App() {
   return (
     <div className="App">
-      <Sidebar theme={theme}/>
-      <div className="main">
+      <Accordion theme={theme}/>
+      {/* <Sidebar theme={theme}/> */}
+      {/* <NavBar collections={collections}/> */}
+      {/* <div className="container-fluid">
+        <div className="row">
+          <div className="col-sm-4">
+            <InspoImage theme={theme}/>
+          </div>
+        </div>
+        <div className="row">
+          <div className="col-sm-10">
+            <Accordion/>
+
+          </div>
+        </div>
+        <ColorRow theme={theme}/>
+      </div> */}
+      {/* <div className="main">
         <Hero theme={theme}/>
         <div className="container-fluid">
           <ColorRow theme={theme}/>
@@ -65,13 +87,6 @@ function App() {
           <TypographyRow theme={theme}/>
           <ButtonyRow theme={theme}/>
         </div>
-      </div>
-      {/* <NavBar collections={collections}/> */}
-      {/* <div className="container">
-        <Hero theme={theme}/>
-        <ColorRow theme={theme}/>
-        <TypographyRow theme={theme}/>
-        <ButtonyRow theme={theme}/>
       </div> */}
     </div>
   );
