@@ -5,7 +5,15 @@
   --bg-light: #F4F4F4;
   --text-dark: #2d2d2d;
   --text-light: #f1f1f1;
+  --bg-primary: #f6e6d9;
+  --text-primary: #f6e6d9;
+  --bg-secondary: #68382e;
+  --text-secondary: #68382e;
+  --bg-accent: #ca3c6c;
+  --text-accent: #ca3c6c;
+  --light-copper: #cd876d;
 }
+
 
 .dark{
   --bg-color: var(--bg-dark);
@@ -23,10 +31,28 @@ body{
   transition: background 500ms ease-in-out, color 850ms ease-in-out;
 }
 
+a{
+  color: currentColor;
+
+  &:hover, &:active{
+    color: var(--text-primary);
+  }
+}
+
+.block-link:hover{
+  color: var(--text-dark);
+  background-color: var(--bg-primary);
+}
+
+.dropdown-item:hover{
+  color: var(--text-dark);
+  background-color: var(--bg-primary);
+}
+
 .App{
-  display: flex;
-  flex-direction: row;
-  background-color: #f7f9fc;
+  // display: flex;
+  // flex-direction: row;
+  // background-color: #f7f9fc;
 }
 
 #sidebar{
@@ -62,6 +88,8 @@ body{
 }
 
 .card{
+  background-color: var(--bg-color);
+  color: var(--text-color);
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   border: none;
 }
@@ -97,6 +125,16 @@ body{
 
 .color-code{
   width: 50px;
+}
+
+.dropdown-menu{
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.dropdown-item{
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
 
 .dropdown-menu-horizontal.show{
@@ -161,4 +199,43 @@ button.nav-link:hover{
 
 .text-shadow{
   text-shadow: 2px 2px 10px #111;
+}
+
+.collapse.width {
+  height: auto;
+  -webkit-transition: width 0.35s ease;
+  -moz-transition: width 0.35s ease;
+  -o-transition: width 0.35s ease;
+  transition: width 0.35s ease;
+}
+
+#vac{
+  height: 100vh;
+
+  .section-content{
+    padding-right: 0.75rem;
+    padding-left: 0.75rem;
+  }
+
+  .section-title{
+    // min-width: calc(6rem + 2px);
+    border-left: 1px solid var(--text-color);
+    border-right: 1px solid var(--text-color);
+
+    @media (max-width: 576px) {
+      min-width: calc(1.525rem + 3.3vw + 2rem + 1.5px);
+    }
+
+    @media (min-width: 577px) and (max-width: 1200px) {
+      min-width: calc(1.76rem + 3.3vw + 2rem + 1.5px);
+    }
+  }
+
+  .section-title a{
+    padding: 1rem;
+    line-height: 1;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    // transform: rotate(-180deg);
+  }
 }
