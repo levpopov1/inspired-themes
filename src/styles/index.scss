@@ -201,16 +201,29 @@ button.nav-link:hover{
   text-shadow: 2px 2px 10px #111;
 }
 
-.collapse.width {
-  height: auto;
+#navbar{
+  border-bottom: 1px solid var(--text-color);
+}
+
+.collapse.width{
+  width: 0;
   -webkit-transition: width 0.35s ease;
   -moz-transition: width 0.35s ease;
   -o-transition: width 0.35s ease;
   transition: width 0.35s ease;
 }
 
+.collapse.width.show {
+  width: auto;
+}
+
+.collapsing.width {
+  transition: width 0.35s ease;
+}
+
+
 #vac{
-  height: 100vh;
+  height: calc(100vh - 65px);
 
   .section-content{
     padding-right: 0.75rem;
