@@ -28,7 +28,7 @@
                 "rgb": "rgb(0,120,239)",
                 "hsl": "hsl(240,100%,20%)"
               },
-              "shadow": {
+              "dark": {
                 "name": "Shadow",
                 "hex": "#111111",
                 "rgb": "rgb(0,0,82)",
@@ -47,7 +47,11 @@
             "name": "Pastel",
             "slug": "tokyo-series/pastel",
             "colors": {
-
+              "primary": {},
+              "secondary": {},
+              "highlight": {},
+              "dark": {},
+              "light": {}
             }
           },
           {
@@ -55,7 +59,11 @@
             "name": "Clouds",
             "slug": "tokyo-series/clouds",
             "colors": {
-
+              "primary": {},
+              "secondary": {},
+              "highlight": {},
+              "dark": {},
+              "light": {}
             }
           },
           {
@@ -63,7 +71,11 @@
             "name": "Neons",
             "slug": "tokyo-series/neons",
             "colors": {
-
+              "primary": {},
+              "secondary": {},
+              "highlight": {},
+              "dark": {},
+              "light": {}
             }
           },
           {
@@ -71,7 +83,11 @@
             "name": "White Noise",
             "slug": "tokyo-series/white-noise",
             "colors": {
-
+              "primary": {},
+              "secondary": {},
+              "highlight": {},
+              "dark": {},
+              "light": {}
             }
           }
         ]
@@ -85,7 +101,11 @@
             "name": "Hydrogen Clouds",
             "slug": "the-great-silence/hydrogen-clouds",
             "colors": {
-    
+              "primary": {},
+              "secondary": {},
+              "highlight": {},
+              "dark": {},
+              "light": {}
             }
           },
           {
@@ -93,7 +113,11 @@
             "name": "Starglow",
             "slug": "the-great-silence/starglow",
             "colors": {
-    
+              "primary": {},
+              "secondary": {},
+              "highlight": {},
+              "dark": {},
+              "light": {}
             }
           },
           {
@@ -101,7 +125,11 @@
             "name": "Atmosphere",
             "slug": "the-great-silence/atmosphere",
             "colors": {
-    
+              "primary": {},
+              "secondary": {},
+              "highlight": {},
+              "dark": {},
+              "light": {}
             }
           },
           {
@@ -109,7 +137,11 @@
             "name": "Nebula",
             "slug": "the-great-silence/nebula",
             "colors": {
-    
+              "primary": {},
+              "secondary": {},
+              "highlight": {},
+              "dark": {},
+              "light": {}
             }
           },
           {
@@ -117,7 +149,11 @@
             "name": "Ice Giant",
             "slug": "the-great-silence/ice-giant",
             "colors": {
-    
+              "primary": {},
+              "secondary": {},
+              "highlight": {},
+              "dark": {},
+              "light": {}
             }
           }
         ]
@@ -131,7 +167,11 @@
             "name": "Dolomites",
             "slug": "landscapes/dolomites",
             "colors": {
-    
+              "primary": {},
+              "secondary": {},
+              "highlight": {},
+              "dark": {},
+              "light": {}
             }
           },
           {
@@ -139,7 +179,11 @@
             "name": "Esperance Beach",
             "slug": "landscapes/esperance-beach",
             "colors": {
-    
+              "primary": {},
+              "secondary": {},
+              "highlight": {},
+              "dark": {},
+              "light": {}
             }
           },
           {
@@ -147,7 +191,11 @@
             "name": "Faroe Islands",
             "slug": "landscapes/faroe-islands",
             "colors": {
-    
+              "primary": {},
+              "secondary": {},
+              "highlight": {},
+              "dark": {},
+              "light": {}
             }
           },
           {
@@ -155,7 +203,11 @@
             "name": "Glacier National Park",
             "slug": "landscapes/glacier-notional-park",
             "colors": {
-    
+              "primary": {},
+              "secondary": {},
+              "highlight": {},
+              "dark": {},
+              "light": {}
             }
           },
           {
@@ -163,7 +215,11 @@
             "name": "Lake Hāwea",
             "slug": "landscapes/lake-hawea",
             "colors": {
-    
+              "primary": {},
+              "secondary": {},
+              "highlight": {},
+              "dark": {},
+              "light": {}
             }
           },
           {
@@ -171,7 +227,11 @@
             "name": "Kauai",
             "slug": "landscapes/kauai",
             "colors": {
-    
+              "primary": {},
+              "secondary": {},
+              "highlight": {},
+              "dark": {},
+              "light": {}
             }
           },
           {
@@ -179,7 +239,11 @@
             "name": "Island of Senja",
             "slug": "landscapes/island-of-senja",
             "colors": {
-    
+              "primary": {},
+              "secondary": {},
+              "highlight": {},
+              "dark": {},
+              "light": {}
             }
           },
           {
@@ -187,7 +251,11 @@
             "name": "Mizar and Alcor",
             "slug": "landscapes/mizar-and-alcor",
             "colors": {
-    
+              "primary": {},
+              "secondary": {},
+              "highlight": {},
+              "dark": {},
+              "light": {}
             }
           },
           {
@@ -195,7 +263,11 @@
             "name": "Mono Lake",
             "slug": "landscapes/mono-lake",
             "colors": {
-    
+              "primary": {},
+              "secondary": {},
+              "highlight": {},
+              "dark": {},
+              "light": {}
             }
           },
           {
@@ -203,7 +275,11 @@
             "name": "Sedona Peaks",
             "slug": "landscapes/sedona-peaks",
             "colors": {
-    
+              "primary": {},
+              "secondary": {},
+              "highlight": {},
+              "dark": {},
+              "light": {}
             }
           },
           {
@@ -211,7 +287,11 @@
             "name": "Ha Long Bay",
             "slug": "landscapes/ha-long-bay",
             "colors": {
-    
+              "primary": {},
+              "secondary": {},
+              "highlight": {},
+              "dark": {},
+              "light": {}
             }
           },
           {
@@ -219,7 +299,11 @@
             "name": "Yosemite National Park",
             "slug": "landscapes/yosemite-national-park",
             "colors": {
-    
+              "primary": {},
+              "secondary": {},
+              "highlight": {},
+              "dark": {},
+              "light": {}
             }
           }
         ]
@@ -233,7 +317,11 @@
             "name": "Camellia",
             "slug": "botanicals/camellia",
             "colors": {
-    
+              "primary": {},
+              "secondary": {},
+              "highlight": {},
+              "dark": {},
+              "light": {}
             }
           },
           {
@@ -241,7 +329,11 @@
             "name": "Freesia",
             "slug": "botanicals/freesia",
             "colors": {
-    
+              "primary": {},
+              "secondary": {},
+              "highlight": {},
+              "dark": {},
+              "light": {}
             }
           },
           {
@@ -249,7 +341,11 @@
             "name": "Hydrangea",
             "slug": "botanicals/hydrangea",
             "colors": {
-    
+              "primary": {},
+              "secondary": {},
+              "highlight": {},
+              "dark": {},
+              "light": {}
             }
           },
           {
@@ -257,7 +353,11 @@
             "name": "Sakura",
             "slug": "botanicals/sakura",
             "colors": {
-    
+              "primary": {},
+              "secondary": {},
+              "highlight": {},
+              "dark": {},
+              "light": {}
             }
           },
           {
@@ -265,7 +365,11 @@
             "name": "Wisteria",
             "slug": "botanicals/wisteria",
             "colors": {
-    
+              "primary": {},
+              "secondary": {},
+              "highlight": {},
+              "dark": {},
+              "light": {}
             }
           },
           {
@@ -273,7 +377,11 @@
             "name": "Lily of the Valley",
             "slug": "botanicals/lily-of-the-valley",
             "colors": {
-    
+              "primary": {},
+              "secondary": {},
+              "highlight": {},
+              "dark": {},
+              "light": {}
             }
           },
           {
@@ -281,7 +389,11 @@
             "name": "Mango Tulip",
             "slug": "botanicals/mango-tulip",
             "colors": {
-    
+              "primary": {},
+              "secondary": {},
+              "highlight": {},
+              "dark": {},
+              "light": {}
             }
           },
           {
@@ -289,7 +401,11 @@
             "name": "Delphinium",
             "slug": "botanicals/delphinium",
             "colors": {
-    
+              "primary": {},
+              "secondary": {},
+              "highlight": {},
+              "dark": {},
+              "light": {}
             }
           },
           {
@@ -297,7 +413,11 @@
             "name": "Sunflower",
             "slug": "botanicals/sunflower",
             "colors": {
-    
+              "primary": {},
+              "secondary": {},
+              "highlight": {},
+              "dark": {},
+              "light": {}
             }
           },
           {
@@ -305,7 +425,11 @@
             "name": "Forget Me Not",
             "slug": "botanicals/forget-me-not",
             "colors": {
-    
+              "primary": {},
+              "secondary": {},
+              "highlight": {},
+              "dark": {},
+              "light": {}
             }
           },
           {
@@ -313,7 +437,11 @@
             "name": "Night Sky Petunia",
             "slug": "botanicals/night-sly-petunia",
             "colors": {
-    
+              "primary": {},
+              "secondary": {},
+              "highlight": {},
+              "dark": {},
+              "light": {}
             }
           },
           {
@@ -321,7 +449,11 @@
             "name": "Lagrass",
             "slug": "botanicals/lagrass",
             "colors": {
-    
+              "primary": {},
+              "secondary": {},
+              "highlight": {},
+              "dark": {},
+              "light": {}
             }
           }
         ]
