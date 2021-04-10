@@ -11,7 +11,7 @@ function Sidebar({theme}) {
 
   return (
     <div className={"collapse " + showSidebar} id="sidebar">
-      <div className="d-flex flex-column sticky-top p-3 text-white bg-dark" id="sidebar-inner">
+      <div className="d-flex flex-column sticky-top p-3" id="sidebar-inner">
         <a href="/" className="d-flex align-items-center text-white text-decoration-none" id="logo">
           <i className="bi bi-palette2 me-2"/>
           <span className="fs-4">Inspired Themes</span>
@@ -39,7 +39,7 @@ function Sidebar({theme}) {
             </div>
           </li>
         </ul>
-        <div className="card text-dark">
+        {/* <div className="card text-dark">
           <img src={theme.image} className="card-img-top" alt={'Image of ' + theme.name }/>
           <div className="card-body">
             <h5 className="card-title">Card title</h5>
@@ -48,7 +48,7 @@ function Sidebar({theme}) {
               <a href="#" className="btn btn-primary">Go somewhere</a>
             </div>
           </div>
-        </div>
+        </div> */}
         <hr/>
         <div className="dropdown">
           <a href="#" className="d-flex align-items-center text-white text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
