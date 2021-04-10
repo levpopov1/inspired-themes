@@ -2,7 +2,7 @@ import ThemeCollection from './ThemeCollection';
 
 function NavBar({collections}) {
   return (
-    <header className="shadow-sm w-100">
+    <header className="" id="navbar">
       <div className="container-fluid">
         <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-2">
           <div className="col-md-4 d-flex align-items-center mb-2 mb-md-0">
@@ -19,18 +19,23 @@ function NavBar({collections}) {
               </div>
             </form>
           </div>
-          <div className="col-md-4 text-end mb-md-0">
-            <div className="dropdown pos-initial">
-              <a href="#" className="link text-decoration-none dropdown-toggle" id="dropdownNavLink" data-bs-toggle="dropdown" aria-expanded="false">
-                Theme Gallery
+          <div className="col-md-4 mb-md-0">
+            <div className="d-flex flex-row justify-content-end">
+              <a className="nav-link" data-bs-toggle="collapse" data-bs-target="#s00" href="#s00" role="button" aria-expanded="true" aria-controls="s00">
+                Hidden Content
               </a>
-              <ul className="dropdown-menu dropdown-menu-horizontal full-width row" aria-labelledby="dropdownNavLink">
-                {
-                  collections.map(collection =>
-                    <ThemeCollection collection={collection} key={collection.id}/>
-                  )
-                }
-              </ul>
+              <div className="dropdown pos-initial">
+                <a className="nav-link dropdown-toggle ms-2" id="dropdownNavLink" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Theme Gallery
+                </a>
+                <ul className="dropdown-menu dropdown-menu-horizontal full-width row" aria-labelledby="dropdownNavLink">
+                  {
+                    collections.map(collection =>
+                      <ThemeCollection collection={collection} key={collection.id}/>
+                    )
+                  }
+                </ul>
+              </div>
             </div>
           </div>
         </div>
