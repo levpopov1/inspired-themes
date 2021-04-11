@@ -3,9 +3,21 @@
       flex: 0 0 auto;
       width: 20%;
   }
+  .row-cols-xxxl-7 > * {
+      flex: 0 0 auto;
+      width: 14.28%;
+  }
+  .row-cols-xxxl-8 > * {
+    flex: 0 0 auto;
+    width: 12.5%;
+  }
 }
 
 @media (min-width: 2200px){
+  .col-xxxl-1 {
+    flex: 0 0 auto;
+    width: 8.33%;
+  }
   .col-xxxl-2 {
     flex: 0 0 auto;
     width: 16.66%;
@@ -18,8 +30,16 @@
       flex: 0 0 auto;
       width: 33.33%;
   }
+  .col-xxxl-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
   .col-xxxl-9 {
       flex: 0 0 auto;
       width: 75%;
+  }
+  .col-xxxl-12 {
+    flex: 0 0 auto;
+    width: 100%;
   }
 }
