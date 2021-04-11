@@ -17,36 +17,36 @@ const theme = {
   collection: "Tokyo Series",
   image: "/img/sakura_pastel.jpg",
   colors: {
-    primary: {
-      name: "Primary",
-      hex: "#0000ef",
-      rgb: "rgb(0,0,239)",
-      hsl: "hsl(240,100%,20%)"
+    "primary": {
+      "name": "Primary",
+      "hex": "#e1caaa",
+      "rgb": "rgb(0,0,239)",
+      "hsl": "hsl(240,100%,20%)"
     },
-    secondary: {
-      name: "Secondary",
-      hex: "#efef00",
-      rgb: "rgb(239,239,0)",
-      hsl: "hsl(240,100%,20%)"
+    "secondary": {
+      "name": "Secondary",
+      "hex": "#41373b",
+      "rgb": "rgb(239,239,0)",
+      "hsl": "hsl(240,100%,20%)"
     },
-    highlight: {
-      name: "Highlight",
-      hex: "#0078ef",
-      rgb: "rgb(0,120,239)",
-      hsl: "hsl(240,100%,20%)"
+    "highlight": {
+      "name": "Highlight",
+      "hex": "#8cc125",
+      "rgb": "rgb(0,120,239)",
+      "hsl": "hsl(240,100%,20%)"
     },
-    dark: {
-      name: "Dark",
-      hex: "#000052",
-      rgb: "rgb(0,0,82)",
-      hsl: "hsl(240,100%,20%)"
+    "dark": {
+      "name": "Dark",
+      "hex": "#211f20",
+      "rgb": "rgb(0,0,82)",
+      "hsl": "hsl(240,100%,20%)"
     },
-    light: {
-      name: "Light",
-      hex: "#efefff",
-      rgb: "rgb(239,239,255)",
-      hsl: "hsl(240,100%,20%)"
-    },
+    "light": {
+      "name": "Light",
+      "hex": "#ededed",
+      "rgb": "rgb(239,239,255)",
+      "hsl": "hsl(240,100%,20%)"
+    }
   }
 }
 
@@ -62,6 +62,7 @@ const collections = data.gallery.collections;
 function App() {
   return (
     <div className="App">
+      <NavBar collections={collections}/>
       <Accordion theme={theme}/>
       {/* <Sidebar theme={theme}/> */}
       {/* <NavBar collections={collections}/> */}
