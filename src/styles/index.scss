@@ -44,11 +44,6 @@ a{
   background-color: var(--bg-primary);
 }
 
-.dropdown-item:hover{
-  color: var(--text-dark);
-  background-color: var(--bg-primary);
-}
-
 .App{
   // display: flex;
   // flex-direction: row;
@@ -137,6 +132,12 @@ a{
   color: var(--text-color);
 }
 
+.dropdown-item:hover{
+  background-color: var(--bg-primary);
+  color: var(--bg-color);
+}
+
+
 .dropdown-menu-horizontal.show{
   display: flex;
   flex-direction: row;
@@ -174,9 +175,15 @@ a{
 }
 
 .minipalette .palette-block{
-  width: 32px;
-  height: 32px;
-  border-radius: 4px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  box-shadow: 0 0.5rem 0.5rem rgba(#000, 0.15);
+
+  &:not(:first-of-type){
+    margin-left: -24px;
+  }
+
 }
 
 .hero{
