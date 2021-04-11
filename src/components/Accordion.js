@@ -51,19 +51,21 @@ function Accordion({theme}) {
       <div className="d-flex flex-row justify-content-end" id="vac">
         <div className="d-flex flex-row vac-section">
           <div className="section-content collapse width" id="s00" data-bs-parent="#vac">
-            <div className="row">
-              <div className="col-sm-6 mb-3">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Velit tempora id consectetur reiciendis maiores ipsa error architecto voluptate aut deserunt?
-                <h1 className="display-5">tse</h1>
-              </div>
-              <div className="col-sm-6 mb-3">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Velit tempora id consectetur reiciendis maiores ipsa error architecto voluptate aut deserunt?
-              </div>
-              <div className="col-sm-6 mb-3">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Velit tempora id consectetur reiciendis maiores ipsa error architecto voluptate aut deserunt?
+            <div className="section-container">
+              <div className="row">
+                <div className="col-sm-6 mb-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Velit tempora id consectetur reiciendis maiores ipsa error architecto voluptate aut deserunt?
+                  <h1 className="display-5">tse</h1>
+                </div>
+                <div className="col-sm-6 mb-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Velit tempora id consectetur reiciendis maiores ipsa error architecto voluptate aut deserunt?
+                </div>
+                <div className="col-sm-6 mb-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Velit tempora id consectetur reiciendis maiores ipsa error architecto voluptate aut deserunt?
+                </div>
               </div>
             </div>
           </div>
@@ -75,7 +77,7 @@ function Accordion({theme}) {
             </a>
           </div>
           <div className="section-content collapse width show" id="s0" data-bs-parent="#vac">
-            <div className="imageHeader d-flex flex-column justify-content-between" style={image}>
+            <div className="section-container d-flex flex-column justify-content-between" style={image}>
               <div className="row mb-3">
                 <div className="col-sm-6">
                   <h1 className="display-1 fw-bold">
@@ -102,18 +104,21 @@ function Accordion({theme}) {
             </a>
           </div>
           <div className="section-content collapse width" id="s1" data-bs-parent="#vac">
-            <div className="row">
-              <div className="col-sm-6 mb-3">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Velit tempora id consectetur reiciendis maiores ipsa error architecto voluptate aut deserunt?
-              </div>
-              <div className="col-sm-6 mb-3">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Velit tempora id consectetur reiciendis maiores ipsa error architecto voluptate aut deserunt?
-              </div>
-              <div className="col-sm-6 mb-3">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Velit tempora id consectetur reiciendis maiores ipsa error architecto voluptate aut deserunt?
+            <div className="section-container">
+              <div className="row">
+                <div className="col-sm-6 mb-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Velit tempora id consectetur reiciendis maiores ipsa error architecto voluptate aut deserunt?
+                  <h1 className="display-5">tse</h1>
+                </div>
+                <div className="col-sm-6 mb-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Velit tempora id consectetur reiciendis maiores ipsa error architecto voluptate aut deserunt?
+                </div>
+                <div className="col-sm-6 mb-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Velit tempora id consectetur reiciendis maiores ipsa error architecto voluptate aut deserunt?
+                </div>
               </div>
             </div>
           </div>
@@ -125,19 +130,21 @@ function Accordion({theme}) {
             </a>
           </div>
           <div className="section-content collapse width" id="s2" data-bs-parent="#vac">
-            <div className="row">
-              <div className="col-sm-6 mb-3">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Velit tempora id consectetur reiciendis maiores ipsa error architecto voluptate aut deserunt?
-                <h1 className="display-5">tse</h1>
-              </div>
-              <div className="col-sm-6 mb-3">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Velit tempora id consectetur reiciendis maiores ipsa error architecto voluptate aut deserunt?
-              </div>
-              <div className="col-sm-6 mb-3">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Velit tempora id consectetur reiciendis maiores ipsa error architecto voluptate aut deserunt?
+            <div className="section-container">
+              <div className="row">
+                <div className="col-sm-6 mb-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Velit tempora id consectetur reiciendis maiores ipsa error architecto voluptate aut deserunt?
+                  <h1 className="display-5">tse</h1>
+                </div>
+                <div className="col-sm-6 mb-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Velit tempora id consectetur reiciendis maiores ipsa error architecto voluptate aut deserunt?
+                </div>
+                <div className="col-sm-6 mb-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Velit tempora id consectetur reiciendis maiores ipsa error architecto voluptate aut deserunt?
+                </div>
               </div>
             </div>
           </div>
@@ -149,19 +156,21 @@ function Accordion({theme}) {
             </a>
           </div>
           <div className="section-content collapse width" id="s3" data-bs-parent="#vac">
-            <div className="row">
-              <div className="col-sm-6 mb-3">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Velit tempora id consectetur reiciendis maiores ipsa error architecto voluptate aut deserunt?
-                <h1 className="display-5">tse</h1>
-              </div>
-              <div className="col-sm-6 mb-3">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Velit tempora id consectetur reiciendis maiores ipsa error architecto voluptate aut deserunt?
-              </div>
-              <div className="col-sm-6 mb-3">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Velit tempora id consectetur reiciendis maiores ipsa error architecto voluptate aut deserunt?
+            <div className="section-container">
+              <div className="row">
+                <div className="col-sm-6 mb-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Velit tempora id consectetur reiciendis maiores ipsa error architecto voluptate aut deserunt?
+                  <h1 className="display-5">tse</h1>
+                </div>
+                <div className="col-sm-6 mb-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Velit tempora id consectetur reiciendis maiores ipsa error architecto voluptate aut deserunt?
+                </div>
+                <div className="col-sm-6 mb-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Velit tempora id consectetur reiciendis maiores ipsa error architecto voluptate aut deserunt?
+                </div>
               </div>
             </div>
           </div>
