@@ -6,13 +6,17 @@
 }
 
 @media (min-width: 2200px){
+  .col-xxxl-2 {
+    flex: 0 0 auto;
+    width: 16.66%;
+  }
   .col-xxxl-3 {
       flex: 0 0 auto;
       width: 25%;
   }
   .col-xxxl-4 {
       flex: 0 0 auto;
-      width: 33%;
+      width: 33.33%;
   }
   .col-xxxl-9 {
       flex: 0 0 auto;
