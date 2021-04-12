@@ -1,6 +1,6 @@
 import ThemeCollection from './ThemeCollection';
 
-function NavBar({collections}) {
+function NavBar({collections, setTheme}) {
   return (
     <header className="" id="navbar">
       <div className="container-fluid">
@@ -21,17 +21,14 @@ function NavBar({collections}) {
           </div>
           <div className="col-md-4 mb-md-0">
             <div className="d-flex flex-row justify-content-end">
-              <a className="nav-link" data-bs-toggle="collapse" data-bs-target="#s00" href="#s00" role="button" aria-expanded="true" aria-controls="s00">
-                Hidden Content
-              </a>
               <div className="dropdown pos-initial">
-                <a className="nav-link dropdown-toggle ms-2" id="dropdownNavLink" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <button className="btn nav-link dropdown-toggle ms-2" id="dropdownNavLink"  data-bs-toggle="dropdown" aria-expanded="false">
                   Theme Gallery
-                </a>
+                </button>
                 <ul className="dropdown-menu dropdown-menu-horizontal full-width row" aria-labelledby="dropdownNavLink">
                   {
                     collections.map(collection =>
-                      <ThemeCollection collection={collection} key={collection.id}/>
+                      <ThemeCollection collection={collection} setTheme={setTheme} key={collection.id}/>
                     )
                   }
                 </ul>
