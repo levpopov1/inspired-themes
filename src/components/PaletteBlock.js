@@ -1,17 +1,17 @@
 function PaletteBlock({color}) {
   return (
     <div className="col">
-      <div className="palette-block" style={{ backgroundColor: color.hex }}></div>
+      <div className="palette-block mb-2" style={{ backgroundColor: color.hex }}></div>
       <div className="colorData">
-        <h3 className="card-title text-center">{ color.name }</h3>
+        <h3 className="card-title text-center">{ color.name || "undefined" }</h3>
         <p className="card-text text-center">
           <code className="code css d-block">
-              { color.hex }
+              { color.hex || "undefined" }
           </code>
         </p>
         <p className="card-text text-center">
           <code className="code css d-block">
-              { color.rgb }
+              { color.rgb || "undefined" }
           </code>
         </p>
         {/* <p className="card-text">
