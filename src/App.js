@@ -1,4 +1,5 @@
-// import NavBar from './components/NavBar';
+import { useState } from 'react';
+
 import Hero from './components/Hero';
 import ColorRow from './components/ColorRow';
 import TypographyHeader from './components/TypographyHeader';
@@ -11,7 +12,7 @@ import NavBar from './components/NavBar';
 import InspoImage from './components/InspoImage';
 import Accordion from './components/Accordion';
 
-const theme = {
+const initialTheme = {
   id: "1",
   name: "Sakura",
   collection: "Tokyo Series",
@@ -55,14 +56,15 @@ const userPrefs = {
   color: "hex"
 }
 
-
-
 const collections = data.gallery.collections;
 
 function App() {
+
+  const [theme, setTheme] = useState(initialTheme);
+
   return (
     <div className="App">
-      <NavBar collections={collections}/>
+      <NavBar collections={collections} setTheme={setTheme}/>
       <Accordion theme={theme}/>
       {/* <Sidebar theme={theme}/> */}
       {/* <NavBar collections={collections}/> */}
