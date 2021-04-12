@@ -391,13 +391,39 @@
             "id": "4.1",
             "name": "Camellia",
             "collection": "Botanicals",
+            "image": "/img/pink-camellia.jpg",
             "slug": "botanicals/camellia",
             "colors": {
-              "primary": {},
-              "secondary": {},
-              "highlight": {},
-              "dark": {},
-              "light": {}
+              "primary": {
+                "name": "Primary",
+                "hex": "#a62e22",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
+              },
+              "secondary": {
+                "name": "Secondary",
+                "hex": "#1b2c1a",
+                "rgb": "rgb(239,239,0)",
+                "hsl": "hsl(240,100%,20%)"
+              },
+              "highlight": {
+                "name": "Highlight",
+                "hex": "#dcc9cf",
+                "rgb": "rgb(0,120,239)",
+                "hsl": "hsl(240,100%,20%)"
+              },
+              "dark": {
+                "name": "Dark",
+                "hex": "#191814",
+                "rgb": "rgb(0,0,82)",
+                "hsl": "hsl(240,100%,20%)"
+              },
+              "light": {
+                "name": "Light",
+                "hex": "#d6e0e2",
+                "rgb": "rgb(239,239,255)",
+                "hsl": "hsl(240,100%,20%)"
+              }
             }
           },
           {
