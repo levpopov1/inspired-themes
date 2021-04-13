@@ -25,7 +25,7 @@ function NavBar({collections, setTheme}) {
                 <button className="btn nav-link dropdown-toggle ms-2" id="dropdownNavLink"  data-bs-toggle="dropdown" aria-expanded="false">
                   Theme Gallery
                 </button>
-                <ul className="dropdown-menu dropdown-menu-horizontal full-width row" aria-labelledby="dropdownNavLink">
+                <ul className="dropdown-menu dropdown-menu-horizontal full-width row shadow" aria-labelledby="dropdownNavLink">
                   {
                     collections.map(collection =>
                       <ThemeCollection collection={collection} setTheme={setTheme} key={collection.id}/>

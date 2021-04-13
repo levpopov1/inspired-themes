@@ -71,34 +71,39 @@ function Accordion({theme}) {
           </div>
         </div>
         <div className="d-flex flex-row vac-section open">
-          <div className="section-title">
+          <div className="section-title d-none d-md-block">
             <a className="display-5 h-100 block-link text-decoration-none" data-bs-toggle="collapse" data-bs-target="#s0" href="#s0" role="button" aria-expanded="true" aria-controls="s0" onClick={toggleDisplayState}>
               <span className="d-block ms-md-2">Welcome to the website</span>
             </a>
           </div>
           <div className="section-content collapse width show" id="s0" data-bs-parent="#vac">
             <div className="section-container d-flex flex-column justify-content-between" style={image}>
-              <div className="row mb-3">
-                <div className="col-sm-6">
+              <div className="row my-auto justify-content-start">
+                <div className="col-sm-6 col-xxxl-4 col-uhd-3 offset-xxl-1 offset-xxxl-2 offset-uhd-3">
                   <h1 className="display-1 fw-bold">
                     {theme.name}
                   </h1>
                   <p className="lead">
                     {theme.collection}
                   </p>
+                  <p className="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Enim dolore, eos est odio ipsum omnis? 
+                    Ab exercitationem beatae delectus, est inventore deserunt ullam sunt ratione officiis, 
+                    doloribus sint, quisquam modi.
+                  </p>
                 </div>
               </div>
               <div className="row mb-5 justify-content-center">
-                <div className="col-sm-11">
+                <div className="col-sm-11 col-xxl-10 col-xxxl-8 col-uhd-6">
                   <MegaPalette theme={theme}/>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
         <div className="d-flex flex-row vac-section">
-          <div className="section-title">
+          <div className="section-title d-none d-md-block">
             <a className="display-5 h-100 block-link text-decoration-none" data-bs-toggle="collapse" data-bs-target="#s1" href="#s1" role="button" aria-expanded="false" aria-controls="s1" onClick={toggleDisplayState}>
               <span className="d-block ms-md-2">Color</span>
             </a>
@@ -124,7 +129,7 @@ function Accordion({theme}) {
           </div>
         </div>
         <div className="d-flex flex-row vac-section">
-          <div className="section-title">
+          <div className="section-title d-none d-md-block">
             <a className="display-5 h-100 block-link text-decoration-none" data-bs-toggle="collapse" data-bs-target="#s2" href="#s2" role="button" aria-expanded="false" aria-controls="s2" onClick={toggleDisplayState}>
               <span className="d-block ms-md-2">Typography</span>
             </a>
@@ -150,7 +155,7 @@ function Accordion({theme}) {
           </div>
         </div>
         <div className="d-flex flex-row vac-section">
-          <div className="section-title">
+          <div className="section-title d-none d-md-block">
             <a className="display-5 h-100 block-link text-decoration-none" data-bs-toggle="collapse" data-bs-target="#s3" href="#s3" role="button" aria-expanded="false" aria-controls="s3" onClick={toggleDisplayState}>
               <span className="d-block ms-md-2">Layout</span>
             </a>

@@ -138,7 +138,7 @@ a{
   border: none;
   border-radius: unset;
   border-top: 1px solid rgba(0, 0, 0, 0.15);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid var(--text-color);
   transform: translate(0px, 64px) !important;
 }
 
@@ -152,7 +152,7 @@ a{
 
 .dropdown-column{
   border-right:1px solid rgba(0, 0, 0, 0.15);
-  padding: 0.5rem 0;
+  padding: 0.5rem 0 0 0;
 }
 
 .continuous{
@@ -297,3 +297,8 @@ button.nav-link:focus{
     // transform: rotate(-180deg);
   }
 }
+
+// .text-darkened{
+//   color: var(--text-color);
+//   mix-blend-mode: difference;
+// }
