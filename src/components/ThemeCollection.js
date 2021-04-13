@@ -3,7 +3,6 @@ import Theme from './Theme';
 function ThemeCollection({collection, setTheme}) {
 
   const handleChangeThemeID = (id) => {
-    console.log(id);
     let nextTheme = collection.themes.find(item => item.id === id);
     setTheme(nextTheme);
   }
