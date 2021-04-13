@@ -1,7 +1,5 @@
-import ColorRow from "./ColorRow";
-import InspoImage from "./InspoImage";
+import { useState, useEffect } from 'react';
 import MegaPalette from "./MegaPalette";
-import MiniPalette from "./MiniPalette";
 
 const toggleDisplayState = (e) => {
   setTimeout(() => {
@@ -40,7 +38,35 @@ const getAncestorByClassName = (el, target) => {
   return null;
 }
 
+const getContrast = (hexcolor) => {
+
+	// If a leading # is provided, remove it
+	if (hexcolor.slice(0, 1) === '#') {
+		hexcolor = hexcolor.slice(1);
+	}
+
+	// Convert to RGB value
+	let r = parseInt(hexcolor.substr(0,2),16);
+	let g = parseInt(hexcolor.substr(2,2),16);
+	let b = parseInt(hexcolor.substr(4,2),16);
+
+	// Get YIQ ratio
+	let yiq = ((r * 299) + (g * 587) + (b * 114)) / 1000;
+  console.log("YIQ = " + yiq);
+
+	// Check contrast
+	return (yiq >= 128) ? 'dark' : 'light';
+
+};
+
 function Accordion({theme}) {
+
+  const [contrastColor, setContrastColor] = useState("dark");
+
+  useEffect(() => {
+    console.log("using effect");
+    setContrastColor(getContrast(theme.colors.secondary.hex));
+  }, [theme.colors.secondary.hex]);
 
   let image = {
     background: 'url(' + theme.image + ') center / cover no-repeat'
@@ -73,12 +99,15 @@ function Accordion({theme}) {
         <div className="d-flex flex-row vac-section open">
           <div className="section-title d-none d-md-block">
             <a className="display-5 h-100 block-link text-decoration-none" data-bs-toggle="collapse" data-bs-target="#s0" href="#s0" role="button" aria-expanded="true" aria-controls="s0" onClick={toggleDisplayState}>
-              <span className="d-block ms-md-2">Welcome to the website</span>
+              <span className="d-inline-block ms-md-2">Overview</span>
+              {/* <span className="d-inline-block ms-md-2">{ theme.name }</span>
+              <span className="d-inline-block ms-md-2 my-3">&mdash;</span>
+              <span className="d-inline-block ms-md-2">{ theme.collection}</span> */}
             </a>
           </div>
           <div className="section-content collapse width show" id="s0" data-bs-parent="#vac">
             <div className="section-container d-flex flex-column justify-content-between" style={image}>
-              <div className="row my-auto justify-content-start">
+              <div className={`row my-auto justify-content-start text-${contrastColor}`}>
                 <div className="col-sm-6 col-xxxl-4 col-uhd-3 offset-xxl-1 offset-xxxl-2 offset-uhd-3">
                   <h1 className="display-1 fw-bold">
                     {theme.name}
