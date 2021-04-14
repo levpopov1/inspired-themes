@@ -1,8 +1,20 @@
 @media (min-width: 1800px){
   // Row-Cols
+  .row-cols-xxxl-3 > * {
+    flex: 0 0 auto;
+    width: 33.33%;
+  }
+  .row-cols-xxxl-4 > * {
+    flex: 0 0 auto;
+    width: 25%;
+  }
   .row-cols-xxxl-5 > * {
     flex: 0 0 auto;
     width: 20%;
+  }
+  .row-cols-xxxl-6 > * {
+    flex: 0 0 auto;
+    width: 16.66%;
   }
   .row-cols-xxxl-7 > * {
     flex: 0 0 auto;
@@ -109,9 +121,21 @@
 // UHD (4K) breakpoint
 @media (min-width: 2400px){
   // Row Cols
+  .row-cols-uhd-3 > * {
+    flex: 0 0 auto;
+    width: 33.33%;
+  }
+  .row-cols-uhd-4 > * {
+    flex: 0 0 auto;
+    width: 25%;
+  }
   .row-cols-uhd-5 > * {
     flex: 0 0 auto;
     width: 20%;
+  }
+  .row-cols-uhd-6 > * {
+    flex: 0 0 auto;
+    width: 16.66%;
   }
   .row-cols-uhd-7 > * {
     flex: 0 0 auto;
