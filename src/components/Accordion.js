@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import MegaPalette from "./MegaPalette";
+import TypographySection from './TypographySection';
+
 
 const toggleDisplayState = (e) => {
   setTimeout(() => {
@@ -38,35 +40,33 @@ const getAncestorByClassName = (el, target) => {
   return null;
 }
 
-const getContrast = (hexcolor) => {
-
-	// If a leading # is provided, remove it
-	if (hexcolor.slice(0, 1) === '#') {
-		hexcolor = hexcolor.slice(1);
-	}
-
-	// Convert to RGB value
-	let r = parseInt(hexcolor.substr(0,2),16);
-	let g = parseInt(hexcolor.substr(2,2),16);
-	let b = parseInt(hexcolor.substr(4,2),16);
-
-	// Get YIQ ratio
-	let yiq = ((r * 299) + (g * 587) + (b * 114)) / 1000;
-  console.log("YIQ = " + yiq);
-
-	// Check contrast
-	return (yiq >= 128) ? 'dark' : 'light';
-
-};
-
 function Accordion({theme}) {
+
+  const getContrast = (hexcolor) => {
+
+    // If a leading # is provided, remove it
+    if (hexcolor.slice(0, 1) === '#') {
+      hexcolor = hexcolor.slice(1);
+    }
+  
+    // Convert to RGB value
+    let r = parseInt(hexcolor.substr(0,2),16);
+    let g = parseInt(hexcolor.substr(2,2),16);
+    let b = parseInt(hexcolor.substr(4,2),16);
+  
+    // Get YIQ ratio
+    let yiq = ((r * 299) + (g * 587) + (b * 114)) / 1000;
+  
+    // Check contrast
+    return (yiq >= 128) ? 'dark' : 'light';
+  
+  };
 
   const [contrastColor, setContrastColor] = useState("dark");
 
   useEffect(() => {
-    console.log("using effect");
-    setContrastColor(getContrast(theme.colors.secondary.hex));
-  }, [theme.colors.secondary.hex]);
+    setContrastColor(getContrast(theme.colors.highlight.hex));
+  }, [theme.colors.highlight.hex]);
 
   let image = {
     background: 'url(' + theme.image + ') center / cover no-repeat'
@@ -108,14 +108,14 @@ function Accordion({theme}) {
           <div className="section-content collapse width show" id="s0" data-bs-parent="#vac">
             <div className="section-container d-flex flex-column justify-content-between" style={image}>
               <div className={`row my-auto justify-content-start text-${contrastColor}`}>
-                <div className="col-sm-6 col-xxxl-4 col-uhd-3 offset-xxl-1 offset-xxxl-2 offset-uhd-3">
+                <div className="col-sm-12 col-lg-8 col-xl-8 col-xxl-6 col-xxxl-4 col-uhd-3 offset-lg-1 offset-xxl-1 offset-xxxl-2 offset-uhd-3">
                   <h1 className="display-1 fw-bold">
                     {theme.name}
                   </h1>
-                  <p className="lead">
+                  <p className="lead fs-1">
                     {theme.collection}
                   </p>
-                  <p className="text">
+                  <p className="text fs-4">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Enim dolore, eos est odio ipsum omnis? 
                     Ab exercitationem beatae delectus, est inventore deserunt ullam sunt ratione officiis, 
@@ -164,23 +164,7 @@ function Accordion({theme}) {
             </a>
           </div>
           <div className="section-content collapse width" id="s2" data-bs-parent="#vac">
-            <div className="section-container">
-              <div className="row">
-                <div className="col-sm-6 mb-3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                  Velit tempora id consectetur reiciendis maiores ipsa error architecto voluptate aut deserunt?
-                  <h1 className="display-5">tse</h1>
-                </div>
-                <div className="col-sm-6 mb-3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                  Velit tempora id consectetur reiciendis maiores ipsa error architecto voluptate aut deserunt?
-                </div>
-                <div className="col-sm-6 mb-3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                  Velit tempora id consectetur reiciendis maiores ipsa error architecto voluptate aut deserunt?
-                </div>
-              </div>
-            </div>
+            <TypographySection theme={theme} getContrast={getContrast}/>
           </div>
         </div>
         <div className="d-flex flex-row vac-section">
