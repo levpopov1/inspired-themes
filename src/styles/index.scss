@@ -2,16 +2,11 @@
 
 :root{
   --bg-dark: #23282E;
-  --bg-light: #F4F4F4;
   --text-dark: #2d2d2d;
-  --text-light: #f1f1f1;
+  --bg-light: #f4f4f4;
+  --text-light: #f4f4f4;
   --bg-primary: #f6e6d9;
   --text-primary: #f6e6d9;
-  --bg-secondary: #68382e;
-  --text-secondary: #68382e;
-  --bg-accent: #ca3c6c;
-  --text-accent: #ca3c6c;
-  --light-copper: #cd876d;
 }
 
 .dark{
@@ -57,6 +52,31 @@ input.form-control{
     color: var(--bg-color);
     background-color: var(--text-color);
   }
+
+  &.active{
+    color: var(--bg-color);
+    background-color: var(--text-color);
+    border-color: var(--text-color);
+
+    &:hover{
+      background-color: var(--bg-primary);
+      border-color: var(--bg-dark);
+      color: var(--text-dark);
+    }
+  }
+}
+
+.font-serif{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.font-sans-serif{
+  font-family: var(--bs-font-sans-serif);
+}
+
+
+.font-monospace{
+  font-family: var(--bs-font-monospace);
 }
 
 #sidebar{
@@ -96,6 +116,10 @@ input.form-control{
   color: var(--text-color);
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   border: none;
+
+  &.card-outline{
+    border: 1px solid var(--text-color);
+  }
 }
 
 .color-block{
