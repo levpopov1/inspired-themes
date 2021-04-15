@@ -1,5 +1,5 @@
 import InternalThemeSwither from './InternalThemeSwitcher';
-import ThemeCollection from './ThemeCollection';
+import ThemesDropdown from './ThemesDropdown';
 
 function NavBar({collections, setTheme}) {
   return (
@@ -32,7 +32,7 @@ function NavBar({collections, setTheme}) {
                 <ul className="dropdown-menu dropdown-menu-horizontal full-width row shadow" aria-labelledby="dropdownNavLink">
                   {
                     collections.map(collection =>
-                      <ThemeCollection collection={collection} setTheme={setTheme} key={collection.id}/>
+                      <ThemesDropdown collection={collection} setTheme={setTheme} key={collection.id}/>
                     )
                   }
                 </ul>
