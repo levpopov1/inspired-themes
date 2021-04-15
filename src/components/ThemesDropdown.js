@@ -1,6 +1,6 @@
-import Theme from './Theme';
+import ThemesDropdownItem from './ThemesDropdownItem';
 
-function ThemeCollection({collection, setTheme}) {
+function ThemesDropdown({collection, setTheme}) {
 
   const handleChangeThemeID = (id) => {
     let nextTheme = collection.themes.find(item => item.id === id);
@@ -12,11 +12,11 @@ function ThemeCollection({collection, setTheme}) {
       <h6 className="dropdown-header">{collection.name}</h6>
       {
         collection.themes.map(theme => 
-          <Theme theme={theme} setThemeID={handleChangeThemeID} key={theme.id}/>
+          <ThemesDropdownItem theme={theme} setThemeID={handleChangeThemeID} key={theme.id}/>
         )
       }
     </div>
   );
 }
 
-export default ThemeCollection;
+export default ThemesDropdown;
