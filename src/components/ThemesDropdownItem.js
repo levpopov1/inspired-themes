@@ -1,6 +1,6 @@
 import MiniPalette from './MiniPalette';
 
-function Theme({theme, setThemeID}) {
+function ThemesDropdownItem({theme, setThemeID}) {
   
   const handleThemeChange = () => {
     setThemeID(theme.id);
@@ -16,4 +16,4 @@ function Theme({theme, setThemeID}) {
   );
 }
 
-export default Theme;
+export default ThemesDropdownItem;
