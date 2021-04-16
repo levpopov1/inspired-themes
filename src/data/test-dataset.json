@@ -204,6 +204,7 @@
             "name": "Dolomites",
             "collection": "Landscapes",
             "slug": "landscapes/dolomites",
+            "image": "/img/Dolomites-summer.jpg",
             "colors": {
               "primary": {},
               "secondary": {},
@@ -217,6 +218,7 @@
             "name": "Esperance Beach",
             "collection": "Landscapes",
             "slug": "landscapes/esperance-beach",
+            "image": "/img/Esperance-beach-Australia.jpg",
             "colors": {
               "primary": {},
               "secondary": {},
@@ -269,6 +271,7 @@
             "name": "Glacier National Park",
             "collection": "Landscapes",
             "slug": "landscapes/glacier-notional-park",
+            "image": "/img/Glacier-National-Park-Montana.jpg",
             "colors": {
               "primary": {},
               "secondary": {},
@@ -282,6 +285,7 @@
             "name": "Lake Hāwea",
             "collection": "Landscapes",
             "slug": "landscapes/lake-hawea",
+            "image": "/img/infrared-Lake-Hawea-new-zeland.jpg",
             "colors": {
               "primary": {},
               "secondary": {},
@@ -295,6 +299,7 @@
             "name": "Kauai",
             "collection": "Landscapes",
             "slug": "landscapes/kauai",
+            "image": "/img/Kauai-northern-shore-Hawaii.jpg",
             "colors": {
               "primary": {},
               "secondary": {},
@@ -308,6 +313,7 @@
             "name": "Island of Senja",
             "collection": "Landscapes",
             "slug": "landscapes/island-of-senja",
+            "image": "/img/midnight-sun-island-of-Senja-Northern-Norway.jpg",
             "colors": {
               "primary": {},
               "secondary": {},
@@ -321,6 +327,7 @@
             "name": "Mizar and Alcor",
             "collection": "Landscapes",
             "slug": "landscapes/mizar-and-alcor",
+            "image": "/img/Mizar-and-Alcor-nightscapes-upstate-NY.jpg",
             "colors": {
               "primary": {},
               "secondary": {},
@@ -334,6 +341,7 @@
             "name": "Mono Lake",
             "collection": "Landscapes",
             "slug": "landscapes/mono-lake",
+            "image": "/img/Mono-Lake-California.jpg",
             "colors": {
               "primary": {},
               "secondary": {},
@@ -347,6 +355,7 @@
             "name": "Sedona Peaks",
             "collection": "Landscapes",
             "slug": "landscapes/sedona-peaks",
+            "image": "/img/Sedona-peaks-Arizona.jpg",
             "colors": {
               "primary": {},
               "secondary": {},
@@ -360,6 +369,7 @@
             "name": "Ha Long Bay",
             "collection": "Landscapes",
             "slug": "landscapes/ha-long-bay",
+            "image": "/img/Vietnam-Ha-Long-Bay.jpg",
             "colors": {
               "primary": {},
               "secondary": {},
@@ -373,6 +383,7 @@
             "name": "Yosemite National Park",
             "collection": "Landscapes",
             "slug": "landscapes/yosemite-national-park",
+            "image": "/img/Yosemite-rain.jpg",
             "colors": {
               "primary": {},
               "secondary": {},
