@@ -41,9 +41,14 @@ const getAncestorByClassName = (el, target) => {
   return null;
 }
 
-function Accordion({theme, collections}) {
+function Accordion({theme, collections, setTheme}) {
 
   const getContrast = (hexcolor) => {
+
+    // default to light if no color is provided
+    if(!hexcolor){
+      return 'light';
+    }
 
     // If a leading # is provided, remove it
     if (hexcolor.slice(0, 1) === '#') {
@@ -78,7 +83,7 @@ function Accordion({theme, collections}) {
       <div className="d-flex flex-row justify-content-end" id="vac">
         <div className="d-flex flex-row vac-section">
           <div className="section-content collapse width show" id="s00" data-bs-parent="#vac">
-            <ThemeGallery collections={collections}/>
+            <ThemeGallery collections={collections} setTheme={setTheme}/>
           </div>
         </div>
         <div className="d-flex flex-row vac-section open">
