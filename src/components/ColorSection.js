@@ -58,8 +58,8 @@ function ColorSection({theme}) {
 
   return (
     <div className="section-container">
-      {Object.keys(theme.colors).map((color, index) => 
-        <ColorRow color={theme.colors[color]} key={index}/>
+      {Object.keys(theme.colors).map((colorKey, index) =>  
+        <ColorRow color={theme.colors[colorKey]} theme={theme} key={index}/>
       )}
     </div>
   );
