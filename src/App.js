@@ -65,7 +65,7 @@ function App() {
   return (
     <div className="App">
       <NavBar collections={collections} setTheme={setTheme}/>
-      <Accordion theme={theme}/>
+      <Accordion theme={theme} collections={collections}/>
       {/* <Sidebar theme={theme}/> */}
       {/* <NavBar collections={collections}/> */}
       {/* <div className="container-fluid">
