@@ -1,12 +1,7 @@
 import LikeButton from './LikeButton';
 import MiniPalette from './MiniPalette';
 
-function Theme({theme}) {
-  
-  // const handleThemeChange = () => {
-  //   setThemeID(theme.id);
-  // }
-
+function Theme({theme, setTheme}) {
   return (
     <div className="col-sm-4 col-uhd-2">
       <div className="card gallery-card mb-4">
@@ -34,7 +29,7 @@ function Theme({theme}) {
           </p>
         </div>
         <div className="card-body d-grid ">
-          <button type="button" className="btn btn-primary">Set Theme</button>
+          <button type="button" className="btn btn-primary" onClick={() => setTheme(theme.id, theme.collection)}>Set Theme</button>
         </div>
         <div className="card-footer d-flex justify-content-between align-items-center">
           <small className="text-muted">
