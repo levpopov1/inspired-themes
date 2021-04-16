@@ -1,12 +1,9 @@
-import ColorBlock from './ColorBlock'
-
-function ColorRow({theme}) {
+function ColorRow({color}) {
   return (
-    <div className="row mb-3 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-5">
-      {Object.keys(theme.colors).map((key, index) => 
-        <ColorBlock color={theme.colors[key]} key={index}/>
-      )}
-      
+    <div className="row" style={{ backgroundColor: color.hex }}>
+      <div className="col-sm-4">
+        <h2 className="title">{color.name}</h2>
+      </div>
     </div>
   );
 }
