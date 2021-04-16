@@ -1,15 +1,7 @@
 import { useState } from 'react';
 
-import Hero from './components/Hero';
-import ColorRow from './components/ColorRow';
-import TypographyHeader from './components/TypographyHeader';
-import TypographyRow from './components/TypographyRow';
-import ButtonyRow from './components/ButtonRow';
 import data from './data/test-dataset.json';
-import Sidebar from './components/Sidebar';
-import InternalThemeSwither from './components/InternalThemeSwitcher';
 import NavBar from './components/NavBar';
-import InspoImage from './components/InspoImage';
 import Accordion from './components/Accordion';
 
 const initialTheme = {
@@ -51,11 +43,6 @@ const initialTheme = {
   }
 }
 
-const userPrefs = {
-  font: "sans-serif",
-  color: "hex"
-}
-
 const collections = data.gallery.collections;
 
 function App() {
@@ -65,32 +52,7 @@ function App() {
   return (
     <div className="App">
       <NavBar collections={collections} setTheme={setTheme}/>
-      <Accordion theme={theme} collections={collections}/>
-      {/* <Sidebar theme={theme}/> */}
-      {/* <NavBar collections={collections}/> */}
-      {/* <div className="container-fluid">
-        <div className="row">
-          <div className="col-sm-4">
-            <InspoImage theme={theme}/>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-sm-10">
-            <Accordion/>
-
-          </div>
-        </div>
-        <ColorRow theme={theme}/>
-      </div> */}
-      {/* <div className="main">
-        <Hero theme={theme}/>
-        <div className="container-fluid">
-          <ColorRow theme={theme}/>
-          <TypographyHeader userPrefs={userPrefs} />
-          <TypographyRow theme={theme}/>
-          <ButtonyRow theme={theme}/>
-        </div>
-      </div> */}
+      <Accordion theme={theme} setTheme={setTheme} collections={collections}/>
     </div>
   );
 }
