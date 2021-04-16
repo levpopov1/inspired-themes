@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import MegaPalette from "./MegaPalette";
+import ThemeGallery from './ThemeGallery';
 import TypographySection from './TypographySection';
 
 
@@ -40,7 +41,7 @@ const getAncestorByClassName = (el, target) => {
   return null;
 }
 
-function Accordion({theme}) {
+function Accordion({theme, collections}) {
 
   const getContrast = (hexcolor) => {
 
@@ -76,36 +77,17 @@ function Accordion({theme}) {
     <div className="container-fluid g-0">
       <div className="d-flex flex-row justify-content-end" id="vac">
         <div className="d-flex flex-row vac-section">
-          <div className="section-content collapse width" id="s00" data-bs-parent="#vac">
-            <div className="section-container">
-              <div className="row">
-                <div className="col-sm-6 mb-3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                  Velit tempora id consectetur reiciendis maiores ipsa error architecto voluptate aut deserunt?
-                  <h1 className="display-5">tse</h1>
-                </div>
-                <div className="col-sm-6 mb-3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                  Velit tempora id consectetur reiciendis maiores ipsa error architecto voluptate aut deserunt?
-                </div>
-                <div className="col-sm-6 mb-3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                  Velit tempora id consectetur reiciendis maiores ipsa error architecto voluptate aut deserunt?
-                </div>
-              </div>
-            </div>
+          <div className="section-content collapse width show" id="s00" data-bs-parent="#vac">
+            <ThemeGallery collections={collections}/>
           </div>
         </div>
         <div className="d-flex flex-row vac-section open">
           <div className="section-title d-none d-md-block">
-            <a className="display-5 h-100 block-link text-decoration-none" data-bs-toggle="collapse" data-bs-target="#s0" href="#s0" role="button" aria-expanded="true" aria-controls="s0" onClick={toggleDisplayState}>
+            <a className="display-5 h-100 block-link text-decoration-none" data-bs-toggle="collapse" data-bs-target="#s0" href="#s0" role="button" aria-expanded="false" aria-controls="s0" onClick={toggleDisplayState}>
               <span className="d-inline-block ms-md-2">Overview</span>
-              {/* <span className="d-inline-block ms-md-2">{ theme.name }</span>
-              <span className="d-inline-block ms-md-2 my-3">&mdash;</span>
-              <span className="d-inline-block ms-md-2">{ theme.collection}</span> */}
             </a>
           </div>
-          <div className="section-content collapse width show" id="s0" data-bs-parent="#vac">
+          <div className="section-content collapse width" id="s0" data-bs-parent="#vac">
             <div className="section-container d-flex flex-column justify-content-between" style={image}>
               <div className={`row my-auto justify-content-start text-${contrastColor}`}>
                 <div className="col-sm-12 col-lg-8 col-xl-8 col-xxl-6 col-xxxl-4 col-uhd-3 offset-lg-1 offset-xxl-1 offset-xxxl-2 offset-uhd-3">
