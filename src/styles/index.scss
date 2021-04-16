@@ -44,6 +44,16 @@ input.form-control{
   background-color: var(--text-color);
 }
 
+.btn{
+  color: var(--text-color);
+  &.btn-primary{
+    color: var(--text-light);
+  }
+  &:hover{
+    color: var(--text-color);
+  }
+}
+
 .btn-outline{
   color: var(--text-color);
   border-color: var(--text-color);
@@ -310,7 +320,7 @@ button.nav-link:focus{
 
   .section-content{
     max-height: calc(100vh - 65px);
-    // overflow-y: scroll;
+    overflow-y: scroll;
     // padding-right: 0.75rem;
     // padding-left: 0.75rem;
   }
@@ -342,3 +352,34 @@ button.nav-link:focus{
 //   color: var(--text-color);
 //   mix-blend-mode: difference;
 // }
+
+.gallery-card{
+  .card-img-top{
+    height: 400px;
+    object-fit: cover;
+  }
+  .card-img{
+    height: 600px;
+    object-fit: cover;
+  }
+}
+
+.no-wrap{
+  white-space: nowrap;
+}
+
+.reactions{
+  .btn.like:hover, .btn.like:active{
+    i{
+      color: red;
+    }
+    span{
+      color: var(--text-color);
+    }
+  }
+  .btn.like{
+    i.active{
+      color: red;
+    }
+  }
+}
