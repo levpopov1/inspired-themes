@@ -1,4 +1,3 @@
-import ThemeCollection from "./ThemeCollection";
 import Theme from "./Theme";
 
 function ThemeGallery({collections, setTheme}) {

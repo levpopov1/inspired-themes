@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import ColorSection from './ColorSection';
 import MegaPalette from "./MegaPalette";
 import ThemeGallery from './ThemeGallery';
 import TypographySection from './TypographySection';
@@ -125,23 +126,7 @@ function Accordion({theme, collections, setTheme}) {
             </a>
           </div>
           <div className="section-content collapse width" id="s1" data-bs-parent="#vac">
-            <div className="section-container">
-              <div className="row">
-                <div className="col-sm-6 mb-3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                  Velit tempora id consectetur reiciendis maiores ipsa error architecto voluptate aut deserunt?
-                  <h1 className="display-5">tse</h1>
-                </div>
-                <div className="col-sm-6 mb-3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                  Velit tempora id consectetur reiciendis maiores ipsa error architecto voluptate aut deserunt?
-                </div>
-                <div className="col-sm-6 mb-3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                  Velit tempora id consectetur reiciendis maiores ipsa error architecto voluptate aut deserunt?
-                </div>
-              </div>
-            </div>
+            <ColorSection theme={theme}/>
           </div>
         </div>
         <div className="d-flex flex-row vac-section">

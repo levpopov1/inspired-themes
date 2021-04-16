@@ -3,7 +3,7 @@ import MiniPalette from './MiniPalette';
 
 function Theme({theme, setTheme}) {
   return (
-    <div className="col-sm-4 col-uhd-2">
+    <div className="col-sm-6 col-xl-4 col-uhd-2">
       <div className="card gallery-card mb-4">
         <img src={theme.image} className="card-img-top" alt={"Image of " + theme.name}/>
         <div className="card-body">
