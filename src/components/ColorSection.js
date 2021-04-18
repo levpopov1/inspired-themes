@@ -51,15 +51,29 @@ function ColorSection({theme}) {
     // Calculate contrast ratio of the two colors
     let cr = (Math.max(l1, l2) + 0.05) / (Math.min(l1, l2) + 0.05);
 
-    return cr;
+    // round the number to 2 decimal places
+    return Math.round(cr * 100) / 100;
   }
 
-  getContrastRatio(theme.colors.primary.hex, theme.colors.secondary.hex);
+  // console.log(getContrastRatio(theme.colors.primary.hex, theme.colors.secondary.hex));
 
   return (
     <div className="section-container">
+      <div className="row">
+        <div className="col-sm-6">
+          <h2 className="title my-3">Pairings</h2>
+          <p className="text">
+            Write a description about how to use color pairings below and what contrast values mean.
+          </p>
+          <p className="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Laboriosam vel magnam quod asperiores dicta nam tempore esse praesentium enim? 
+            Odio officia totam cumque, dignissimos necessitatibus aut reiciendis debitis harum numquam!
+          </p>
+        </div>
+      </div>
       {Object.keys(theme.colors).map((colorKey, index) =>  
-        <ColorRow color={theme.colors[colorKey]} theme={theme} key={index}/>
+        <ColorRow color={theme.colors[colorKey]} theme={theme} getContrastRatio={getContrastRatio} key={index}/>
       )}
     </div>
   );
