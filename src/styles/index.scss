@@ -383,3 +383,30 @@ button.nav-link:focus{
     }
   }
 }
+
+.gauge-container {
+  width: 150px;
+  height: 150px;
+  display: block;
+  margin: 0 auto;
+  // padding: 10px;
+}
+.gauge-container > .gauge > .dial {
+  stroke: var(--bg-color);
+  stroke-width: 2;
+  stroke-linecap: round;
+  // fill: rgba(0,0,0,0.6);
+}
+.gauge-container > .gauge > .value {
+  stroke: var(--text-color);
+  stroke-width: 7;
+  stroke-linecap: round;
+  // stroke-dasharray: 50 4;
+  fill: rgba(0,0,0,0);
+}
+.gauge-container > .gauge > .value-text {
+  fill: var(--text-color);
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+}
