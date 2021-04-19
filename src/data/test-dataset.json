@@ -49,25 +49,47 @@
             "name": "Pastel",
             "collection": "Tokyo Series",
             "slug": "tokyo-series/pastel",
+            "image": "/img/Tokyo-pastel.jpg",
             "colors": {
-              "primary": {},
-              "secondary": {},
-              "highlight": {},
-              "dark": {},
-              "light": {}
+              "primary": {
+                "name": "Primary"
+              },
+              "secondary": {
+                "name": "Secondary"
+              },
+              "highlight": {
+                "name": "Highlight"
+              },
+              "dark": {
+                "name": "Dark"
+              },
+              "light": {
+                "name": "Light"
+              }
             }
           },
           {
             "id": "1.3",
-            "name": "Clouds",
+            "name": "Sunset",
             "collection": "Tokyo Series",
-            "slug": "tokyo-series/clouds",
+            "slug": "tokyo-series/sunset",
+            "image": "/img/Eh3gRgUU0AQ7ZOZ.jpg",
             "colors": {
-              "primary": {},
-              "secondary": {},
-              "highlight": {},
-              "dark": {},
-              "light": {}
+              "primary": {
+                "name": "Primary"
+              },
+              "secondary": {
+                "name": "Secondary"
+              },
+              "highlight": {
+                "name": "Highlight"
+              },
+              "dark": {
+                "name": "Dark"
+              },
+              "light": {
+                "name": "Light"
+              }
             }
           },
           {
@@ -75,12 +97,23 @@
             "name": "Neons",
             "collection": "Tokyo Series",
             "slug": "tokyo-series/neons",
+            "image": "/img/51054431217_69836a275f_k.jpg",
             "colors": {
-              "primary": {},
-              "secondary": {},
-              "highlight": {},
-              "dark": {},
-              "light": {}
+              "primary": {
+                "name": "Primary"
+              },
+              "secondary": {
+                "name": "Secondary"
+              },
+              "highlight": {
+                "name": "Highlight"
+              },
+              "dark": {
+                "name": "Dark"
+              },
+              "light": {
+                "name": "Light"
+              }
             }
           },
           {
@@ -88,12 +121,23 @@
             "name": "White Noise",
             "collection": "Tokyo Series",
             "slug": "tokyo-series/white-noise",
+            "image": "/img/grain-3.jpg",
             "colors": {
-              "primary": {},
-              "secondary": {},
-              "highlight": {},
-              "dark": {},
-              "light": {}
+              "primary": {
+                "name": "Primary"
+              },
+              "secondary": {
+                "name": "Secondary"
+              },
+              "highlight": {
+                "name": "Highlight"
+              },
+              "dark": {
+                "name": "Dark"
+              },
+              "light": {
+                "name": "Light"
+              }
             }
           }
         ]
@@ -107,12 +151,23 @@
             "name": "Hydrogen Clouds",
             "collection": "The Great Silence",
             "slug": "the-great-silence/hydrogen-clouds",
+            "image": "/img/the-great-silence-1.jpg",
             "colors": {
-              "primary": {},
-              "secondary": {},
-              "highlight": {},
-              "dark": {},
-              "light": {}
+              "primary": {
+                "name": "Primary"
+              },
+              "secondary": {
+                "name": "Secondary"
+              },
+              "highlight": {
+                "name": "Highlight"
+              },
+              "dark": {
+                "name": "Dark"
+              },
+              "light": {
+                "name": "Light"
+              }
             }
           },
           {
@@ -120,12 +175,23 @@
             "name": "Starglow",
             "collection": "The Great Silence",
             "slug": "the-great-silence/starglow",
+            "image": "/img/the-great-silence-0.jpg",
             "colors": {
-              "primary": {},
-              "secondary": {},
-              "highlight": {},
-              "dark": {},
-              "light": {}
+              "primary": {
+                "name": "Primary"
+              },
+              "secondary": {
+                "name": "Secondary"
+              },
+              "highlight": {
+                "name": "Highlight"
+              },
+              "dark": {
+                "name": "Dark"
+              },
+              "light": {
+                "name": "Light"
+              }
             }
           },
           {
@@ -133,12 +199,23 @@
             "name": "Atmosphere",
             "collection": "The Great Silence",
             "slug": "the-great-silence/atmosphere",
+            "image": "/img/the-great-silence-2.jpg",
             "colors": {
-              "primary": {},
-              "secondary": {},
-              "highlight": {},
-              "dark": {},
-              "light": {}
+              "primary": {
+                "name": "Primary"
+              },
+              "secondary": {
+                "name": "Secondary"
+              },
+              "highlight": {
+                "name": "Highlight"
+              },
+              "dark": {
+                "name": "Dark"
+              },
+              "light": {
+                "name": "Light"
+              }
             }
           },
           {
@@ -146,12 +223,23 @@
             "name": "Nebula",
             "collection": "The Great Silence",
             "slug": "the-great-silence/nebula",
+            "image": "/img/the-great-silence-3.jpg",
             "colors": {
-              "primary": {},
-              "secondary": {},
-              "highlight": {},
-              "dark": {},
-              "light": {}
+              "primary": {
+                "name": "Primary"
+              },
+              "secondary": {
+                "name": "Secondary"
+              },
+              "highlight": {
+                "name": "Highlight"
+              },
+              "dark": {
+                "name": "Dark"
+              },
+              "light": {
+                "name": "Light"
+              }
             }
           },
           {
@@ -206,11 +294,21 @@
             "slug": "landscapes/dolomites",
             "image": "/img/Dolomites-summer.jpg",
             "colors": {
-              "primary": {},
-              "secondary": {},
-              "highlight": {},
-              "dark": {},
-              "light": {}
+              "primary": {
+                "name": "Primary"
+              },
+              "secondary": {
+                "name": "Secondary"
+              },
+              "highlight": {
+                "name": "Highlight"
+              },
+              "dark": {
+                "name": "Dark"
+              },
+              "light": {
+                "name": "Light"
+              }
             }
           },
           {
@@ -220,11 +318,21 @@
             "slug": "landscapes/esperance-beach",
             "image": "/img/Esperance-beach-Australia.jpg",
             "colors": {
-              "primary": {},
-              "secondary": {},
-              "highlight": {},
-              "dark": {},
-              "light": {}
+              "primary": {
+                "name": "Primary"
+              },
+              "secondary": {
+                "name": "Secondary"
+              },
+              "highlight": {
+                "name": "Highlight"
+              },
+              "dark": {
+                "name": "Dark"
+              },
+              "light": {
+                "name": "Light"
+              }
             }
           },
           {
@@ -273,11 +381,21 @@
             "slug": "landscapes/glacier-notional-park",
             "image": "/img/Glacier-National-Park-Montana.jpg",
             "colors": {
-              "primary": {},
-              "secondary": {},
-              "highlight": {},
-              "dark": {},
-              "light": {}
+              "primary": {
+                "name": "Primary"
+              },
+              "secondary": {
+                "name": "Secondary"
+              },
+              "highlight": {
+                "name": "Highlight"
+              },
+              "dark": {
+                "name": "Dark"
+              },
+              "light": {
+                "name": "Light"
+              }
             }
           },
           {
@@ -287,11 +405,21 @@
             "slug": "landscapes/lake-hawea",
             "image": "/img/infrared-Lake-Hawea-new-zeland.jpg",
             "colors": {
-              "primary": {},
-              "secondary": {},
-              "highlight": {},
-              "dark": {},
-              "light": {}
+              "primary": {
+                "name": "Primary"
+              },
+              "secondary": {
+                "name": "Secondary"
+              },
+              "highlight": {
+                "name": "Highlight"
+              },
+              "dark": {
+                "name": "Dark"
+              },
+              "light": {
+                "name": "Light"
+              }
             }
           },
           {
@@ -301,11 +429,21 @@
             "slug": "landscapes/kauai",
             "image": "/img/Kauai-northern-shore-Hawaii.jpg",
             "colors": {
-              "primary": {},
-              "secondary": {},
-              "highlight": {},
-              "dark": {},
-              "light": {}
+              "primary": {
+                "name": "Primary"
+              },
+              "secondary": {
+                "name": "Secondary"
+              },
+              "highlight": {
+                "name": "Highlight"
+              },
+              "dark": {
+                "name": "Dark"
+              },
+              "light": {
+                "name": "Light"
+              }
             }
           },
           {
@@ -315,11 +453,21 @@
             "slug": "landscapes/island-of-senja",
             "image": "/img/midnight-sun-island-of-Senja-Northern-Norway.jpg",
             "colors": {
-              "primary": {},
-              "secondary": {},
-              "highlight": {},
-              "dark": {},
-              "light": {}
+              "primary": {
+                "name": "Primary"
+              },
+              "secondary": {
+                "name": "Secondary"
+              },
+              "highlight": {
+                "name": "Highlight"
+              },
+              "dark": {
+                "name": "Dark"
+              },
+              "light": {
+                "name": "Light"
+              }
             }
           },
           {
@@ -329,11 +477,21 @@
             "slug": "landscapes/mizar-and-alcor",
             "image": "/img/Mizar-and-Alcor-nightscapes-upstate-NY.jpg",
             "colors": {
-              "primary": {},
-              "secondary": {},
-              "highlight": {},
-              "dark": {},
-              "light": {}
+              "primary": {
+                "name": "Primary"
+              },
+              "secondary": {
+                "name": "Secondary"
+              },
+              "highlight": {
+                "name": "Highlight"
+              },
+              "dark": {
+                "name": "Dark"
+              },
+              "light": {
+                "name": "Light"
+              }
             }
           },
           {
@@ -343,11 +501,21 @@
             "slug": "landscapes/mono-lake",
             "image": "/img/Mono-Lake-California.jpg",
             "colors": {
-              "primary": {},
-              "secondary": {},
-              "highlight": {},
-              "dark": {},
-              "light": {}
+              "primary": {
+                "name": "Primary"
+              },
+              "secondary": {
+                "name": "Secondary"
+              },
+              "highlight": {
+                "name": "Highlight"
+              },
+              "dark": {
+                "name": "Dark"
+              },
+              "light": {
+                "name": "Light"
+              }
             }
           },
           {
@@ -357,11 +525,21 @@
             "slug": "landscapes/sedona-peaks",
             "image": "/img/Sedona-peaks-Arizona.jpg",
             "colors": {
-              "primary": {},
-              "secondary": {},
-              "highlight": {},
-              "dark": {},
-              "light": {}
+              "primary": {
+                "name": "Primary"
+              },
+              "secondary": {
+                "name": "Secondary"
+              },
+              "highlight": {
+                "name": "Highlight"
+              },
+              "dark": {
+                "name": "Dark"
+              },
+              "light": {
+                "name": "Light"
+              }
             }
           },
           {
@@ -371,11 +549,21 @@
             "slug": "landscapes/ha-long-bay",
             "image": "/img/Vietnam-Ha-Long-Bay.jpg",
             "colors": {
-              "primary": {},
-              "secondary": {},
-              "highlight": {},
-              "dark": {},
-              "light": {}
+              "primary": {
+                "name": "Primary"
+              },
+              "secondary": {
+                "name": "Secondary"
+              },
+              "highlight": {
+                "name": "Highlight"
+              },
+              "dark": {
+                "name": "Dark"
+              },
+              "light": {
+                "name": "Light"
+              }
             }
           },
           {
@@ -385,11 +573,21 @@
             "slug": "landscapes/yosemite-national-park",
             "image": "/img/Yosemite-rain.jpg",
             "colors": {
-              "primary": {},
-              "secondary": {},
-              "highlight": {},
-              "dark": {},
-              "light": {}
+              "primary": {
+                "name": "Primary"
+              },
+              "secondary": {
+                "name": "Secondary"
+              },
+              "highlight": {
+                "name": "Highlight"
+              },
+              "dark": {
+                "name": "Dark"
+              },
+              "light": {
+                "name": "Light"
+              }
             }
           }
         ]
@@ -443,11 +641,21 @@
             "collection": "Botanicals",
             "slug": "botanicals/freesia",
             "colors": {
-              "primary": {},
-              "secondary": {},
-              "highlight": {},
-              "dark": {},
-              "light": {}
+              "primary": {
+                "name": "Primary"
+              },
+              "secondary": {
+                "name": "Secondary"
+              },
+              "highlight": {
+                "name": "Highlight"
+              },
+              "dark": {
+                "name": "Dark"
+              },
+              "light": {
+                "name": "Light"
+              }
             }
           },
           {
@@ -456,11 +664,21 @@
             "collection": "Botanicals",
             "slug": "botanicals/hydrangea",
             "colors": {
-              "primary": {},
-              "secondary": {},
-              "highlight": {},
-              "dark": {},
-              "light": {}
+              "primary": {
+                "name": "Primary"
+              },
+              "secondary": {
+                "name": "Secondary"
+              },
+              "highlight": {
+                "name": "Highlight"
+              },
+              "dark": {
+                "name": "Dark"
+              },
+              "light": {
+                "name": "Light"
+              }
             }
           },
           {
@@ -469,11 +687,21 @@
             "collection": "Botanicals",
             "slug": "botanicals/sakura",
             "colors": {
-              "primary": {},
-              "secondary": {},
-              "highlight": {},
-              "dark": {},
-              "light": {}
+              "primary": {
+                "name": "Primary"
+              },
+              "secondary": {
+                "name": "Secondary"
+              },
+              "highlight": {
+                "name": "Highlight"
+              },
+              "dark": {
+                "name": "Dark"
+              },
+              "light": {
+                "name": "Light"
+              }
             }
           },
           {
@@ -482,11 +710,21 @@
             "collection": "Botanicals",
             "slug": "botanicals/wisteria",
             "colors": {
-              "primary": {},
-              "secondary": {},
-              "highlight": {},
-              "dark": {},
-              "light": {}
+              "primary": {
+                "name": "Primary"
+              },
+              "secondary": {
+                "name": "Secondary"
+              },
+              "highlight": {
+                "name": "Highlight"
+              },
+              "dark": {
+                "name": "Dark"
+              },
+              "light": {
+                "name": "Light"
+              }
             }
           },
           {
@@ -495,11 +733,21 @@
             "collection": "Botanicals",
             "slug": "botanicals/lily-of-the-valley",
             "colors": {
-              "primary": {},
-              "secondary": {},
-              "highlight": {},
-              "dark": {},
-              "light": {}
+              "primary": {
+                "name": "Primary"
+              },
+              "secondary": {
+                "name": "Secondary"
+              },
+              "highlight": {
+                "name": "Highlight"
+              },
+              "dark": {
+                "name": "Dark"
+              },
+              "light": {
+                "name": "Light"
+              }
             }
           },
           {
@@ -508,11 +756,21 @@
             "collection": "Botanicals",
             "slug": "botanicals/mango-tulip",
             "colors": {
-              "primary": {},
-              "secondary": {},
-              "highlight": {},
-              "dark": {},
-              "light": {}
+              "primary": {
+                "name": "Primary"
+              },
+              "secondary": {
+                "name": "Secondary"
+              },
+              "highlight": {
+                "name": "Highlight"
+              },
+              "dark": {
+                "name": "Dark"
+              },
+              "light": {
+                "name": "Light"
+              }
             }
           },
           {
@@ -521,11 +779,21 @@
             "collection": "Botanicals",
             "slug": "botanicals/delphinium",
             "colors": {
-              "primary": {},
-              "secondary": {},
-              "highlight": {},
-              "dark": {},
-              "light": {}
+              "primary": {
+                "name": "Primary"
+              },
+              "secondary": {
+                "name": "Secondary"
+              },
+              "highlight": {
+                "name": "Highlight"
+              },
+              "dark": {
+                "name": "Dark"
+              },
+              "light": {
+                "name": "Light"
+              }
             }
           },
           {
@@ -534,11 +802,21 @@
             "collection": "Botanicals",
             "slug": "botanicals/sunflower",
             "colors": {
-              "primary": {},
-              "secondary": {},
-              "highlight": {},
-              "dark": {},
-              "light": {}
+              "primary": {
+                "name": "Primary"
+              },
+              "secondary": {
+                "name": "Secondary"
+              },
+              "highlight": {
+                "name": "Highlight"
+              },
+              "dark": {
+                "name": "Dark"
+              },
+              "light": {
+                "name": "Light"
+              }
             }
           },
           {
@@ -547,11 +825,21 @@
             "collection": "Botanicals",
             "slug": "botanicals/forget-me-not",
             "colors": {
-              "primary": {},
-              "secondary": {},
-              "highlight": {},
-              "dark": {},
-              "light": {}
+              "primary": {
+                "name": "Primary"
+              },
+              "secondary": {
+                "name": "Secondary"
+              },
+              "highlight": {
+                "name": "Highlight"
+              },
+              "dark": {
+                "name": "Dark"
+              },
+              "light": {
+                "name": "Light"
+              }
             }
           },
           {
@@ -560,11 +848,21 @@
             "collection": "Botanicals",
             "slug": "botanicals/night-sly-petunia",
             "colors": {
-              "primary": {},
-              "secondary": {},
-              "highlight": {},
-              "dark": {},
-              "light": {}
+              "primary": {
+                "name": "Primary"
+              },
+              "secondary": {
+                "name": "Secondary"
+              },
+              "highlight": {
+                "name": "Highlight"
+              },
+              "dark": {
+                "name": "Dark"
+              },
+              "light": {
+                "name": "Light"
+              }
             }
           },
           {
@@ -573,11 +871,21 @@
             "collection": "Botanicals",
             "slug": "botanicals/lagrass",
             "colors": {
-              "primary": {},
-              "secondary": {},
-              "highlight": {},
-              "dark": {},
-              "light": {}
+              "primary": {
+                "name": "Primary"
+              },
+              "secondary": {
+                "name": "Secondary"
+              },
+              "highlight": {
+                "name": "Highlight"
+              },
+              "dark": {
+                "name": "Dark"
+              },
+              "light": {
+                "name": "Light"
+              }
             }
           }
         ]
