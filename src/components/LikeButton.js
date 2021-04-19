@@ -6,11 +6,9 @@ function LikeButton() {
 
   const handleLike = (e) => {
     let button = e.currentTarget;
-    console.log(button.firstChild.classList);
     button.firstChild.classList.remove("bi-heart");
     button.firstChild.classList.add("bi-heart-fill", "active");
     setLikes(likes+1);
-
   }
 
   return (

@@ -44,6 +44,7 @@ const initialTheme = {
 }
 
 const collections = data.gallery.collections;
+const API_URL = "https://api.themes.levpopov.dev/static/";
 
 function App() {
 

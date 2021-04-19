@@ -4,6 +4,11 @@ function ColorSection({theme}) {
 
   const getContrastRatio = (color1, color2) => {
 
+    // check we have both colors
+    if(!color1 || !color1){
+      return null;
+    }
+
     // If a leading # is provided, remove it
     if (color1.slice(0, 1) === '#') {
       color1 = color1.slice(1);
