@@ -60,8 +60,6 @@ function ColorSection({theme}) {
     return Math.round(cr * 100) / 100;
   }
 
-  // console.log(getContrastRatio(theme.colors.primary.hex, theme.colors.secondary.hex));
-
   return (
     <div className="section-container">
       <div className="row">

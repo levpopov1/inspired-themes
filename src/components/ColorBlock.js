@@ -1,6 +1,8 @@
 import ContrastRatioGauge from "./ContrastRatioGauge";
 
-function ColorBlock({color, contrastRatio, rowColor}) {
+function ColorBlock({color, getContrastRatio, rowColor}) {
+
+  let contrastRatio = getContrastRatio(rowColor.hex, color.hex);
 
   let advice = "";
 

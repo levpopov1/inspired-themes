@@ -1,6 +1,9 @@
 import ColorBlock from './ColorBlock';
 
 function ColorRow({color, theme, getContrastRatio}) {
+
+  // let contrastRatio = 0;
+
   return (
     <div className="row justify-content-end" style={{ backgroundColor: color.hex }}>
       <div className="col-sm-12">
@@ -8,8 +11,8 @@ function ColorRow({color, theme, getContrastRatio}) {
       </div>
       {Object.keys(theme.colors).map(function(colorKey, index){
         if(colorKey !== color.name.toLowerCase()){
-          let contrastRatio = getContrastRatio(color.hex, theme.colors[colorKey].hex);
-          return <ColorBlock key={index} color={theme.colors[colorKey]} contrastRatio={contrastRatio} rowColor={color}/>
+          // contrastRatio = getContrastRatio(color.hex, theme.colors[colorKey].hex);
+          return <ColorBlock key={index} color={theme.colors[colorKey]} getContrastRatio={getContrastRatio} rowColor={color}/>
         }
       })}
     </div>
