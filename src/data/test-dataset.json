@@ -52,19 +52,34 @@
             "image": "/img/Tokyo-pastel.jpg",
             "colors": {
               "primary": {
-                "name": "Primary"
+                "name": "Primary",
+                "hex": "#bd8dbd",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "secondary": {
-                "name": "Secondary"
+                "name": "Secondary",
+                "hex": "#71b6ef",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "highlight": {
-                "name": "Highlight"
+                "name": "Highlight",
+                "hex": "#ccb8f7",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "dark": {
-                "name": "Dark"
+                "name": "Dark",
+                "hex": "#16033f",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "light": {
-                "name": "Light"
+                "name": "Light",
+                "hex": "#f9d2d3",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               }
             }
           },
@@ -76,19 +91,34 @@
             "image": "/img/Eh3gRgUU0AQ7ZOZ.jpg",
             "colors": {
               "primary": {
-                "name": "Primary"
+                "name": "Primary",
+                "hex": "#153e4b",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "secondary": {
-                "name": "Secondary"
+                "name": "Secondary",
+                "hex": "#ca989b",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "highlight": {
-                "name": "Highlight"
+                "name": "Highlight",
+                "hex": "#e2bec0",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "dark": {
-                "name": "Dark"
+                "name": "Dark",
+                "hex": "#040d12",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "light": {
-                "name": "Light"
+                "name": "Light",
+                "hex": "#ffecec",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               }
             }
           },
@@ -100,19 +130,34 @@
             "image": "/img/51054431217_69836a275f_k.jpg",
             "colors": {
               "primary": {
-                "name": "Primary"
+                "name": "Primary",
+                "hex": "#04e6fd",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "secondary": {
-                "name": "Secondary"
+                "name": "Secondary",
+                "hex": "#db133f",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "highlight": {
-                "name": "Highlight"
+                "name": "Highlight",
+                "hex": "#fbc861",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "dark": {
-                "name": "Dark"
+                "name": "Dark",
+                "hex": "#1c2634",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "light": {
-                "name": "Light"
+                "name": "Light",
+                "hex": "#f7f4fb",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               }
             }
           },
@@ -124,19 +169,34 @@
             "image": "/img/grain-3.jpg",
             "colors": {
               "primary": {
-                "name": "Primary"
+                "name": "Primary",
+                "hex": "#0f5161",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "secondary": {
-                "name": "Secondary"
+                "name": "Secondary",
+                "hex": "#9e5732",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "highlight": {
-                "name": "Highlight"
+                "name": "Highlight",
+                "hex": "#f1c9a0",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "dark": {
-                "name": "Dark"
+                "name": "Dark",
+                "hex": "#07131f",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "light": {
-                "name": "Light"
+                "name": "Light",
+                "hex": "#f7fbfe",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               }
             }
           }
@@ -154,19 +214,34 @@
             "image": "/img/the-great-silence-1.jpg",
             "colors": {
               "primary": {
-                "name": "Primary"
+                "name": "Primary",
+                "hex": "#2a5fbf",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "secondary": {
-                "name": "Secondary"
+                "name": "Secondary",
+                "hex": "#0a6f4d",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "highlight": {
-                "name": "Highlight"
+                "name": "Highlight",
+                "hex": "#86b7f2",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "dark": {
-                "name": "Dark"
+                "name": "Dark",
+                "hex": "#0a090f",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "light": {
-                "name": "Light"
+                "name": "Light",
+                "hex": "#edecfa",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               }
             }
           },
@@ -178,19 +253,34 @@
             "image": "/img/the-great-silence-0.jpg",
             "colors": {
               "primary": {
-                "name": "Primary"
+                "name": "Primary",
+                "hex": "#17172f",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "secondary": {
-                "name": "Secondary"
+                "name": "Secondary",
+                "hex": "#ff9882",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "highlight": {
-                "name": "Highlight"
+                "name": "Highlight",
+                "hex": "#7a78c7",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "dark": {
-                "name": "Dark"
+                "name": "Dark",
+                "hex": "#0b0a17",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "light": {
-                "name": "Light"
+                "name": "Light",
+                "hex": "#fdce9b",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               }
             }
           },
@@ -202,19 +292,34 @@
             "image": "/img/the-great-silence-2.jpg",
             "colors": {
               "primary": {
-                "name": "Primary"
+                "name": "Primary",
+                "hex": "#e24c27",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "secondary": {
-                "name": "Secondary"
+                "name": "Secondary",
+                "hex": "#1e142f",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "highlight": {
-                "name": "Highlight"
+                "name": "Highlight",
+                "hex": "#f9843e",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "dark": {
-                "name": "Dark"
+                "name": "Dark",
+                "hex": "#0c0914",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "light": {
-                "name": "Light"
+                "name": "Light",
+                "hex": "#e6d1c5",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               }
             }
           },
@@ -226,19 +331,34 @@
             "image": "/img/the-great-silence-3.jpg",
             "colors": {
               "primary": {
-                "name": "Primary"
+                "name": "Primary",
+                "hex": "#1999fe",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "secondary": {
-                "name": "Secondary"
+                "name": "Secondary",
+                "hex": "#3e1921",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "highlight": {
-                "name": "Highlight"
+                "name": "Highlight",
+                "hex": "#e56fbc",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "dark": {
-                "name": "Dark"
+                "name": "Dark",
+                "hex": "#140605",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "light": {
-                "name": "Light"
+                "name": "Light",
+                "hex": "#01d6fe",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               }
             }
           },
@@ -295,19 +415,34 @@
             "image": "/img/Dolomites-summer.jpg",
             "colors": {
               "primary": {
-                "name": "Primary"
+                "name": "Primary",
+                "hex": "#18251b",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "secondary": {
-                "name": "Secondary"
+                "name": "Secondary",
+                "hex": "#dca669",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "highlight": {
-                "name": "Highlight"
+                "name": "Highlight",
+                "hex": "#fddd00",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "dark": {
-                "name": "Dark"
+                "name": "Dark",
+                "hex": "#121616",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "light": {
-                "name": "Light"
+                "name": "Light",
+                "hex": "#f0ebe8",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               }
             }
           },
@@ -319,19 +454,34 @@
             "image": "/img/Esperance-beach-Australia.jpg",
             "colors": {
               "primary": {
-                "name": "Primary"
+                "name": "Primary",
+                "hex": "#02cfd8",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "secondary": {
-                "name": "Secondary"
+                "name": "Secondary",
+                "hex": "#e3e2e4",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "highlight": {
-                "name": "Highlight"
+                "name": "Highlight",
+                "hex": "#95d1dc",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "dark": {
-                "name": "Dark"
+                "name": "Dark",
+                "hex": "#00657a",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "light": {
-                "name": "Light"
+                "name": "Light",
+                "hex": "#f0efed",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               }
             }
           },
@@ -382,19 +532,34 @@
             "image": "/img/Glacier-National-Park-Montana.jpg",
             "colors": {
               "primary": {
-                "name": "Primary"
+                "name": "Primary",
+                "hex": "#936a98",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "secondary": {
-                "name": "Secondary"
+                "name": "Secondary",
+                "hex": "#505086",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "highlight": {
-                "name": "Highlight"
+                "name": "Highlight",
+                "hex": "#e59b84",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "dark": {
-                "name": "Dark"
+                "name": "Dark",
+                "hex": "#0a0e0d",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "light": {
-                "name": "Light"
+                "name": "Light",
+                "hex": "#f6e1dd",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               }
             }
           },
@@ -406,19 +571,34 @@
             "image": "/img/infrared-Lake-Hawea-new-zeland.jpg",
             "colors": {
               "primary": {
-                "name": "Primary"
+                "name": "Primary",
+                "hex": "#1a4e62",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "secondary": {
-                "name": "Secondary"
+                "name": "Secondary",
+                "hex": "#e77281",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "highlight": {
-                "name": "Highlight"
+                "name": "Highlight",
+                "hex": "#daceb8",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "dark": {
-                "name": "Dark"
+                "name": "Dark",
+                "hex": "#03080c",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "light": {
-                "name": "Light"
+                "name": "Light",
+                "hex": "#fafafa",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               }
             }
           },
@@ -430,19 +610,34 @@
             "image": "/img/Kauai-northern-shore-Hawaii.jpg",
             "colors": {
               "primary": {
-                "name": "Primary"
+                "name": "Primary",
+                "hex": "#00687e",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "secondary": {
-                "name": "Secondary"
+                "name": "Secondary",
+                "hex": "#fdb35e",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "highlight": {
-                "name": "Highlight"
+                "name": "Highlight",
+                "hex": "#feee73",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "dark": {
-                "name": "Dark"
+                "name": "Dark",
+                "hex": "#0e1d22",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "light": {
-                "name": "Light"
+                "name": "Light",
+                "hex": "#e6ddda",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               }
             }
           },
@@ -454,19 +649,34 @@
             "image": "/img/midnight-sun-island-of-Senja-Northern-Norway.jpg",
             "colors": {
               "primary": {
-                "name": "Primary"
+                "name": "Primary",
+                "hex": "#142131",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "secondary": {
-                "name": "Secondary"
+                "name": "Secondary",
+                "hex": "#d39c69",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "highlight": {
-                "name": "Highlight"
+                "name": "Highlight",
+                "hex": "#fff0cf",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "dark": {
-                "name": "Dark"
+                "name": "Dark",
+                "hex": "#020814",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "light": {
-                "name": "Light"
+                "name": "Light",
+                "hex": "#d2c3c6",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               }
             }
           },
@@ -478,19 +688,34 @@
             "image": "/img/Mizar-and-Alcor-nightscapes-upstate-NY.jpg",
             "colors": {
               "primary": {
-                "name": "Primary"
+                "name": "Primary",
+                "hex": "#0174df",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "secondary": {
-                "name": "Secondary"
+                "name": "Secondary",
+                "hex": "#001e68",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "highlight": {
-                "name": "Highlight"
+                "name": "Highlight",
+                "hex": "#d9919d",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "dark": {
-                "name": "Dark"
+                "name": "Dark",
+                "hex": "#0a081e",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "light": {
-                "name": "Light"
+                "name": "Light",
+                "hex": "#b5b5d9",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               }
             }
           },
