@@ -19,11 +19,16 @@ function ContrastRatioGauge(props) {
 
   useEffect(() => {
     if(!gaugeRef.current) {
-      const options = { ...gaugeOptions, ...props };
+      // gaugeClass has to be set here to make classList.replace line below work
+      const options = {...gaugeOptions, gaugeClass: "gauge " + props.contrastColor};
       gaugeRef.current = Gauge(gaugeEl.current, options);
       gaugeRef.current.setValue(options.initialValue);
     }
-    gaugeRef.current.setValue(props.value, gaugeOptions.animDuration);
+    gaugeRef.current.setValue(props.value);
+
+    // hacky way to update color class on the Gauge
+    // because gaugeRef does not provide setOptions function after it is created
+    gaugeEl.current.childNodes[0].classList.replace("light", props.contrastColor);
   }, [props]);
 
   return (
