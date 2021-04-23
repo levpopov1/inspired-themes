@@ -1,6 +1,14 @@
+import { useState, useEffect } from 'react';
 import ContrastRatioGauge from "./ContrastRatioGauge";
+import getContrast from '../lib/getContrast';
 
 function ColorBlock({color, getContrastRatio, rowColor}) {
+
+  const [contrastColor, setContrastColor] = useState('light');
+
+  useEffect(() => {
+    setContrastColor(getContrast(rowColor.hex));
+  }, [rowColor]);
 
   let contrastRatio = getContrastRatio(rowColor.hex, color.hex);
 
@@ -21,9 +29,9 @@ function ColorBlock({color, getContrastRatio, rowColor}) {
 
   return (
     <div className="col-md-6 col-xl-3 col-xxxl-2 mb-3">
-      <div className="card h-100" style={{ border: `1px solid ${color.hex}`, backgroundColor: "transparent", color: color.hex }}>
+      <div className="card h-100" style={{ backgroundColor: rowColor.hex, color: color.hex }}>
         <div className="card-header">
-          <ContrastRatioGauge value={contrastRatio}/>
+          <ContrastRatioGauge value={contrastRatio} contrastColor={contrastColor}/>
         </div>
         <div className="card-body">
           <h5 className="card-title">{color.name}</h5>
