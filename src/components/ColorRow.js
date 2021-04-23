@@ -5,7 +5,7 @@ function ColorRow({color, theme, getContrastRatio}) {
   // let contrastRatio = 0;
 
   return (
-    <div className="row justify-content-end" style={{ backgroundColor: color.hex }}>
+    <div className="row justify-content-end" >
       <div className="col-sm-12">
         <h2 className="title my-3">{color.name}</h2>
       </div>
