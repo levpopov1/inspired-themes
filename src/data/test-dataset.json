@@ -104,7 +104,7 @@
               },
               "highlight": {
                 "name": "Highlight",
-                "hex": "#e2bec0",
+                "hex": "#f89e79",
                 "rgb": "rgb(0,0,239)",
                 "hsl": "hsl(240,100%,20%)"
               },
@@ -727,19 +727,34 @@
             "image": "/img/Mono-Lake-California.jpg",
             "colors": {
               "primary": {
-                "name": "Primary"
+                "name": "Primary",
+                "hex": "#224173",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "secondary": {
-                "name": "Secondary"
+                "name": "Secondary",
+                "hex": "#ee6465",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "highlight": {
-                "name": "Highlight"
+                "name": "Highlight",
+                "hex": "#c1c1db",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "dark": {
-                "name": "Dark"
+                "name": "Dark",
+                "hex": "#08090b",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "light": {
-                "name": "Light"
+                "name": "Light",
+                "hex": "#fbfbf5",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               }
             }
           },
@@ -751,19 +766,34 @@
             "image": "/img/Sedona-peaks-Arizona.jpg",
             "colors": {
               "primary": {
-                "name": "Primary"
+                "name": "Primary",
+                "hex": "#6f97c4",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "secondary": {
-                "name": "Secondary"
+                "name": "Secondary",
+                "hex": "#9a3310",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "highlight": {
-                "name": "Highlight"
+                "name": "Highlight",
+                "hex": "#fee0b1",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "dark": {
-                "name": "Dark"
+                "name": "Dark",
+                "hex": "#1e0f01",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "light": {
-                "name": "Light"
+                "name": "Light",
+                "hex": "#ebedf2",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               }
             }
           },
@@ -775,19 +805,34 @@
             "image": "/img/Vietnam-Ha-Long-Bay.jpg",
             "colors": {
               "primary": {
-                "name": "Primary"
+                "name": "Primary",
+                "hex": "#a3b7d8",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "secondary": {
-                "name": "Secondary"
+                "name": "Secondary",
+                "hex": "#457d6e",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "highlight": {
-                "name": "Highlight"
+                "name": "Highlight",
+                "hex": "#94bb69",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "dark": {
-                "name": "Dark"
+                "name": "Dark",
+                "hex": "#0c1119",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "light": {
-                "name": "Light"
+                "name": "Light",
+                "hex": "#e7e5ef",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               }
             }
           },
@@ -799,19 +844,34 @@
             "image": "/img/Yosemite-rain.jpg",
             "colors": {
               "primary": {
-                "name": "Primary"
+                "name": "Primary",
+                "hex": "#28444f",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "secondary": {
-                "name": "Secondary"
+                "name": "Secondary",
+                "hex": "#205a54",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "highlight": {
-                "name": "Highlight"
+                "name": "Highlight",
+                "hex": "#f6be86",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "dark": {
-                "name": "Dark"
+                "name": "Dark",
+                "hex": "#101c1e",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               },
               "light": {
-                "name": "Light"
+                "name": "Light",
+                "hex": "#ededeb",
+                "rgb": "rgb(0,0,239)",
+                "hsl": "hsl(240,100%,20%)"
               }
             }
           }
