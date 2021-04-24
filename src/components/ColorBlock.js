@@ -1,16 +1,39 @@
 import { useState, useEffect } from 'react';
 import ContrastRatioGauge from "./ContrastRatioGauge";
 import getContrast from '../lib/getContrast';
+import getContrastRatio from '../lib/getContrastRatio';
 
-function ColorBlock({color, getContrastRatio, rowColor}) {
+function ColorBlock({color, rowColor}) {
 
   const [contrastColor, setContrastColor] = useState('light');
+  const [wcagAA, setWcagAA] = useState("FAIL");
+  const [wcagAAA, setWcagAAA] = useState("FAIL");
+
+  let contrastRatio = getContrastRatio(rowColor.hex, color.hex);
 
   useEffect(() => {
     setContrastColor(getContrast(rowColor.hex));
   }, [rowColor]);
 
-  let contrastRatio = getContrastRatio(rowColor.hex, color.hex);
+  useEffect(() => {
+    if(contrastRatio >= 7){
+      setWcagAA("PASS");
+      setWcagAAA("PASS");
+    }
+    else if(contrastRatio >= 3.5){
+      setWcagAA("PASS");
+      setWcagAAA("FAIL");
+    }
+    else{
+      setWcagAA("FAIL");
+      setWcagAAA("FAIL");
+    }
+    return () => {
+      setWcagAA("FAIL");
+      setWcagAAA("FAIL");
+    }
+  }, [contrastRatio]);
+
 
   let advice = "";
 
@@ -28,15 +51,29 @@ function ColorBlock({color, getContrastRatio, rowColor}) {
   }
 
   return (
-    <div className="col-md-6 col-xl-3 col-xxxl-2 mb-3">
-      <div className="card h-100" style={{ backgroundColor: rowColor.hex, color: color.hex }}>
-        <div className="card-header">
+    <div className="col-md-6 col-xl-3 col-xxxl-2 mb-4">
+      <div className="card colorPair h-100" style={{ backgroundColor: rowColor.hex, color: color.hex }}>
+        <div className="card-heder">
           <ContrastRatioGauge value={contrastRatio} contrastColor={contrastColor}/>
         </div>
         <div className="card-body">
-          <h5 className="card-title">{color.name}</h5>
+          <h3 className="card-title">{color.name}</h3>
           <p className="card-text">
             {advice}
+          </p>
+        </div>
+        <div className="card-footer d-flex flex-column justify-content-end">  
+          <p className="card-text d-flex justify-content-between mb-1">
+            WCAG AAA
+            <span className="badge">
+              {wcagAAA}
+            </span>
+          </p>
+          <p className="card-text d-flex justify-content-between">
+            WCAG AA
+            <span className="badge">
+              {wcagAA}
+            </span>
           </p>
         </div>
       </div>
