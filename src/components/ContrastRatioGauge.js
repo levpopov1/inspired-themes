@@ -29,6 +29,7 @@ function ContrastRatioGauge(props) {
     // hacky way to update color class on the Gauge
     // because gaugeRef does not provide setOptions function after it is created
     gaugeEl.current.childNodes[0].classList.replace("light", props.contrastColor);
+    gaugeEl.current.childNodes[0].classList.replace("dark", props.contrastColor);
   }, [props]);
 
   return (
