@@ -390,8 +390,11 @@ button.nav-link:focus{
 }
 
 .gauge-container {
-  width: 150px;
-  height: 135px;
+  // width: 150px;
+  // height: 135px;  
+  width: 100%;
+  height: auto;
+  max-width: 200px;
   display: block;
   margin: 0 auto;
 }
@@ -430,3 +433,17 @@ button.nav-link:focus{
 .gauge-container > .gauge.light > .value-text {
   fill: var(--text-light);
 }
+
+.colorPair .card-header{
+  background-color: transparent;
+}
+
+.colorPair .badge{
+  color: unset;
+}
+
+.list-group-item{
+  background-color: transparent;
+  color: unset;
+}
+
