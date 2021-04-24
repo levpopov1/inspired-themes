@@ -1,6 +1,6 @@
 import ColorBlock from './ColorBlock';
 
-function ColorRow({color, theme, getContrastRatio}) {
+function ColorRow({color, theme}) {
 
   // let contrastRatio = 0;
 
@@ -12,7 +12,7 @@ function ColorRow({color, theme, getContrastRatio}) {
       {Object.keys(theme.colors).map(function(colorKey, index){
         if(colorKey !== color.name.toLowerCase()){
           // contrastRatio = getContrastRatio(color.hex, theme.colors[colorKey].hex);
-          return <ColorBlock key={index} color={theme.colors[colorKey]} getContrastRatio={getContrastRatio} rowColor={color}/>
+          return <ColorBlock key={index} color={theme.colors[colorKey]} rowColor={color}/>
         }
       })}
     </div>
