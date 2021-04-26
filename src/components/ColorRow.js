@@ -7,7 +7,7 @@ function ColorRow({color, theme}) {
   return (
     <div className="row justify-content-end" >
       <div className="col-sm-12">
-        <h2 className="title my-3">{color.name}</h2>
+        {/* <h2 className="title my-3">{color.name}</h2> */}
       </div>
       {Object.keys(theme.colors).map(function(colorKey, index){
         if(colorKey !== color.name.toLowerCase()){
