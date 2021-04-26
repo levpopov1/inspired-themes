@@ -1,19 +1,12 @@
 import { useState, useEffect } from 'react';
-import ContrastRatioGauge from "./ContrastRatioGauge";
-import getContrast from '../lib/getContrast';
 import getContrastRatio from '../lib/getContrastRatio';
 
 function ColorBlock({color, rowColor}) {
 
-  const [contrastColor, setContrastColor] = useState('');
   const [wcagAA, setWcagAA] = useState(false);
   const [wcagAAA, setWcagAAA] = useState(false);
 
   let contrastRatio = getContrastRatio(rowColor.hex, color.hex);
-
-  useEffect(() => {
-    setContrastColor(getContrast(rowColor.hex));
-  }, [rowColor]);
 
   useEffect(() => {
     if(contrastRatio >= 7){
@@ -55,9 +48,6 @@ function ColorBlock({color, rowColor}) {
   return (
     <div className="col-md-6 col-xl-3 col-xxxl-2 mb-4">
       <div className="card colorPair h-100 mb-2" style={{ backgroundColor: rowColor.hex, color: color.hex }}>
-        {/* <div className="card-header">
-          <ContrastRatioGauge value={contrastRatio} contrastColor={contrastColor}/>
-        </div> */}
         <div className="card-body">
           <h1 className="display-2 fw-bold">{contrastRatio}</h1>
           <h3 className="card-title">{color.name}</h3>
@@ -66,6 +56,7 @@ function ColorBlock({color, rowColor}) {
           </p>
         </div>
         <div className="card-body d-flex flex-column justify-content-end">
+            
             <p className={`card-text mb-0 ${wcagAAA ? "" : "text-decoration-line-through"}`}>
               WCAG AAA
               {wcagAAA && <i className="bi bi-check-circle-fill ms-2"></i>}
