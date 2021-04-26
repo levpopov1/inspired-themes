@@ -5,7 +5,7 @@ import TypographyRow from './TypographyRow';
 function TypographySection({theme, getContrast}) {
 
   const [font, setFont] = useState('sans-serif');
-  const [showInfo, setShowInfo] = useState(true);
+  const [showInfo, setShowInfo] = useState(false);
 
 
   return (
