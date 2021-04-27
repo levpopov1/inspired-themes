@@ -1,19 +1,13 @@
 import ColorBlock from './ColorBlock';
 
 function ColorRow({color, theme}) {
-
-  // let contrastRatio = 0;
-
   return (
-    <div className="row justify-content-end" >
-      <div className="col-sm-12">
-        {/* <h2 className="title my-3">{color.name}</h2> */}
-      </div>
+    <div className="row" >
       {Object.keys(theme.colors).map(function(colorKey, index){
-        if(colorKey !== color.name.toLowerCase()){
-          // contrastRatio = getContrastRatio(color.hex, theme.colors[colorKey].hex);
-          return <ColorBlock key={index} color={theme.colors[colorKey]} rowColor={color}/>
+        if(colorKey === color.name.toLowerCase()){
+          return null;
         }
+        return <ColorBlock key={index} color={theme.colors[colorKey]} rowColor={color}/>
       })}
     </div>
   );
