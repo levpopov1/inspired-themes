@@ -46,7 +46,7 @@ function ColorBlock({color, rowColor}) {
   }
 
   return (
-    <div className="col-md-6 col-xl-3 col-xxxl-3 mb-4">
+    <div className="col-sm-6 col-lg-3 mb-4">
       <div className="card colorPair h-100 mb-2" style={{ backgroundColor: rowColor.hex, color: color.hex }}>
         <div className="card-body">
           <h1 className="display-2 fw-bold">{contrastRatio}</h1>
@@ -56,15 +56,14 @@ function ColorBlock({color, rowColor}) {
           </p>
         </div>
         <div className="card-body d-flex flex-column justify-content-end">
-            
-            <p className={`card-text mb-0 ${wcagAAA ? "" : "text-decoration-line-through"}`}>
-              WCAG AAA
-              {wcagAAA && <i className="bi bi-check-circle-fill ms-2"></i>}
-            </p>
-            <p className={`card-text ${wcagAA ? "" : "text-decoration-line-through"}`}>
-              WCAG AA
-              {wcagAA && <i className="bi bi-check-circle-fill ms-2"></i>}
-            </p>
+          <p className={`card-text mb-0 ${wcagAAA ? "" : "text-decoration-line-through"}`}>
+            WCAG AAA
+            {wcagAAA && <i className="bi bi-check-circle-fill ms-2"></i>}
+          </p>
+          <p className={`card-text ${wcagAA ? "" : "text-decoration-line-through"}`}>
+            WCAG AA
+            {wcagAA && <i className="bi bi-check-circle-fill ms-2"></i>}
+          </p>
         </div>
       </div>
     </div>
