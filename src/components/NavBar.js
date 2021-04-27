@@ -25,7 +25,10 @@ function NavBar({collections, setTheme}) {
               <div className="nav-link">
                 <InternalThemeSwither/>
               </div>
-              <div className="dropdown pos-initial">
+              <button className="btn nav-link" data-bs-toggle="collapse" data-bs-target="#s00" aria-expanded="false" aria-controls="s00">
+                Theme Gallery
+              </button>
+              {/* <div className="dropdown pos-initial">
                 <button className="btn nav-link dropdown-toggle ms-2" id="dropdownNavLink"  data-bs-toggle="dropdown" aria-expanded="false">
                   Theme Gallery
                 </button>
@@ -36,7 +39,7 @@ function NavBar({collections, setTheme}) {
                     )
                   }
                 </ul>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
