@@ -59,6 +59,10 @@ body{
   color: var(--text-color);
 }
 
+.fullscreen{
+  min-height: calc(100vh - 58px);
+}
+
 a{
   color: currentColor;
 
