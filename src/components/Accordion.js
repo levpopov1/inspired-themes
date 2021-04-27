@@ -57,12 +57,12 @@ function Accordion({theme, collections, setTheme}) {
   return (
     <div className="container-fluid g-0">
       <div className="d-flex flex-row justify-content-end" id="vac">
-        <div className="d-flex flex-row vac-section">
+        <div className="d-flex flex-row vac-section open" id="gallery">
           <div className="section-content collapse width show" id="s00" data-bs-parent="#vac">
             <ThemeGallery collections={collections} setTheme={setTheme}/>
           </div>
         </div>
-        <div className="d-flex flex-row vac-section open">
+        <div className="d-flex flex-row vac-section" id="overview">
           <div className="section-title d-none d-md-block">
             <a className="display-5 h-100 block-link text-decoration-none" data-bs-toggle="collapse" data-bs-target="#s0" href="#s0" role="button" aria-expanded="false" aria-controls="s0" onClick={toggleDisplayState}>
               <span className="d-inline-block ms-md-2">Overview</span>
@@ -94,7 +94,7 @@ function Accordion({theme, collections, setTheme}) {
             </div>
           </div>
         </div>
-        <div className="d-flex flex-row vac-section">
+        <div className="d-flex flex-row vac-section" id="colors">
           <div className="section-title d-none d-md-block">
             <a className="display-5 h-100 block-link text-decoration-none" data-bs-toggle="collapse" data-bs-target="#s1" href="#s1" role="button" aria-expanded="false" aria-controls="s1" onClick={toggleDisplayState}>
               <span className="d-block ms-md-2">Color</span>
@@ -104,7 +104,7 @@ function Accordion({theme, collections, setTheme}) {
             <ColorSection theme={theme}/>
           </div>
         </div>
-        <div className="d-flex flex-row vac-section">
+        <div className="d-flex flex-row vac-section" id="typography">
           <div className="section-title d-none d-md-block">
             <a className="display-5 h-100 block-link text-decoration-none" data-bs-toggle="collapse" data-bs-target="#s2" href="#s2" role="button" aria-expanded="false" aria-controls="s2" onClick={toggleDisplayState}>
               <span className="d-block ms-md-2">Typography</span>
@@ -114,7 +114,7 @@ function Accordion({theme, collections, setTheme}) {
             <TypographySection theme={theme} getContrast={getContrast}/>
           </div>
         </div>
-        <div className="d-flex flex-row vac-section">
+        <div className="d-flex flex-row vac-section" id="layout">
           <div className="section-title d-none d-md-block">
             <a className="display-5 h-100 block-link text-decoration-none" data-bs-toggle="collapse" data-bs-target="#s3" href="#s3" role="button" aria-expanded="false" aria-controls="s3" onClick={toggleDisplayState}>
               <span className="d-block ms-md-2">Layout</span>
