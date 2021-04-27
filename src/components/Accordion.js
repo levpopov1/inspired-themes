@@ -4,43 +4,7 @@ import MegaPalette from "./MegaPalette";
 import ThemeGallery from './ThemeGallery';
 import TypographySection from './TypographySection';
 import getContrast from '../lib/getContrast';
-
-const toggleDisplayState = (e) => {
-  setTimeout(() => {
-    // clear open calss from all .vac-section elements
-    let allSections = document.querySelectorAll('#vac .vac-section');
-    allSections.forEach(function(item){
-      item.classList.remove('open');
-    });
-  
-    // add .open to currently open .vac-section element
-    let vacSection = getAncestorByClassName(e.target, "vac-section");
-    vacSection.classList.add("open");
-
-    // show the hidden section when all main sections are closed
-    let collapsibleSections = document.querySelectorAll('#vac .section-content');
-    let shownSections = 0;
-    collapsibleSections.forEach(function(item){
-      if(item.classList.contains('show')){
-        shownSections = shownSections + 1;
-      }
-    });
-    if(shownSections === 0){
-      let hiddenSection = document.querySelector('#vac #s00');
-      hiddenSection.classList.add('show');
-    }
-  }, 360);
-}
-
-const getAncestorByClassName = (el, target) => {
-  while (el && el.parentNode) {
-    el = el.parentNode;
-    if(el.classList.contains(target)){
-      return el;
-    }
-  }
-  return null;
-}
+import { toggleDisplayState } from '../lib/handleVacCollapse';
 
 function Accordion({theme, collections, setTheme}) {
 
@@ -94,7 +58,7 @@ function Accordion({theme, collections, setTheme}) {
             </div>
           </div>
         </div>
-        <div className="d-flex flex-row vac-section" id="colors">
+        <div className="d-flex flex-row vac-section" id="color">
           <div className="section-title d-none d-md-block">
             <a className="display-5 h-100 block-link text-decoration-none" data-bs-toggle="collapse" data-bs-target="#s1" href="#s1" role="button" aria-expanded="false" aria-controls="s1" onClick={toggleDisplayState}>
               <span className="d-block ms-md-2">Color</span>
