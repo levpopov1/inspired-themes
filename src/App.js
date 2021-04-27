@@ -1,8 +1,20 @@
 import { useState } from 'react';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
+// Router Views
+import Home from './views/Home';
+import Gallery from './views/Gallery';
+import Overview from './views/Overview';
+import Color from './views/Color';
+import Typography from './views/Typography';
+import Layout from './views/Layout';
+
+// Components
+import Navbar2 from './components/Navbar2';
+
+// Data
 import data from './data/test-dataset.json';
-import NavBar from './components/NavBar';
-import Accordion from './components/Accordion';
+
 
 const initialTheme = {
   id: "1",
@@ -44,7 +56,7 @@ const initialTheme = {
 }
 
 const collections = data.gallery.collections;
-const API_URL = "https://api.themes.levpopov.dev/static/";
+// const API_URL = "https://api.themes.levpopov.dev/static/";
 
 function App() {
 
@@ -52,8 +64,31 @@ function App() {
 
   return (
     <div className="App">
-      <NavBar collections={collections} setTheme={setTheme}/>
-      <Accordion theme={theme} setTheme={setTheme} collections={collections}/>
+      {/* <NavBar collections={collections} setTheme={setTheme}/> */}
+      {/* <Accordion theme={theme} setTheme={setTheme} collections={collections}/> */}
+      <Router>
+        <Navbar2/>
+        <Switch>
+          <Route path="/gallery">
+            <Gallery />
+          </Route>
+          <Route path="/overview">
+            <Overview />
+          </Route>
+          <Route path="/color">
+            <Color />
+          </Route>
+          <Route path="/typography">
+            <Typography />
+          </Route>
+          <Route path="/layout">
+            <Layout />
+          </Route>
+          <Route path="/">
+            <Home />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
