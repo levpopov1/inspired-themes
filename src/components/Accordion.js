@@ -35,7 +35,7 @@ function Accordion({theme, collections, setTheme}) {
           <div className="section-content collapse width" id="s0" data-bs-parent="#vac">
             <div className="section-container d-flex flex-column justify-content-between" style={image}>
               <div className={`row my-auto justify-content-start text-${contrastColor}`}>
-                <div className="col-sm-12 col-lg-8 col-xl-8 col-xxl-6 col-xxxl-4 col-uhd-3 offset-lg-1 offset-xxl-1 offset-xxxl-2 offset-uhd-3">
+                <div className="col-sm-12 col-md-8 col-xl-8 col-xxl-6 col-xxxl-4 col-uhd-3 offset-md-2 offset-xxl-1 offset-xxxl-2 offset-uhd-3">
                   <h1 className="display-1 fw-bold">
                     {theme.name}
                   </h1>
@@ -51,7 +51,7 @@ function Accordion({theme, collections, setTheme}) {
                 </div>
               </div>
               <div className="row mb-5 justify-content-center">
-                <div className="col-sm-11 col-xxl-10 col-xxxl-8 col-uhd-6">
+                <div className="col-sm-11 col-md-8 col-xl-10 col-xxl-10 col-xxxl-8 col-uhd-6">
                   <MegaPalette theme={theme}/>
                 </div>
               </div>
