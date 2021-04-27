@@ -274,6 +274,14 @@ input.form-control{
 
 .megapalette{
   display: flex;
+
+  .col-12{
+    @media (max-width: 576px) {
+      &:not(:first-of-type){
+        margin-top: -10%;
+      }
+    }
+  }
 }
 
 .megapalette .palette-block{
@@ -286,6 +294,11 @@ input.form-control{
     content: "";
     display: block;
     padding-bottom: 100%;
+  }
+
+  @media (max-width: 576px) {
+    max-width: 100px;
+    margin-left: 0;
   }
 
 }
