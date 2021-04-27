@@ -1,11 +1,15 @@
+import { useHistory } from "react-router-dom";
 import Theme from "./Theme";
 
 function ThemeGallery({collections, setTheme}) {
+
+  let history = useHistory();
   
   const handleThemeChange = (id, collectionName) => {
     let currentCollection = collections.find(cl => cl.name === collectionName);
     let nextTheme = currentCollection.themes.find(item => item.id === id);
     setTheme(nextTheme);
+    history.push("/overview");
   }
 
   return (
