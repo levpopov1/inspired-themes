@@ -1,9 +1,9 @@
 import LikeButton from './LikeButton';
 import MiniPalette from './MiniPalette';
 
-function Theme({theme, setTheme}) {
+function Theme({theme, handleThemeChange}) {
   return (
-    <div className="col-sm-6 col-lg-4 col-xl-4 col-uhd-2">
+    <div className="col">
       <div className="card gallery-card mb-4">
         <img src={theme.image} className="card-img-top" alt={"Image of " + theme.name}/>
         <div className="card-body">
@@ -29,7 +29,7 @@ function Theme({theme, setTheme}) {
           </p>
         </div>
         <div className="card-body d-grid ">
-          <button type="button" className="btn btn-primary" onClick={() => setTheme(theme.id, theme.collection)}>Set Theme</button>
+          <button type="button" className="btn btn-primary" onClick={() => handleThemeChange(theme.id, theme.collection)}>Set Theme</button>
         </div>
         <div className="card-footer d-flex justify-content-between align-items-center">
           <small className="text-muted">
