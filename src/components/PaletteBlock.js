@@ -9,11 +9,11 @@ function PaletteBlock({color}) {
               { color.hex || "undefined" }
           </code>
         </p>
-        <p className="card-text text-center">
+        {/* <p className="card-text text-center d-none d-xl-block">
           <code className="code css d-block">
               { color.rgb || "undefined" }
           </code>
-        </p>
+        </p> */}
         {/* <p className="card-text">
           <code className="code css d-block">
             { color.hsl }
