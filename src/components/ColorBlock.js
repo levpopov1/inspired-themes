@@ -46,7 +46,7 @@ function ColorBlock({color, rowColor}) {
   }
 
   return (
-    <div className="col-md-6 col-xl-3 col-xxxl-2 mb-4">
+    <div className="col-md-6 col-xl-3 col-xxxl-3 mb-4">
       <div className="card colorPair h-100 mb-2" style={{ backgroundColor: rowColor.hex, color: color.hex }}>
         <div className="card-body">
           <h1 className="display-2 fw-bold">{contrastRatio}</h1>
