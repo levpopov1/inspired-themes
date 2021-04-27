@@ -3,7 +3,7 @@ import InternalThemeSwither from './InternalThemeSwitcher';
 
 function NavBar2() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark">
+    <nav className="navbar navbar-expand-lg navbar-adaptive mb-3 sticky-top">
       <div className="container-fluid">
         <NavLink to="/" className="navbar-brand">
           <i className="bi bi-palette2 me-2"/>
