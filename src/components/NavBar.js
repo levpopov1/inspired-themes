@@ -1,5 +1,7 @@
 import InternalThemeSwither from './InternalThemeSwitcher';
 import ThemesDropdown from './ThemesDropdown';
+import { openSection } from '../lib/handleVacCollapse';
+
 
 function NavBar({collections, setTheme}) {
   return (
@@ -25,7 +27,7 @@ function NavBar({collections, setTheme}) {
               <div className="nav-link">
                 <InternalThemeSwither/>
               </div>
-              <button className="btn nav-link" data-bs-toggle="collapse" data-bs-target="#s00" aria-expanded="false" aria-controls="s00">
+              <button className="btn nav-link" onClick={() => openSection("gallery")}>
                 Theme Gallery
               </button>
               {/* <div className="dropdown pos-initial">
