@@ -76,7 +76,7 @@ function App() {
             <Overview theme={theme}/>
           </Route>
           <Route path="/color">
-            <Color />
+            <Color theme={theme}/>
           </Route>
           <Route path="/typography">
             <Typography />

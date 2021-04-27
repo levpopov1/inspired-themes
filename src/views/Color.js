@@ -1,7 +1,11 @@
-function Color() {
+import ColorSection from '../components/ColorSection';
+
+function Color({theme}) {
   return (
     <div className="router-view-color">
-      <h1 className="title">Color</h1>
+      <div className="container-fluid">
+        <ColorSection theme={theme}/>
+      </div>
     </div>
   );
 }
