@@ -1,7 +1,11 @@
-function Typography() {
+import TypographySection from '../components/TypographySection';
+
+function Typography({theme}) {
   return (
     <div className="router-view-typography">
-      <h1 className="title">Typography</h1>
+      <div className="container-fluid">
+        <TypographySection theme={theme}/>
+      </div>
     </div>
   );
 }

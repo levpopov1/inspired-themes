@@ -79,7 +79,7 @@ function App() {
             <Color theme={theme}/>
           </Route>
           <Route path="/typography">
-            <Typography />
+            <Typography theme={theme}/>
           </Route>
           <Route path="/layout">
             <Layout />

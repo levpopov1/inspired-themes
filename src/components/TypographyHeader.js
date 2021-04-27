@@ -2,12 +2,10 @@ function TypographyHeader({font, setFont, showInfo, setShowInfo}){
   return(
     <div className="row">
       <div className="col-sm-4 my-3">
-        <div className="p-3">
-          <h1 className="fs-1">Fonts</h1>
-          <p className="text">
-            Use the switch on the right to preview how different fonts would look with your theme. 
-          </p>
-        </div>
+        <h1 className="fs-1">Fonts</h1>
+        <p className="text">
+          Use the switch on the right to preview how different fonts would look with your theme. 
+        </p>
       </div>
       <div className="col-sm-8 my-3 d-flex justify-content-end align-items-center">
         <button type="button" className={`btn btn-outline me-2 ${showInfo ? "active" : ""}`} onClick={() => setShowInfo(!showInfo)}>
