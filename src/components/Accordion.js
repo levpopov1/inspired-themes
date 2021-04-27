@@ -27,7 +27,7 @@ function Accordion({theme, collections, setTheme}) {
           </div>
         </div>
         <div className="d-flex flex-row vac-section" id="overview">
-          <div className="section-title d-none d-md-block">
+          <div className="section-title d-none d-xl-block">
             <a className="display-5 h-100 block-link text-decoration-none" data-bs-toggle="collapse" data-bs-target="#s0" href="#s0" role="button" aria-expanded="false" aria-controls="s0" onClick={toggleDisplayState}>
               <span className="d-inline-block ms-md-2">Overview</span>
             </a>
@@ -59,7 +59,7 @@ function Accordion({theme, collections, setTheme}) {
           </div>
         </div>
         <div className="d-flex flex-row vac-section" id="color">
-          <div className="section-title d-none d-md-block">
+          <div className="section-title d-none d-xl-block">
             <a className="display-5 h-100 block-link text-decoration-none" data-bs-toggle="collapse" data-bs-target="#s1" href="#s1" role="button" aria-expanded="false" aria-controls="s1" onClick={toggleDisplayState}>
               <span className="d-block ms-md-2">Color</span>
             </a>
@@ -69,7 +69,7 @@ function Accordion({theme, collections, setTheme}) {
           </div>
         </div>
         <div className="d-flex flex-row vac-section" id="typography">
-          <div className="section-title d-none d-md-block">
+          <div className="section-title d-none d-xl-block">
             <a className="display-5 h-100 block-link text-decoration-none" data-bs-toggle="collapse" data-bs-target="#s2" href="#s2" role="button" aria-expanded="false" aria-controls="s2" onClick={toggleDisplayState}>
               <span className="d-block ms-md-2">Typography</span>
             </a>
@@ -79,7 +79,7 @@ function Accordion({theme, collections, setTheme}) {
           </div>
         </div>
         <div className="d-flex flex-row vac-section" id="layout">
-          <div className="section-title d-none d-md-block">
+          <div className="section-title d-none d-xl-block">
             <a className="display-5 h-100 block-link text-decoration-none" data-bs-toggle="collapse" data-bs-target="#s3" href="#s3" role="button" aria-expanded="false" aria-controls="s3" onClick={toggleDisplayState}>
               <span className="d-block ms-md-2">Layout</span>
             </a>
