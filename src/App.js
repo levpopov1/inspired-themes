@@ -73,7 +73,7 @@ function App() {
             <Gallery collections={collections} setTheme={setTheme}/>
           </Route>
           <Route path="/overview">
-            <Overview />
+            <Overview theme={theme}/>
           </Route>
           <Route path="/color">
             <Color />
