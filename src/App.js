@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 // Router Views
 import Home from './views/Home';
@@ -70,7 +70,7 @@ function App() {
         <Navbar2/>
         <Switch>
           <Route path="/gallery">
-            <Gallery />
+            <Gallery collections={collections} setTheme={setTheme}/>
           </Route>
           <Route path="/overview">
             <Overview />
