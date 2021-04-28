@@ -1,5 +1,8 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+// Utils
+import makeAPIRequest from './lib/makeAPIRequest';
 
 // Router Views
 // import Home from './views/Home';
@@ -10,6 +13,7 @@ import Typography from './views/Typography';
 import Layout from './views/Layout';
 
 // Components
+import Error from './components/Error';
 import Navbar2 from './components/Navbar2';
 import NavbarMobile from './components/NavbarMobile';
 
@@ -56,17 +60,45 @@ const initialTheme = {
   }
 }
 
-const collections = data.gallery.collections;
-// const API_URL = "https://api.themes.levpopov.dev/static/";
+// const collections = data.gallery.collections;
 
 function App() {
 
   const [theme, setTheme] = useState(initialTheme);
+  const [collections, setCollections] = useState([]);
+  const [fetchingError, setFetchingError] = useState({isError: false, message: ""});
+
+  useEffect(() => {
+    const getThemeCollections = async () => {
+
+      setFetchingError({isError: false});
+
+      let response = await makeAPIRequest("/collections");
+
+      if(response.error){
+        return setFetchingError({isError: true, message: response.message});
+      }
+
+      setCollections(response.data);
+    }
+
+    getThemeCollections();
+
+    return () => {
+      setCollections([]);
+    }
+  }, []);
+
 
   return (
     <div className="App">
       <Router>
         <Navbar2/>
+        {
+          fetchingError.isError
+          ? <Error message={fetchingError.message} type={"danger"}/>
+          : null
+        }
         <Switch>
           <Route path="/gallery">
             <Gallery collections={collections} setTheme={setTheme}/>
