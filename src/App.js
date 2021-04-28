@@ -25,7 +25,7 @@ const initialTheme = {
   id: "1",
   name: "Sakura",
   collection: "Tokyo Series",
-  image: "/img/sakura_pastel.jpg",
+  image: "https://api.themes.levpopov.dev/static/img/sakura_pastel.jpg",
   colors: {
     "primary": {
       "name": "Primary",
