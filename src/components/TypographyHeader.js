@@ -7,8 +7,8 @@ function TypographyHeader({font, setFont, showInfo, setShowInfo}){
           Use the switch on the right to preview how different fonts would look with your theme. 
         </p>
       </div>
-      <div className="col-sm-8 my-3 d-flex justify-content-end align-items-center">
-        <button type="button" className={`btn btn-outline me-2 ${showInfo ? "active" : ""}`} onClick={() => setShowInfo(!showInfo)}>
+      <div className="col-sm-8 my-3 d-flex flex-column flex-md-row justify-content-end align-items-center">
+        <button type="button" className={`btn btn-outline me-2 mb-3 mb-md-0 ${showInfo ? "active" : ""}`} onClick={() => setShowInfo(!showInfo)}>
           <i className="bi-info-circle"></i>
           <span className="ms-2">{showInfo ? "Hide" : "Show"} Info</span>
         </button>
