@@ -6,7 +6,7 @@ function Error({message, type}) {
 
   return (
     <div className="d-flex justify-content-center">
-      <div className="col-sm-4">
+      <div className="col-sm-8 col-md-6 col-lg-4">
         <div className={`card text-dark bg-${type ? type : "light"} my-3 ${visibility ? "d-block" : "d-none"}`}>
           <div className="card-body d-flex flex-row justify-content-between">
             <p className="card-text mb-0">

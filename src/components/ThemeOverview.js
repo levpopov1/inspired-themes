@@ -7,8 +7,8 @@ function ThemeOverview({theme}) {
   const [contrastColor, setContrastColor] = useState("dark");
 
   useEffect(() => {
-    setContrastColor(getContrast(theme.colors.highlight.hex));
-  }, [theme.colors.highlight.hex]);
+    setContrastColor(getContrast(theme.colors.primary.hex));
+  }, [theme.colors.primary.hex]);
 
   return (
     <>

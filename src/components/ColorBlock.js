@@ -41,7 +41,8 @@ function ColorBlock({color, rowColor}) {
     Only use this for fonts larger than 24px or large block elements.`;
   }
   else{
-    advice = `${color.name} is almost invisible on a ${rowColor.name} color background. 
+    advice = `${color.name} is almost invisible on a ${rowColor.name} color background, 
+    especially for people with visual impairments. 
     Do not use this pairing.`;
   }
 
