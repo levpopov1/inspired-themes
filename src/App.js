@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 // Router Views
-import Home from './views/Home';
+// import Home from './views/Home';
 import Gallery from './views/Gallery';
 import Overview from './views/Overview';
 import Color from './views/Color';
@@ -64,8 +64,6 @@ function App() {
 
   return (
     <div className="App">
-      {/* <NavBar collections={collections} setTheme={setTheme}/> */}
-      {/* <Accordion theme={theme} setTheme={setTheme} collections={collections}/> */}
       <Router>
         <Navbar2/>
         <Switch>
@@ -85,7 +83,7 @@ function App() {
             <Layout />
           </Route>
           <Route path="/">
-            <Home />
+            <Gallery collections={collections} setTheme={setTheme}/>
           </Route>
         </Switch>
       </Router>
