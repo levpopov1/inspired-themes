@@ -18,7 +18,7 @@ import Navbar2 from './components/Navbar2';
 import NavbarMobile from './components/NavbarMobile';
 
 // Data
-import data from './data/test-dataset.json';
+// import data from './data/test-dataset.json';
 
 
 const initialTheme = {

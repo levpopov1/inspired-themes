@@ -7,7 +7,7 @@ function ThemeGallery({collections, setTheme}) {
   
   const handleThemeChange = (id, collectionName) => {
     let currentCollection = collections.find(cl => cl.name === collectionName);
-    let nextTheme = currentCollection.themes.find(item => item.id === id);
+    let nextTheme = currentCollection.themes.find(item => item._id === id);
     setTheme(nextTheme);
     history.push("/overview");
   }
@@ -16,7 +16,7 @@ function ThemeGallery({collections, setTheme}) {
     <div className="row">
       {collections.map(collection =>
         collection.themes.map(theme => 
-          <Theme theme={theme} handleThemeChange={handleThemeChange} key={theme.id}/>
+          <Theme theme={theme} handleThemeChange={handleThemeChange} key={theme._id}/>
         )
       )}
     </div>

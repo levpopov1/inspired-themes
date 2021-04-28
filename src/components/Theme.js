@@ -29,7 +29,7 @@ function Theme({theme, handleThemeChange}) {
           </p>
         </div>
         <div className="card-body d-grid ">
-          <button type="button" className="btn btn-primary" onClick={() => handleThemeChange(theme.id, theme.collection)}>Set Theme</button>
+          <button type="button" className="btn btn-primary" onClick={() => handleThemeChange(theme._id, theme.collectionName)}>Set Theme</button>
         </div>
         <div className="card-footer d-flex justify-content-between align-items-center">
           <small className="text-muted">
