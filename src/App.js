@@ -11,6 +11,7 @@ import Layout from './views/Layout';
 
 // Components
 import Navbar2 from './components/Navbar2';
+import NavbarMobile from './components/NavbarMobile';
 
 // Data
 import data from './data/test-dataset.json';
@@ -86,6 +87,7 @@ function App() {
             <Gallery collections={collections} setTheme={setTheme}/>
           </Route>
         </Switch>
+        <NavbarMobile/>
       </Router>
     </div>
   );
