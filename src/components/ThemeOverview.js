@@ -20,7 +20,7 @@ function ThemeOverview({theme}) {
         <p className="lead fs-1">
           {theme.collection}
         </p>
-        <p className="text fs-4">
+        <p className="text fs-5">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. 
           Enim dolore, eos est odio ipsum omnis? 
           Ab exercitationem beatae delectus, est inventore deserunt ullam sunt ratione officiis, 
