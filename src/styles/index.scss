@@ -524,3 +524,8 @@ button.nav-link:focus{
   backdrop-filter: blur(8px);
   border-radius: 8px;
 }
+
+.modal-content{
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
