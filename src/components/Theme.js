@@ -8,7 +8,7 @@ function Theme({theme, handleThemeChange}) {
         <img src={theme.image} className="card-img-top" alt={"Image of " + theme.name}/>
         <div className="card-body">
           <h6 className="card-title text-muted d-block">
-            {theme.collection}
+            {theme.collectionName}
           </h6>
           <div className="d-flex flex-row justify-content-between align-items-center">
             <h4 className="card-title text-wrap">

@@ -40,7 +40,7 @@ function Accordion({theme, collections, setTheme}) {
                     {theme.name}
                   </h1>
                   <p className="lead fs-1">
-                    {theme.collection}
+                    {theme.collectionName}
                   </p>
                   <p className="text fs-4">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. 
