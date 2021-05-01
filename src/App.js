@@ -25,8 +25,9 @@ import ExportTheme from './components/ExportTheme';
 const initialTheme = {
   id: "1",
   name: "Default",
-  collection: "Tokyo Series",
+  collectionName: "Example",
   image: "https://api.themes.levpopov.dev/static/img/default.jpg",
+  description: "The is the default theme for the site itself. The colors you see here are used throughout the site's pages and controls. Choose a different theme from the gallery to get started.",
   colors: {
     "primary": {
       "name": "Primary",

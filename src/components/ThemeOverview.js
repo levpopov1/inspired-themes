@@ -10,6 +10,8 @@ function ThemeOverview({theme}) {
     setContrastColor(getContrast(theme.colors.primary.hex));
   }, [theme.colors.primary.hex]);
 
+  const lorem = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim dolore, eos est odio ipsum omnis? Ab exercitationem beatae delectus, est inventore deserunt ullam sunt ratione officiis, doloribus sint, quisquam modi."
+
   return (
     <>
     <div className={`row my-auto justify-content-start text-${contrastColor}`}>
@@ -21,10 +23,7 @@ function ThemeOverview({theme}) {
           {theme.collectionName}
         </p>
         <p className="text fs-5">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Enim dolore, eos est odio ipsum omnis? 
-          Ab exercitationem beatae delectus, est inventore deserunt ullam sunt ratione officiis, 
-          doloribus sint, quisquam modi.
+          {theme.description || lorem}
         </p>
       </div>
     </div>
