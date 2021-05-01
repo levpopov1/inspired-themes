@@ -6,19 +6,32 @@ const closeMenu = () => {
   navCollapse.classList.remove("show");
 }
 
-function NavBar2() {
+function NavBar2({theme}) {
   return (
     <nav className="navbar navbar-expand-md navbar-adaptive navbar-dark sticky-top">
       <div className="container-fluid">
-        <NavLink to="/" className="navbar-brand text-adaptive ms-2">
+        <NavLink to="/" className="navbar-brand text-adaptive mx-2">
           <i className="bi bi-palette2 me-2"/>
-          Inspired Themes
+          {
+            theme.name === "Default"
+            ? <span className="d-inline d-lg-none">Inspired Themes</span>
+            : <span className="d-inline d-lg-none">{theme.name}</span>
+          }
+          <span className="d-none d-lg-inline">Inspired Themes</span>
         </NavLink>
+        <div className="d-none d-lg-block">
+          <span className="navbar-text">
+            <i className="bi bi-dot"></i>
+          </span>
+          <span className="navbar-text ms-2">
+            {theme.name}
+          </span>
+        </div>
         <button className="navbar-toggler text-adaptive collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <i className="bi bi-grid-fill"></i>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav ms-auto">
+          <ul className="navbar-nav ms-auto align-items-md-center">
             <li className="nav-item">
               <NavLink to="/gallery" className="nav-link" onClick={closeMenu}>
                 Gallery
@@ -46,6 +59,11 @@ function NavBar2() {
             </li>
             <li className="nav-link">
               <InternalThemeSwither/>
+            </li>
+            <li className="nav-item">
+              <button className="btn btn-sm btn-outline">
+                Export Theme
+              </button>
             </li>
           </ul>
         </div>
