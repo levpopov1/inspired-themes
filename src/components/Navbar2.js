@@ -61,7 +61,7 @@ function NavBar2({theme}) {
               <InternalThemeSwither/>
             </li>
             <li className="nav-item">
-              <button className="btn btn-sm btn-outline">
+              <button className="btn btn-sm btn-outline" data-bs-toggle="modal" data-bs-target="#exportThemeModal">
                 Export Theme
               </button>
             </li>
