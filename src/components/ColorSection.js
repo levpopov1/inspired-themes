@@ -1,10 +1,10 @@
-import ColorHeader from './ColorHeader';
+import WCAGinfo from './WCAGinfo';
 import ColorRow from './ColorRow';
 
 function ColorSection({theme}) {
   return (
     <>
-      <ColorHeader/>
+      <WCAGinfo/>
       {Object.keys(theme.colors).map((colorKey, index) =>  
         <ColorRow color={theme.colors[colorKey]} theme={theme} key={index}/>
       )}
