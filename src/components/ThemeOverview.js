@@ -13,7 +13,7 @@ function ThemeOverview({theme}) {
   return (
     <>
     <div className={`row my-auto justify-content-start text-${contrastColor}`}>
-      <div className="col-sm-12 col-md-8 col-xl-8 col-xxl-6 col-xxxl-4 col-uhd-3 offset-md-2 offset-xxl-1 offset-xxxl-3 offset-uhd-3">
+      <div className="col-sm-12 col-md-8 col-xl-8 col-xxl-6 col-xxxl-4 col-uhd-3 offset-md-2 offset-xxl-1 offset-xxxl-3 offset-uhd-3 mb-3">
         <h1 className="display-1 fw-bold">
           {theme.name}
         </h1>

@@ -8,7 +8,7 @@ function Overview({theme}) {
 
   return (
     <div className="router-view-overview">
-      <div className="container-fluid fullscreen d-flex flex-column justify-content-between" style={image}>
+      <div className="container-fluid fullscreen d-flex flex-column justify-content-between pt-3 pt-md-0" style={image}>
         <ThemeOverview theme={theme}/>
       </div>
     </div>
