@@ -51,7 +51,7 @@ function ColorBlock({color, rowColor}) {
       <div className="card colorPair h-100 mb-2" style={{ backgroundColor: rowColor.hex, color: color.hex }}>
         <div className="card-body">
           <h1 className="display-2 fw-bold">{contrastRatio}</h1>
-          <h3 className="card-title">{color.name}</h3>
+          <h3 className="card-title">{color.name} on {rowColor.name}</h3>
           <p className="card-text">
             {advice}
           </p>
