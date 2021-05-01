@@ -23,37 +23,37 @@ import NavbarMobile from './components/NavbarMobile';
 
 const initialTheme = {
   id: "1",
-  name: "Sakura",
+  name: "Default",
   collection: "Tokyo Series",
-  image: "https://api.themes.levpopov.dev/static/img/sakura_pastel.jpg",
+  image: "https://api.themes.levpopov.dev/static/img/default.jpg",
   colors: {
     "primary": {
       "name": "Primary",
-      "hex": "#e1caaa",
+      "hex": "#f6e6d9",
       "rgb": "rgb(0,0,239)",
       "hsl": "hsl(240,100%,20%)"
     },
     "secondary": {
       "name": "Secondary",
-      "hex": "#41373b",
+      "hex": "#252e3d",
       "rgb": "rgb(239,239,0)",
       "hsl": "hsl(240,100%,20%)"
     },
     "highlight": {
       "name": "Highlight",
-      "hex": "#8cc125",
+      "hex": "#f2dcb3",
       "rgb": "rgb(0,120,239)",
       "hsl": "hsl(240,100%,20%)"
     },
     "dark": {
       "name": "Dark",
-      "hex": "#211f20",
+      "hex": "#23282E",
       "rgb": "rgb(0,0,82)",
       "hsl": "hsl(240,100%,20%)"
     },
     "light": {
       "name": "Light",
-      "hex": "#ededed",
+      "hex": "#f4f4f4",
       "rgb": "rgb(239,239,255)",
       "hsl": "hsl(240,100%,20%)"
     }
@@ -93,7 +93,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar2/>
+        <Navbar2 theme={theme}/>
         {
           fetchingError.isError
           ? <Error message={fetchingError.message} type={"danger"}/>
