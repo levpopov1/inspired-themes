@@ -16,6 +16,7 @@ import Layout from './views/Layout';
 import Error from './components/Error';
 import Navbar2 from './components/Navbar2';
 import NavbarMobile from './components/NavbarMobile';
+import ExportTheme from './components/ExportTheme';
 
 // Data
 // import data from './data/test-dataset.json';
@@ -120,6 +121,7 @@ function App() {
           </Route>
         </Switch>
         <NavbarMobile/>
+        <ExportTheme theme={theme}/>
       </Router>
     </div>
   );
