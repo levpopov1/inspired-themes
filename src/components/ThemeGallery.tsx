@@ -2,7 +2,7 @@ import React from 'react';
 import { useHistory } from "react-router-dom";
 import Theme from "./Theme";
 
-function ThemeGallery({collections, setTheme}) {
+const ThemeGallery: React.FC = ({collections, setTheme}) => {
 
   let history = useHistory();
   

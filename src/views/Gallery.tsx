@@ -1,7 +1,7 @@
 import React from 'react';
 import ThemeGallery from "../components/ThemeGallery";
 
-function Gallery({collections, setTheme}) {
+const Gallery: React.FC = ({collections, setTheme}) => {
   return (
     <div className="router-view-gallery">
       <div className="container-fluid mt-3">

@@ -1,5 +1,6 @@
 import React from 'react';
-function TypographyHeader({font, setFont, showInfo, setShowInfo}){
+
+const TypographyHeader: React.FC = ({font, setFont, showInfo, setShowInfo}) => {
   return(
     <div className="row">
       <div className="col-sm-4 my-3">

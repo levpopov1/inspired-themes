@@ -1,5 +1,6 @@
 import React from 'react';
-function MiniPalette({colors}) {
+
+const MiniPalette: React.FC = ({colors}) => {
   return (
     <div className="minipalette">
       <div className="palette-block" style={{ backgroundColor: colors.primary.hex }}></div>

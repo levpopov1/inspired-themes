@@ -1,7 +1,7 @@
 import React from 'react';
 import TypographySection from '../components/TypographySection';
 
-function Typography({theme}) {
+const Typography: React.FC = ({theme}) => {
   return (
     <div className="router-view-typography">
       <div className="container-fluid">

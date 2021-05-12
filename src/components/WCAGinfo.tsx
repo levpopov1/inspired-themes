@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState, useRef } from 'react';
 
-function WCAGinfo() {
+const WCAGinfo: React.FC = () => {
 
   const [readMoreButtonText, setreadMoreButtonText] = useState("more");
   const overflowBox = useRef(null);

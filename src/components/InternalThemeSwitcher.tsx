@@ -28,8 +28,8 @@ const handleSwitch = (e) => {
   }
 }
 
-function InternalThemeSwither() {
 
+const InternalThemeSwither: React.FC = () => {
   return (
     <div className="themeSwither">
       <div className="form-check form-switch">

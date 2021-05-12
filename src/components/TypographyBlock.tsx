@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 
-function TypographyBlock({color, font, getContrast}) {
+const TypographyBlock: React.FC = ({color, font, getContrast}) => {
 
   const [contrastColor, setContrastColor] = useState("dark");
 

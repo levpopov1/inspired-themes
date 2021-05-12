@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 
-function LikeButton() {
+const LikeButton: React.FC = () => {
 
   const [likes, setLikes] = useState(0);
 

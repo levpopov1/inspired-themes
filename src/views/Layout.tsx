@@ -1,5 +1,6 @@
 import React from 'react';
-function Layout() {
+
+const Layout: React.FC = () => {
   return (
     <div className="router-view-layout">
       <div className="container-fluid">

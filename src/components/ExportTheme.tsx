@@ -1,5 +1,6 @@
 import React from 'react';
-function ExportTheme({theme}) {
+
+const ExportTheme: React.FC = ({theme}) => {
   return (
     <div className="modal fade" id="exportThemeModal" tabindex="-1" aria-labelledby="exportThemeModalLabel" aria-hidden="true">
       <div className="modal-dialog">

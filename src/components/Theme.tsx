@@ -2,7 +2,7 @@ import React from 'react';
 import LikeButton from './LikeButton';
 import MiniPalette from './MiniPalette';
 
-function Theme({theme, handleThemeChange}) {
+const Theme: React.FC = ({theme, handleThemeChange}) => {
   return (
     <div className="col">
       <div className="card gallery-card mb-4">

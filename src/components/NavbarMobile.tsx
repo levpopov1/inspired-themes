@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-function NavbarMobile() {
+const NavbarMobile: React.FC = () => {
   return (
     <nav className="navbar navbar-adaptive navbar-mobile navbar-dark fixed-bottom d-block d-md-none">
       <ul className="navbar-nav w-100 flex-row justify-content-around">

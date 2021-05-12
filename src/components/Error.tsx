@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 
-function Error({message, type}) {
+const Error: React.FC = ({message, type}) => {
 
   const [visibility, setVisibility] = useState(true);
 

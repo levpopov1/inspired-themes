@@ -1,5 +1,6 @@
 import React from 'react';
-function TypographyInfo({showInfo}) {
+
+const TypographyInfo: React.FC = ({showInfo}) => {
   return (
     <div className={`col mb-3 ${showInfo ? "d-block" : "d-none"}`}>
       <div className="card card-outline h-100 p-4">

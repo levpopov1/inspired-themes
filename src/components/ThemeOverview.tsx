@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import getContrast from '../lib/getContrast';
 import MegaPalette from './MegaPalette';
 
-function ThemeOverview({theme}) {
+const ThemeOverview: React.FC = ({theme}) => {
 
   const [contrastColor, setContrastColor] = useState("dark");
 
