@@ -1,7 +1,8 @@
 import React from 'react';
+import { iColor } from '../interfaces';
 
 interface Props {
-  color: object
+  color: iColor
 }
 
 const PaletteBlock: React.FC<Props> = ({color}) => {

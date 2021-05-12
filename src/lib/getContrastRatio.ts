@@ -1,8 +1,8 @@
-export default function getContrastRatio(color1: string, color2: string){
+export default function getContrastRatio(color1: string, color2: string): number {
 
   // check we have both colors
   if(!color1 || !color1){
-    return null;
+    return 0;
   }
 
   // If a leading # is provided, remove it

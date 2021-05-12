@@ -1,9 +1,10 @@
 import React from 'react';
+import { iTheme } from '../interfaces';
 import TypographyBlock from './TypographyBlock';
 import TypographyInfo from './TypographyInfo';
 
 interface Props {
-  theme: object,
+  theme: iTheme,
   font: string,
   getContrast: (color: string) => string,
   showInfo: boolean

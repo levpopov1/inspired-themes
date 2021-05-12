@@ -3,9 +3,10 @@ import { useState } from 'react';
 import TypographyHeader from './TypographyHeader';
 import TypographyRow from './TypographyRow';
 import getContrast from '../lib/getContrast';
+import { iTheme } from '../interfaces';
 
 interface Props {
-  theme: object
+  theme: iTheme
 }
 
 const TypographySection: React.FC<Props> = ({theme}) => {

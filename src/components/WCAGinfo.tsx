@@ -4,15 +4,17 @@ import { useState, useRef } from 'react';
 const WCAGinfo: React.FC = () => {
 
   const [readMoreButtonText, setreadMoreButtonText] = useState("more");
-  const overflowBox = useRef(null);
+  const overflowBox = useRef<HTMLDivElement>(null);
 
   const showText = () => {
-    overflowBox.current.classList.toggle("show");
-    if(readMoreButtonText === "more"){
-      setreadMoreButtonText("less");
-    }
-    else{
-      setreadMoreButtonText("more");
+    if(overflowBox.current){
+      overflowBox.current.classList.toggle("show");
+      if(readMoreButtonText === "more"){
+        setreadMoreButtonText("less");
+      }
+      else{
+        setreadMoreButtonText("more");
+      }
     }
   }
 

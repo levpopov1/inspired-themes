@@ -1,8 +1,9 @@
 import React from 'react';
 import TypographySection from '../components/TypographySection';
+import { iTheme } from '../interfaces';
 
 interface Props {
-  theme: object
+  theme: iTheme
 }
 
 const Typography: React.FC<Props> = ({theme}) => {

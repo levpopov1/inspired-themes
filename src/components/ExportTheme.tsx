@@ -1,12 +1,13 @@
 import React from 'react';
+import { iTheme } from '../interfaces';
 
 interface Props {
-  theme: object
+  theme: iTheme
 }
 
 const ExportTheme: React.FC<Props> = ({theme}) => {
   return (
-    <div className="modal fade" id="exportThemeModal" tabindex="-1" aria-labelledby="exportThemeModalLabel" aria-hidden="true">
+    <div className="modal fade" id="exportThemeModal" tabIndex={-1} aria-labelledby="exportThemeModalLabel" aria-hidden="true">
       <div className="modal-dialog">
         <div className="modal-content">
           <div className="modal-header">

@@ -5,7 +5,7 @@ const getInternalThemeInitialState = () => {
   return (userTheme && userTheme === "light") ? true : false;
 }
 
-const rememberInternalThemeSetting = (theme) => {
+const rememberInternalThemeSetting = (theme: string) => {
   localStorage.setItem("internalTheme", theme);
 }
 
@@ -17,7 +17,7 @@ const setLightTheme = () => {
   document.body.classList.replace("dark", "light");
 }
 
-const handleSwitch = (e) => {
+const handleSwitch = (e: React.ChangeEvent<HTMLInputElement>) => {
   if(e.target.checked){
     setLightTheme();
     rememberInternalThemeSetting("light");

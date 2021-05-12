@@ -1,11 +1,12 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
+import { iTheme } from '../interfaces';
 import getContrast from '../lib/getContrast';
 import MegaPalette from './MegaPalette';
 
 
 interface Props {
-  theme: object
+  theme: iTheme
 }
 
 const ThemeOverview: React.FC<Props> = ({theme}) => {

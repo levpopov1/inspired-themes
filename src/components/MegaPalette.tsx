@@ -1,8 +1,9 @@
 import React from 'react';
+import { iTheme } from '../interfaces';
 import PaletteBlock from "./PaletteBlock";
 
 interface Props {
-  theme: object
+  theme: iTheme
 }
 
 const MegaPalette: React.FC<Props> = ({theme}) => {

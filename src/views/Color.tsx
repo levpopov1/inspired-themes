@@ -1,8 +1,9 @@
 import React from 'react';
 import ColorSection from '../components/ColorSection';
+import { iTheme } from '../interfaces';
 
 interface Props {
-  theme: object
+  theme: iTheme
 }
 
 const Color: React.FC<Props> = ({theme}) => {

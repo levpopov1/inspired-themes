@@ -1,8 +1,9 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
+import { iColor } from '../interfaces';
 
 interface Props {
-  color: object,
+  color: iColor,
   font: string,
   getContrast: (color: string) => string
 }

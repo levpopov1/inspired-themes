@@ -1,9 +1,10 @@
 import React, { SetStateAction } from 'react';
+import { iTheme } from '../interfaces';
 import LikeButton from './LikeButton';
 import MiniPalette from './MiniPalette';
 
 interface Props {
-  theme: object,
+  theme: iTheme,
   handleThemeChange: (id: string, collectionName: string) => void
 }
 

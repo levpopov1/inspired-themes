@@ -1,14 +1,15 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { iTheme } from '../interfaces';
 import InternalThemeSwither from './InternalThemeSwitcher';
 
 const closeMenu = () => {
   let navCollapse = document.querySelector(".navbar-collapse");
-  navCollapse.classList.remove("show");
+  navCollapse!.classList.remove("show");
 }
 
 interface Props {
-  theme: object
+  theme: iTheme
 }
 
 const NavBar2: React.FC<Props> = ({theme}) => {

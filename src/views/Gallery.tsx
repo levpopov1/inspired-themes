@@ -1,9 +1,10 @@
 import React, { SetStateAction } from 'react';
 import ThemeGallery from "../components/ThemeGallery";
+import { iCollection, iTheme } from '../interfaces';
 
 interface Props {
-  collections: Array<Object>,
-  setTheme: React.Dispatch<SetStateAction<string>>
+  collections: Array<iCollection>,
+  setTheme: React.Dispatch<SetStateAction<iTheme>>
 }
 
 const Gallery: React.FC<Props> = ({collections, setTheme}) => {

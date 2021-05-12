@@ -1,8 +1,9 @@
 import React from 'react';
 import ThemeOverview from "../components/ThemeOverview";
+import { iTheme } from '../interfaces';
 
 interface Props {
-  theme: object
+  theme: iTheme
 }
 
 const Overview: React.FC<Props> = ({theme}) => {

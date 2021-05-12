@@ -5,7 +5,7 @@ const LikeButton: React.FC = () => {
 
   const [likes, setLikes] = useState(0);
 
-  const handleLike = (e) => {
+  const handleLike = (e: any) => {
     let button = e.currentTarget;
     button.firstChild.classList.remove("bi-heart");
     button.firstChild.classList.add("bi-heart-fill", "active");

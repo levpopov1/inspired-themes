@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 
 interface Props {
-  message: string,
+  message: string | null,
   type: string
 }
 

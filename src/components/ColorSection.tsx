@@ -1,9 +1,10 @@
 import React from 'react';
 import WCAGinfo from './WCAGinfo';
 import ColorRow from './ColorRow';
+import { iTheme } from '../interfaces';
 
 interface Props {
-  theme: object
+  theme: iTheme
 }
 
 const ColorSection: React.FC<Props> = ({theme}) => {

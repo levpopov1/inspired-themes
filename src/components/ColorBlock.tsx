@@ -1,10 +1,11 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
+import { iColor } from '../interfaces';
 import getContrastRatio from '../lib/getContrastRatio';
 
 interface Props {
-  color: object,
-  rowColor: object
+  color: iColor,
+  rowColor: iColor
 }
 
 const ColorBlock: React.FC<Props> = ({color, rowColor}) => {

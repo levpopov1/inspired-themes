@@ -1,9 +1,10 @@
 import React from 'react';
+import { iColor, iTheme } from '../interfaces';
 import ColorBlock from './ColorBlock';
 
 interface Props {
-  color: object,
-  theme: object
+  color: iColor,
+  theme: iTheme
 }
 
 const ColorRow: React.FC<Props> = ({color, theme}) => {

@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { iCollection, iTheme, iFetchingError } from './interfaces/index';
 
 // Utils
 import makeAPIRequest from './lib/makeAPIRequest';
@@ -24,7 +25,7 @@ import ExportTheme from './components/ExportTheme';
 
 
 const initialTheme = {
-  id: "1",
+  _id: "1",
   name: "Default",
   collectionName: "Example",
   image: "https://api.themes.levpopov.dev/static/img/default.jpg",
@@ -67,9 +68,9 @@ const initialTheme = {
 
 const App: React.FC = () => {
 
-  const [theme, setTheme] = useState(initialTheme);
-  const [collections, setCollections] = useState([]);
-  const [fetchingError, setFetchingError] = useState<{isError: boolean, message: string | null}>({isError: false, message: ""});
+  const [theme, setTheme] = useState<iTheme>(initialTheme);
+  const [collections, setCollections] = useState<iCollection[]>([]);
+  const [fetchingError, setFetchingError] = useState<iFetchingError>({isError: false, message: ""});
 
   useEffect(() => {
     const getThemeCollections = async () => {
