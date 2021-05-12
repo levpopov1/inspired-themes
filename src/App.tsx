@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -64,16 +65,16 @@ const initialTheme = {
 
 // const collections = data.gallery.collections;
 
-function App() {
+const App: React.FC = () => {
 
   const [theme, setTheme] = useState(initialTheme);
   const [collections, setCollections] = useState([]);
-  const [fetchingError, setFetchingError] = useState({isError: false, message: ""});
+  const [fetchingError, setFetchingError] = useState<{isError: boolean, message: string | null}>({isError: false, message: ""});
 
   useEffect(() => {
     const getThemeCollections = async () => {
 
-      setFetchingError({isError: false});
+      setFetchingError({isError: false, message: null});
 
       let response = await makeAPIRequest("/collections");
 
