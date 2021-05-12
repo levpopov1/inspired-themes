@@ -2,7 +2,11 @@ import React from 'react';
 import WCAGinfo from './WCAGinfo';
 import ColorRow from './ColorRow';
 
-const ColorSection: React.FC = ({theme}) => {
+interface Props {
+  theme: object
+}
+
+const ColorSection: React.FC<Props> = ({theme}) => {
   return (
     <>
       <WCAGinfo/>

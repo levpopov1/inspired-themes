@@ -1,6 +1,10 @@
 import React from 'react';
 
-const TypographyInfo: React.FC = ({showInfo}) => {
+interface Props {
+  showInfo: boolean
+}
+
+const TypographyInfo: React.FC<Props> = ({showInfo}) => {
   return (
     <div className={`col mb-3 ${showInfo ? "d-block" : "d-none"}`}>
       <div className="card card-outline h-100 p-4">

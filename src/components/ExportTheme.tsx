@@ -1,6 +1,10 @@
 import React from 'react';
 
-const ExportTheme: React.FC = ({theme}) => {
+interface Props {
+  theme: object
+}
+
+const ExportTheme: React.FC<Props> = ({theme}) => {
   return (
     <div className="modal fade" id="exportThemeModal" tabindex="-1" aria-labelledby="exportThemeModalLabel" aria-hidden="true">
       <div className="modal-dialog">

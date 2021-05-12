@@ -4,7 +4,11 @@ import TypographyHeader from './TypographyHeader';
 import TypographyRow from './TypographyRow';
 import getContrast from '../lib/getContrast';
 
-const TypographySection: React.FC = ({theme}) => {
+interface Props {
+  theme: object
+}
+
+const TypographySection: React.FC<Props> = ({theme}) => {
 
   const [font, setFont] = useState('sans-serif');
   const [showInfo, setShowInfo] = useState(false);

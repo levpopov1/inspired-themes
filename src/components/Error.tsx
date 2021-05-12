@@ -1,7 +1,12 @@
 import React from 'react';
 import { useState } from 'react';
 
-const Error: React.FC = ({message, type}) => {
+interface Props {
+  message: string,
+  type: string
+}
+
+const Error: React.FC<Props> = ({message, type}) => {
 
   const [visibility, setVisibility] = useState(true);
 

@@ -1,6 +1,14 @@
 import React from 'react';
+import { SetStateAction } from 'react';
 
-const TypographyHeader: React.FC = ({font, setFont, showInfo, setShowInfo}) => {
+interface Props {
+  font: string,
+  setFont: React.Dispatch<SetStateAction<string>>,
+  showInfo: boolean,
+  setShowInfo: React.Dispatch<SetStateAction<boolean>>
+}
+
+const TypographyHeader: React.FC<Props> = ({font, setFont, showInfo, setShowInfo}) => {
   return(
     <div className="row">
       <div className="col-sm-4 my-3">

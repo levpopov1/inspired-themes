@@ -1,7 +1,13 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 
-const TypographyBlock: React.FC = ({color, font, getContrast}) => {
+interface Props {
+  color: object,
+  font: string,
+  getContrast: (color: string) => string
+}
+
+const TypographyBlock: React.FC<Props> = ({color, font, getContrast}) => {
 
   const [contrastColor, setContrastColor] = useState("dark");
 

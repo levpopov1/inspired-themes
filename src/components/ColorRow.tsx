@@ -1,7 +1,12 @@
 import React from 'react';
 import ColorBlock from './ColorBlock';
 
-const ColorRow: React.FC = ({color, theme}) => {
+interface Props {
+  color: object,
+  theme: object
+}
+
+const ColorRow: React.FC<Props> = ({color, theme}) => {
   return (
     <div className="row" >
       {Object.keys(theme.colors).map(function(colorKey, index){

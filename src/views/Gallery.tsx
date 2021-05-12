@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { SetStateAction } from 'react';
 import ThemeGallery from "../components/ThemeGallery";
 
-const Gallery: React.FC = ({collections, setTheme}) => {
+interface Props {
+  collections: Array<Object>,
+  setTheme: React.Dispatch<SetStateAction<string>>
+}
+
+const Gallery: React.FC<Props> = ({collections, setTheme}) => {
   return (
     <div className="router-view-gallery">
       <div className="container-fluid mt-3">

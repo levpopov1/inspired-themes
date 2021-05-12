@@ -7,7 +7,11 @@ const closeMenu = () => {
   navCollapse.classList.remove("show");
 }
 
-const NavBar2: React.FC = ({theme}) => {
+interface Props {
+  theme: object
+}
+
+const NavBar2: React.FC<Props> = ({theme}) => {
   return (
     <nav className="navbar navbar-expand-md navbar-adaptive navbar-dark sticky-top">
       <div className="container-fluid">

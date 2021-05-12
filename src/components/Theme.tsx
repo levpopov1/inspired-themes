@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { SetStateAction } from 'react';
 import LikeButton from './LikeButton';
 import MiniPalette from './MiniPalette';
 
-const Theme: React.FC = ({theme, handleThemeChange}) => {
+interface Props {
+  theme: object,
+  handleThemeChange: (id: string, collectionName: string) => void
+}
+
+const Theme: React.FC<Props> = ({theme, handleThemeChange}) => {
   return (
     <div className="col">
       <div className="card gallery-card mb-4">

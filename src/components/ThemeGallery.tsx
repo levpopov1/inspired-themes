@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { SetStateAction } from 'react';
 import { useHistory } from "react-router-dom";
 import Theme from "./Theme";
 
-const ThemeGallery: React.FC = ({collections, setTheme}) => {
+interface Props {
+  collections: Array<Object>,
+  setTheme: React.Dispatch<SetStateAction<object>>
+}
+
+const ThemeGallery: React.FC<Props> = ({collections, setTheme}) => {
 
   let history = useHistory();
   

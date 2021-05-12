@@ -1,7 +1,11 @@
 import React from 'react';
 import ThemeOverview from "../components/ThemeOverview";
 
-const Overview: React.FC = ({theme}) => {
+interface Props {
+  theme: object
+}
+
+const Overview: React.FC<Props> = ({theme}) => {
 
   let image = {
     background: 'url(' + theme.image + ') center / cover no-repeat'

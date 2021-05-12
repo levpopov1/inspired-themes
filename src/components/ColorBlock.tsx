@@ -2,7 +2,12 @@ import React from 'react';
 import { useState, useEffect } from 'react';
 import getContrastRatio from '../lib/getContrastRatio';
 
-const ColorBlock: React.FC = ({color, rowColor}) => {
+interface Props {
+  color: object,
+  rowColor: object
+}
+
+const ColorBlock: React.FC<Props> = ({color, rowColor}) => {
 
   const [wcagAA, setWcagAA] = useState(false);
   const [wcagAAA, setWcagAAA] = useState(false);

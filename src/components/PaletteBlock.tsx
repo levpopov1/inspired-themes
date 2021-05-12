@@ -1,6 +1,10 @@
 import React from 'react';
 
-const PaletteBlock: React.FC = ({color}) => {
+interface Props {
+  color: object
+}
+
+const PaletteBlock: React.FC<Props> = ({color}) => {
   return (
     <div className="col-12 col-md d-flex d-md-block flex-row flex-md-column align-items-center justify-content-between">
       <div className="palette-block mb-md-2" style={{ backgroundColor: color.hex }}></div>

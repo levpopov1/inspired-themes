@@ -1,7 +1,11 @@
 import React from 'react';
 import ColorSection from '../components/ColorSection';
 
-const Color: React.FC = ({theme}) => {
+interface Props {
+  theme: object
+}
+
+const Color: React.FC<Props> = ({theme}) => {
   return (
     <div className="router-view-color">
       <div className="container-fluid">
