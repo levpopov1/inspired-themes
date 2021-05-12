@@ -1,3 +1,5 @@
+import React from 'react';
+
 const getInternalThemeInitialState = () => {
   let userTheme = localStorage.getItem('internalTheme');
   return (userTheme && userTheme === "light") ? true : false;

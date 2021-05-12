@@ -1,3 +1,4 @@
+import React from 'react';
 function MiniPalette({colors}) {
   return (
     <div className="minipalette">

@@ -1,3 +1,4 @@
+import React from 'react';
 function PaletteBlock({color}) {
   return (
     <div className="col-12 col-md d-flex d-md-block flex-row flex-md-column align-items-center justify-content-between">

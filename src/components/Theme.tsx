@@ -1,3 +1,4 @@
+import React from 'react';
 import LikeButton from './LikeButton';
 import MiniPalette from './MiniPalette';
 

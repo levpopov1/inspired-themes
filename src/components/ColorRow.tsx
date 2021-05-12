@@ -1,3 +1,4 @@
+import React from 'react';
 import ColorBlock from './ColorBlock';
 
 function ColorRow({color, theme}) {

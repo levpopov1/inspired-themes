@@ -1,3 +1,4 @@
+import React from 'react';
 function ExportTheme({theme}) {
   return (
     <div className="modal fade" id="exportThemeModal" tabindex="-1" aria-labelledby="exportThemeModalLabel" aria-hidden="true">

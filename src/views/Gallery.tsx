@@ -1,3 +1,4 @@
+import React from 'react';
 import ThemeGallery from "../components/ThemeGallery";
 
 function Gallery({collections, setTheme}) {

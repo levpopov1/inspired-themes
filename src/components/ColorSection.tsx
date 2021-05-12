@@ -1,3 +1,4 @@
+import React from 'react';
 import WCAGinfo from './WCAGinfo';
 import ColorRow from './ColorRow';
 

@@ -1,3 +1,4 @@
+import React from 'react';
 function TypographyInfo({showInfo}) {
   return (
     <div className={`col mb-3 ${showInfo ? "d-block" : "d-none"}`}>

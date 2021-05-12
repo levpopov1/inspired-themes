@@ -1,3 +1,4 @@
+import React from 'react';
 import TypographySection from '../components/TypographySection';
 
 function Typography({theme}) {

@@ -1,3 +1,4 @@
+import React from 'react';
 function TypographyHeader({font, setFont, showInfo, setShowInfo}){
   return(
     <div className="row">

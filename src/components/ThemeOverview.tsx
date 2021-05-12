@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState, useEffect } from 'react';
 import getContrast from '../lib/getContrast';
 import MegaPalette from './MegaPalette';

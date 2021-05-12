@@ -1,3 +1,4 @@
+import React from 'react';
 import PaletteBlock from "./PaletteBlock";
 
 function MegaPalette({theme}) {

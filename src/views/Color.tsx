@@ -1,3 +1,4 @@
+import React from 'react';
 import ColorSection from '../components/ColorSection';
 
 function Color({theme}) {
