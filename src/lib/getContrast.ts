@@ -1,4 +1,4 @@
-export default function getContrast(hexcolor){
+export default function getContrast(hexcolor: string){
 
   // default to light if no color is provided
   if(!hexcolor){

@@ -1,4 +1,4 @@
-export default function getContrastRatio(color1, color2){
+export default function getContrastRatio(color1: string, color2: string){
 
   // check we have both colors
   if(!color1 || !color1){

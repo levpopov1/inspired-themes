@@ -1,4 +1,4 @@
-export default async function makeAPIRequest(endpoint, requestOptions={}){
+export default async function makeAPIRequest(endpoint: string, requestOptions: object){
 
   const API_URL = "https://api.themes.levpopov.dev";
 
