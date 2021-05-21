@@ -1,6 +1,10 @@
 @import "./extensions.scss";
 
 :root{
+  --bg-black: #111111;
+  --text-black: #111111;
+  --bg-white: #eeeeee;
+  --text-white: #eeeeee;
   --bg-dark: #23282E;
   --text-dark: #23282E;
   --bg-light: #f4f4f4;
@@ -24,6 +28,7 @@
 }
 
 .dark{
+  --bg-body: var(--bg-black);
   --bg-color: var(--bg-dark);
   --text-color: var(--text-light);
 
@@ -36,6 +41,7 @@
 }
 
 .light{
+  --bg-body: var(--bg-white);
   --bg-color: var(--bg-light);
   --text-color: var(--text-dark);
 
@@ -48,7 +54,7 @@
 }
 
 body{
-  background-color: var(--bg-color);
+  background-color: var(--bg-body);
   color: var(--text-color);
   transition: background 500ms ease-in-out, color 850ms ease-in-out;
 }
@@ -393,7 +399,7 @@ button.nav-link:focus{
 }
 
 .navbar-adaptive{
-  background-color: var(--bg-color);
+  background-color: var(--bg-body);
   color: var(--text-color);
 }
 
