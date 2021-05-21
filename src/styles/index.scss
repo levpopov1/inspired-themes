@@ -592,4 +592,16 @@ button.nav-link:focus{
 .modal-content{
   background-color: var(--bg-color);
   color: var(--text-color);
+
+  pre{
+    border-radius: 0.3rem;
+  }
+}
+
+.modal-header{
+  border-bottom: none;
+}
+
+.modal-footer{
+  border-top: none;
 }
