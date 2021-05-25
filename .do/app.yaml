@@ -1,0 +1,17 @@
+domains:
+- domain: themes.levpopov.dev
+  type: PRIMARY
+name: inspired-themes
+region: ams
+static_sites:
+- build_command: npm run build
+  environment_slug: node-js
+  github:
+    branch: master
+    deploy_on_push: true
+    repo: levpopov1/inspired-themes
+  name: inspired-themes
+  output_dir: build
+  routes:
+  - path: /
+  catchall_document: index.html

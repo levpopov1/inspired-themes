@@ -1,6 +1,10 @@
 @import "./extensions.scss";
 
 :root{
+  --bg-black: #1b1e23;
+  --text-black: #1b1e23;
+  --bg-white: #eeeeee;
+  --text-white: #eeeeee;
   --bg-dark: #23282E;
   --text-dark: #23282E;
   --bg-light: #f4f4f4;
@@ -12,6 +16,12 @@
 
   // RGB components of above colors
   // to use when transparency is needed (via grba)
+  --color-black--r: 27;
+  --color-black--g: 30;
+  --color-black--b: 35;
+  --color-white--r: 238;
+  --color-white--g: 238;
+  --color-white--b: 238;
   --color-dark--r: 35;
   --color-dark--g: 40;
   --color-dark--b: 46;
@@ -24,6 +34,7 @@
 }
 
 .dark{
+  --bg-body: var(--bg-black);
   --bg-color: var(--bg-dark);
   --text-color: var(--text-light);
 
@@ -33,9 +44,14 @@
   --text-color-r: var(--color-light--r);
   --text-color-g: var(--color-light--g);
   --text-color-b: var(--color-light--b);
+
+  --shade-color-r: var(--color-white--r);
+  --shade-color-g: var(--color-white--g);
+  --shade-color-b: var(--color-white--b);
 }
 
 .light{
+  --bg-body: var(--bg-white);
   --bg-color: var(--bg-light);
   --text-color: var(--text-dark);
 
@@ -45,10 +61,14 @@
   --text-color-r: var(--color-dark--r);
   --text-color-g: var(--color-dark--g);
   --text-color-b: var(--color-dark--b);
+
+  --shade-color-r: var(--color-white--r);
+  --shade-color-g: var(--color-white--g);
+  --shade-color-b: var(--color-white--b);
 }
 
 body{
-  background-color: var(--bg-color);
+  background-color: var(--bg-body);
   color: var(--text-color);
   transition: background 500ms ease-in-out, color 850ms ease-in-out;
 }
@@ -393,7 +413,7 @@ button.nav-link:focus{
 }
 
 .navbar-adaptive{
-  background-color: var(--bg-color);
+  background-color: var(--bg-body);
   color: var(--text-color);
 }
 
@@ -545,8 +565,8 @@ button.nav-link:focus{
   text-align: center; 
   margin: 0; 
   padding: 40px 0; 
-  background: -webkit-linear-gradient(top, rgba(var(--bg-color-r),var(--bg-color-g),var(--bg-color-b),0) 0%, var(--bg-color) 100%);
-  background: linear-gradient(to bottom, rgba(var(--bg-color-r),var(--bg-color-g),var(--bg-color-b),0) 0%, var(--bg-color) 100%);
+  background: -webkit-linear-gradient(top, rgba(var(--shade-color-r),var(--shade-color-g),var(--shade-color-b),0) 0%, var(--bg-body) 100%);
+  background: linear-gradient(to bottom, rgba(var(--shade-color-r),var(--shade-color-g),var(--shade-color-b),0) 0%, var(--bg-body) 100%);
 }
 
 .navbar-mobile{
@@ -572,4 +592,16 @@ button.nav-link:focus{
 .modal-content{
   background-color: var(--bg-color);
   color: var(--text-color);
+
+  pre{
+    border-radius: 0.3rem;
+  }
+}
+
+.modal-header{
+  border-bottom: none;
+}
+
+.modal-footer{
+  border-top: none;
 }

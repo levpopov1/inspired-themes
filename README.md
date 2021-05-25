@@ -9,17 +9,20 @@ export any theme as CSS and much more.
 
 
 ### Inspired By
-https://colorpalettes.net/
-https://www.colorhexa.com/
+https://colorpalettes.net/  
+https://www.colorhexa.com/  
 
 ### WCAG Contrast Ration Calculation
-https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-procedure
-https://www.w3.org/TR/WCAG20/#relativeluminancedef
-https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html
-https://webaim.org/resources/contrastchecker/
+https://www.w3.org/TR/WCAG20-TECHS/G17.html#G17-procedure  
+https://www.w3.org/TR/WCAG20/#relativeluminancedef  
+https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html  
+https://webaim.org/resources/contrastchecker/  
 
 ### A11y color
-https://color.review/
-https://colorable.jxnblk.com/00ff01/1b0066
-http://a11yrocks.com/colorPalette/
-https://css-tricks.com/programming-sass-to-create-accessible-color-combinations/
+https://color.review/  
+https://colorable.jxnblk.com/00ff01/1b0066  
+http://a11yrocks.com/colorPalette/  
+https://css-tricks.com/programming-sass-to-create-accessible-color-combinations/  
+
+### Syntax Highlighting
+https://react-syntax-highlighter.github.io/react-syntax-highlighter/demo/  
