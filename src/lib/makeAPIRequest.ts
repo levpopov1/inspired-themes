@@ -19,7 +19,7 @@ export default async function makeAPIRequest(endpoint: string, requestOptions = 
     let data = await response.json();
     return {error: null, message: null, data: data}
   } 
-  catch (error) {
+  catch (error: any) {
     return {error: true, message: error.message, data: null}
   }
 

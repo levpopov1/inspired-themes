@@ -1,5 +1,5 @@
 import React, { SetStateAction } from 'react';
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { iCollection, iTheme } from '../interfaces';
 import Theme from "./Theme";
 
@@ -10,7 +10,7 @@ interface Props {
 
 const ThemeGallery: React.FC<Props> = ({collections, setTheme}) => {
 
-  let history = useHistory();
+  let navigate = useNavigate();
   
   const handleThemeChange = (id: string, collectionName: string) => {
     let currentCollection = collections.find(cl => cl.name === collectionName);
@@ -18,7 +18,7 @@ const ThemeGallery: React.FC<Props> = ({collections, setTheme}) => {
       let nextTheme = currentCollection.themes.find(item => item._id === id);
       setTheme(nextTheme!);
     }
-    history.push("/overview");
+    navigate("/overview");
   }
 
   return (

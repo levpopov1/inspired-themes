@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { iCollection, iTheme, iFetchingError } from './interfaces/index';
 
 // Utils
@@ -103,26 +103,14 @@ const App: React.FC = () => {
           ? <Error message={fetchingError.message} type={"danger"}/>
           : null
         }
-        <Switch>
-          <Route path="/gallery">
-            <Gallery collections={collections} setTheme={setTheme}/>
-          </Route>
-          <Route path="/overview">
-            <Overview theme={theme}/>
-          </Route>
-          <Route path="/color">
-            <Color theme={theme}/>
-          </Route>
-          <Route path="/typography">
-            <Typography theme={theme}/>
-          </Route>
-          <Route path="/layout">
-            <Layout />
-          </Route>
-          <Route path="/">
-            <Gallery collections={collections} setTheme={setTheme}/>
-          </Route>
-        </Switch>
+        <Routes>
+          <Route path="/" element={<Gallery collections={collections} setTheme={setTheme}/>}></Route>
+          <Route path="gallery" element={<Gallery collections={collections} setTheme={setTheme}/>}></Route>
+          <Route path="overview" element={<Overview theme={theme}/>}></Route>
+          <Route path="color" element={<Color theme={theme}/>}></Route>
+          <Route path="typography" element={<Typography theme={theme}/>}></Route>
+          <Route path="layout" element={<Layout />}></Route>
+        </Routes>
         <NavbarMobile/>
         <ExportTheme theme={theme}/>
       </Router>
